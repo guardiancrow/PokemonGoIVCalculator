@@ -13,7 +13,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
-        <script src="//cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+        <!-- <script src="//cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> -->
 
         <link rel="stylesheet" href="./css/dashboard.css">
         <script src="./js/poke.js"></script>
@@ -155,7 +155,7 @@
                     <div id="attention">
                     </div>
                     <br>
-                    <h2>レベルと個体値の候補</h2>
+                    <h2>概要</h2>
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -166,12 +166,13 @@
                         <tbody id="rangeResult">
                         </tbody>
                     </table>
-                    <div class="form-group">
+                    <div id="stackedbar"></div>
+                    <!-- <div class="form-group">
                         <input type="text" id="text-result" class="form-control" value=""/>
                     </div>
                     <div class="form-group">
                         <input type="button" class="btn btn-sm" value="結果をコピー" id="copy-result" data-clipboard-target="#text-result"/>
-                    </div>
+                    </div> -->
 
                     <br>
                     <h2>詳細</h2>
@@ -182,7 +183,7 @@
                                 <th>レベル</th>
                                 <th>攻撃</th>
                                 <th>防御</th>
-                                <th>スタミナ</th>
+                                <th>HP</th>
                             </tr>
                         </thead>
                         <tbody id="result">
@@ -191,7 +192,7 @@
 
                     <br>
                     <h2>強化の試算</h2>
-                    <div id="reinforcement"></div>
+                    <div id="reinforcement"><p class="small">（強化後のCPや強化に必要なほしのすな・アメの数が表示されます。）</p></div>
 
                     <!--<br>
                     <h2>入力履歴</h2>
@@ -206,6 +207,20 @@
                         <tbody id="input-history">
                         </tbody>
                     </table>-->
+
+                    <br>
+                    <h2>履歴</h2>
+                    <div id="history"></div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <p class="small">（履歴はブラウザ内に保存され、計算によって外部に送信されることはありません。）</p>
+                        </div>
+                        <div class="col-xs-4 btn-group">
+                            <input type="button" class="col-xs-12 btn btn-danger btn-sm" value="履歴を全て削除" id="clearHistory"/>
+                        </div>
+                    </div>
+
+                    <hr>
                 </div>
             </div>
         </div>

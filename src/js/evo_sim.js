@@ -110,13 +110,14 @@ $(document).ready(function(){
                 title.append(input.name + " >> " + evolvednameary[i] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             }
             var table = $('<table class="table table-bordered table-striped"></table>');
-            var thead = $("<thead><tr><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
+            var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
 
             table.prepend(thead);
             var tbody = $("<tbody></tbody>");
             var row = $.map(futurearray[i], function(value) {
                 var row = $("<tr></tr>");
-                row.append("<td>" + value['level'] + "</td>")
+                row.append("<td>" + Math.floor(value['level_base'] / 2.0) + "</td>")
+                row.append("<td>" + value['plevel'] + "</td>")
                 row.append("<td>" + value['cp'] + "</td>")
                 row.append("<td>" + value['cpmax'] + "</td>")
                 row.append("<td>" + value['totalstardust'] + "</td>")
@@ -153,7 +154,7 @@ $(document).ready(function(){
                 candy = requireCandy[Math.floor(j / 2.0)];
                 var cp = Math.max(10, Math.floor((base['attack'] + input.atk) * Math.sqrt(base['defense'] + input.def) * Math.sqrt(base['stamina'] + input.sta) * CPM[j] * CPM[j] / 10.0));
                 var cpMax = Math.max(10, Math.floor((base['attack'] + 15) * Math.sqrt(base['defense'] + 15) * Math.sqrt(base['stamina'] + 15) * CPM[j] * CPM[j] / 10.0));
-                ary.push({level_base: j, level: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
+                ary.push({level_base: j, plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
             }
             result.push(ary);
         }
