@@ -1,35 +1,6 @@
 /*global requireStardust, requireCandy, pokedex, CPM */
 
 $(document).ready(function(){
-    $('#name').autocomplete( {
-        source: function(request, response) {
-            var names = [];
-            var termed = new RegExp('^(' + request.term + ')');
-            $.each(pokedex, function(idx, data) {
-                if (data['name'].match(termed) || data['hira'].match(termed)) {
-                    names.push(data['name']);
-                }
-            });
-            response(names);
-        },
-        autoFocus: true,
-        delay: 250,
-        minLength: 1
-    });
-    var init = function() {
-        var stardust = $('#stardust')
-        for (var i = 0; i < requireStardust.length; i++) {
-            stardust.append($("<option>").val(i).text(requireStardust[i]));
-        }
-
-        var selectName = $('#select-name');
-        $.each(pokedex, function(idx, value) {
-            var name = value['name'];
-            selectName.append($("<option>").val(name).text(name));
-        })
-    }
-    init();
-
     var getBaseStats = function(name) {
         var base = null
         $.each(pokedex, function(idx, data) {
@@ -70,7 +41,7 @@ $(document).ready(function(){
         return base[type] + iv[type];
     }
 
-    var getRangeText = function(ary) {
+    var getRangeText = function(ary, fixed) {
         if (ary == null) {
             return "";
         }
@@ -83,9 +54,9 @@ $(document).ready(function(){
             max = 0;
         }
         if (min == max) {
-            return String(min);
+            return min.toFixed(fixed);
         } else {
-            return min + "〜" + max;
+            return min.toFixed(fixed) + "〜" + max.toFixed(fixed);
         }
     }
 
@@ -190,7 +161,7 @@ $(document).ready(function(){
                     var iv = {stamina: s, attack: a, defense: d};
                     var cp = calcCP(base, iv, CPM[level]);
                     if (cp == curCP) {
-                        var percent = Math.round((a + d + s) * 1000 / 45) / 10;
+                        var percent = Math.round((a + d + s) * 1000.0 / 45.0) / 10.0;
                         if (percent < minPercent || percent > maxPercent) {
                             continue;
                         }
@@ -287,13 +258,84 @@ $(document).ready(function(){
         $inputHistory.append(row);
     }*/
 
+    var restoreInput = function(input) {
+        $('input[name="name"]').val(input.name);
+        $('input[name="cp"]').val(input.cp);
+        $('input[name="hp"]').val(input.hp);
+        $('#stardust').val(input.stardustIndex);
+        $('#no-reinforced').prop('checked', input.no_reinforced);
+        $('#cponly').prop('checked', input.cponly);
+
+        $('input[name="team"]').parent('.btn').removeClass('active');
+        $('input[name="team"]').prop('checked', false);
+        if (input.team >= 1 && input.team <= 3) {
+            $('input[name="team"][value="'+input.team+'"]').parent('.btn').addClass('active');
+            $('input[name="team"][value="'+input.team+'"]').prop('checked', true);
+        }
+        $('input[name="eval"]').parent('.btn').removeClass('active');
+        $('input[name="eval"]').prop('checked', false);
+        if (input.eval >= 1 && input.eval <= 4) {
+            $('input[name="eval"][value="'+input.eval+'"]').parent('.btn').addClass('active');
+            $('input[name="eval"][value="'+input.eval+'"]').prop('checked', true);
+        }
+        $('input[name="noteworthy"]').parent('.btn').removeClass('active');
+        $('input[name="noteworthy"]').prop('checked', false);
+        $.map(input.noteworthy, function(value) {
+            $('input[name="noteworthy"][value="'+value+'"]').parent('.btn').addClass('active');
+            $('input[name="noteworthy"][value="'+value+'"]').prop('checked', true);
+        });
+        $('input[name="status"]').parent('.btn').removeClass('active');
+        $('input[name="status"]').prop('checked', false);
+        if (input.status >= 1 && input.status <= 3) {
+            $('input[name="status"][value="'+input.status+'"]').parent('.btn').addClass('active');
+            $('input[name="status"][value="'+input.status+'"]').prop('checked', true);
+        }
+    }
+
+    var restoreDisplay = function(value) {
+        candIVs = null;
+        var input = JSON.parse(localStorage.getItem(value));
+        restoreInput(input);
+        refineIV(input);
+
+        renderRangeIV();
+        renderCandIV();
+        renderStackedBar();
+        renderTrialCalculation(input);
+    }
+
+    var addHistory = function(input, candIVs) {
+        if (!localStorage) {
+            return;
+        }
+        var key = -1;
+        for (var i = 0; i < localStorage.length; i++) {
+            if (localStorage.getItem(i) == null) {
+                key = i;
+            }
+        }
+        if (key == -1) {
+            key = localStorage.length;
+        }
+        var appendeddata = {page: 'calcIV', percent: '', date: 0};
+        var percent = $.map(candIVs, function(v) {
+            return Math.round((v['attack'] + v['defense'] + v['stamina']) * 1000.0 / 45.0) / 10.0;
+        })
+        appendeddata['percent'] = getRangeText(percent, 1);
+        appendeddata['date'] = Date.now();
+        var ext = $('this').extend(input, appendeddata);
+        localStorage.setItem(key.toString(), JSON.stringify(ext));
+    }
+
+    //renderer
+
     var renderCandIV = function() {
         var result = $("#result");
         result.empty();
 
         for(var i = 0; i < candIVs.length; i++) {
             var row = $("<tr></tr>");
-            row.append("<td>" + Math.round((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 1000.0 / 45.0) / 10.0 + "&#37;</td>")
+            row.append("<td>" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;</td>")
             row.append("<td>" + (candIVs[i]['level'] / 2 + 1) + "</td>")
             row.append("<td>" + candIVs[i]['attack'] + "</td>")
             row.append("<td>" + candIVs[i]['defense'] + "</td>")
@@ -315,12 +357,12 @@ $(document).ready(function(){
         rangeResult.empty();
 
         var result = {};
-        var iter = {percent: 'パーセント', level: 'レベル', attack: '攻撃', defense: '防御', stamina: 'スタミナ'};
+        var iter = {percent: 'パーセント', level: 'レベル', attack: '攻撃', defense: '防御', stamina: 'HP'};
 
         $.each(iter, function(key, value) {
             result[key] = $.map(candIVs, function(v) {
                 if (key == 'percent') {
-                    return Math.round((v['attack'] + v['defense'] + v['stamina']) * 1000 / 45) / 10;
+                    return Math.round((v['attack'] + v['defense'] + v['stamina']) * 1000.0 / 45.0) / 10.0;
                 }
                 else if (key == 'level') {
                     return v['level'] / 2 + 1;
@@ -332,7 +374,7 @@ $(document).ready(function(){
             rangeResult.append(makeRow(value, result[key]));
         });
 
-        var mod = function(ary) {
+        /*var mod = function(ary) {
             var str = getRangeText(ary);
 
             if (str.indexOf('〜') == -1) {
@@ -350,7 +392,7 @@ $(document).ready(function(){
         textResult +=  mod(result['attack']) + " / DEF";
         textResult +=  mod(result['defense']) + " / STA";
         textResult +=  mod(result['stamina']);
-        $("#text-result").val(textResult);
+        $("#text-result").val(textResult);*/
     }
 
     var renderTrialCalculation = function(input) {
@@ -371,26 +413,33 @@ $(document).ready(function(){
             var stardust = 0;
             var totalcandy = 0;
             var candy = 0;
-            //for (var j = 0; j < CPM.length; j++, totalstardust += stardust, totalcandy += candy) {
-            for (var j = candIVs[i]['level']; j < CPM.length; j++, totalstardust += stardust, totalcandy += candy) {
+            var j = 0;
+            var consumedstardust = 0;
+            var consumedcandy = 0;
+            for (j = 0; j < candIVs[i]['level']; j++, consumedstardust += stardust, consumedcandy += candy) {
+                stardust = requireStardust[Math.floor(j / 4)];
+                candy = requireCandy[Math.floor(j / 2)];
+            }
+            for (j = candIVs[i]['level']; j < CPM.length; j++, totalstardust += stardust, totalcandy += candy) {
                 stardust = requireStardust[Math.floor(j / 4)];
                 candy = requireCandy[Math.floor(j / 2)];
                 var cp = Math.max(10, Math.floor(sum(base, candIVs[i], 'attack') * Math.sqrt(sum(base, candIVs[i], 'defense')) * Math.sqrt(sum(base, candIVs[i], 'stamina')) * CPM[j] * CPM[j] / 10.0));
                 var cpMax = Math.max(10, Math.floor((base['attack'] + 15) * Math.sqrt(base['defense'] + 15) * Math.sqrt(base['stamina'] + 15) * CPM[j] * CPM[j] / 10.0));
-                ary.push({level: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
+                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
             }
 
-            singletable = $("<div></div>");
+            singletable = $('<div class="reinforcetable"></div>');
             var title = $('<p class="lead"></p>');
-            title.append(input.name + "(" + Math.round((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 1000.0 / 45.0) / 10.0 + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : ATK" + candIVs[i]['attack'] + " / DEF"+ candIVs[i]['defense'] + " / STA" + candIVs[i]['stamina']);
+            title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " | 最大CP : " + ary[ary.length-1]['cp']);
             var table = $('<table class="table table-bordered table-striped"></table>');
-            var thead = $("<thead><tr><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
+            var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
 
             table.prepend(thead);
             var tbody = $("<tbody></tbody>");
             var row = $.map(ary, function(value) {
                 var row = $("<tr></tr>");
-                row.append("<td>" + value['level'] + "</td>")
+                row.append("<td>" + value['tlevel'] + "</td>")
+                row.append("<td>" + value['plevel'] + "</td>")
                 row.append("<td>" + value['cp'] + "</td>")
                 row.append("<td>" + value['cpmax'] + "</td>")
                 row.append("<td>" + value['totalstardust'] + "</td>")
@@ -400,10 +449,86 @@ $(document).ready(function(){
             tbody.append(row);
             table.append(tbody);
             singletable.append(title);
+            singletable.append('<p class="text-right small">ポケモンレベル1から'+(candIVs[i]['level'] / 2.0 + 1.0)+'までに必要だった ほしのすな：'+consumedstardust+' / アメ：'+consumedcandy+'</p>');
             singletable.append(table);
+            singletable.append('<hr/>');
             reinforce.append(singletable);
         }
     }
+
+    var renderStackedBar = function () {
+        var stackedbar = $("#stackedbar");
+        stackedbar.empty();
+        if (candIVs == null || candIVs.length == 0) {
+            return;
+        }
+        var minatk = Math.min.apply(null, candIVs.map(function (v) {return v.attack;})) * 100.0 / 45.0;
+        var mindef = Math.min.apply(null, candIVs.map(function (v) {return v.defense;})) * 100.0 / 45.0;
+        var minsta = Math.min.apply(null, candIVs.map(function (v) {return v.stamina;})) * 100.0 / 45.0;
+        if (minatk + mindef + minsta == Infinity) {
+            return;
+        }
+        var indeterminate = (Math.max.apply(null, candIVs.map(function (v) {return v.attack + v.defense + v.stamina;})) * 100.0 / 45.0) - (minatk + mindef + minsta);
+        if (indeterminate < 2.22222) { // 1.0 * 100.0 / 45.0
+            stackedbar.append('<h3>個体値イメージ</h3><div class="progress" style="background-color:dimgray !important;"><div class="progress-bar progress-bar-primary" style="width:'+minatk+'%">攻撃</div><div class="progress-bar progress-bar-danger" style="width:'+mindef+'%">防御</div><div class="progress-bar progress-bar-warning" style="width:'+minsta+'%">HP</div></div>');
+        } else {
+            stackedbar.append('<h3>個体値イメージ</h3><div class="progress" style="background-color:dimgray !important;"><div class="progress-bar progress-bar-primary" style="width:'+minatk+'%">攻撃</div><div class="progress-bar progress-bar-danger" style="width:'+mindef+'%">防御</div><div class="progress-bar progress-bar-warning" style="width:'+minsta+'%">HP</div><div class="progress-bar progress-bar-success progress-bar-striped active" style="width:'+indeterminate+'%">不定</div></div>');
+        }
+    }
+
+    var renderHistory = function() {
+        if (!localStorage) {
+            return;
+        }
+        var history = $("#history");
+        history.empty();
+
+        if(localStorage.length == 0) {
+            return;
+        }
+
+        var ary = [];
+        var i;
+
+        //ソートのために一度全て取得
+        for (i = 0; i < localStorage.length; i++) {
+            var appendeddata = {key: 0};
+            appendeddata['key'] = localStorage.key(i);
+            var storeddata = JSON.parse(localStorage.getItem(localStorage.key(i)));
+            if (storeddata['page'] != "calcIV") {
+                continue;
+            }
+            ary.push($('this').extend(appendeddata, storeddata));
+        }
+
+        if(ary.length == 0) {
+            return;
+        }
+
+        ary.sort(function localStorageCompare(a, b) {
+            return (b['date']) - (a['date']);
+        });
+
+        var table = $('<table class="table table-bordered table-striped"></table>');
+        var thead = $("<thead><tr><th>ポケモン名</th><th>CP</th><th>パーセント</th><th></th><th></th></tr></thead>");
+        var tbody = $("<tbody></tbody>");
+
+        for (i = 0; i < ary.length; i++) {
+            var row = $("<tr></tr>");
+            row.append("<td>" + ary[i]['name'] + "</td>");
+            row.append("<td>" + ary[i]['cp'] + "</td>");
+            row.append("<td>" + ary[i]['percent'] + "&#37;</td>");
+            row.append('<td><button class="btn btn-primary btn-xs history-restore" value="' + ary[i]['key'] + '">復元</button></td>');
+            row.append('<td><button class="btn btn-danger btn-xs history-remove" value="' + ary[i]['key'] + '">削除</button></td>');
+            tbody.append(row);
+        }
+
+        table.append(thead);
+        table.append(tbody);
+        history.append(table);
+    }
+
+    //events
 
     $('#calcCP').on('click', function() {
         candIVs = null;
@@ -419,8 +544,13 @@ $(document).ready(function(){
         //renderInputHistory(input);
         renderRangeIV();
         renderCandIV();
-
+        renderStackedBar();
         renderTrialCalculation(input);
+
+        if (candIVs.length > 0) {
+            addHistory(input, candIVs);
+            renderHistory();
+        }
     })
 
     /*$('#refine').on('click', function() {
@@ -498,22 +628,87 @@ $(document).ready(function(){
         }
     })
 
+    $('#clearHistory').on('click', function() {
+        if (!localStorage) {
+            return;
+        }
+        localStorage.clear();
+        $("#history-body").empty();
+    })
+
+    $('#history').on('click', 'button.history-restore', function() {
+        if (!localStorage) {
+            return;
+        }
+        restoreDisplay(parseInt($(this).attr('value')));
+        $('html,body').animate({
+            scrollTop: 0
+        },{
+            queue: false
+        })
+    })
+
+    $('#history').on('click', 'button.history-remove', function() {
+        if (!localStorage) {
+            return;
+        }
+        localStorage.removeItem($(this).attr('value'));
+        renderHistory();
+    })
+
+    $('#name').autocomplete( {
+        source: function(request, response) {
+            var names = [];
+            var termed = new RegExp('^(' + request.term + ')');
+            $.each(pokedex, function(idx, data) {
+                if (data['name'].match(termed) || data['hira'].match(termed)) {
+                    names.push(data['name']);
+                }
+            });
+            response(names);
+        },
+        autoFocus: true,
+        delay: 250,
+        minLength: 1
+    });
+
+    var init = function() {
+        var stardust = $('#stardust')
+        for (var i = 0; i < requireStardust.length; i++) {
+            stardust.append($("<option>").val(i).text(requireStardust[i]));
+        }
+
+        var selectName = $('#select-name');
+        $.each(pokedex, function(idx, value) {
+            var name = value['name'];
+            selectName.append($("<option>").val(name).text(name));
+        })
+
+        renderHistory();
+    }
+
+    init();
+
     var makeRow = function(label, cand) {
         var row = $("<tr></tr>");
         row.append("<td>" + label + "</td>");
 
         var min = Math.min.apply(null, cand);
         var max = Math.max.apply(null, cand);
+        var fixed = 0;
+        if (label == 'パーセント') {
+            fixed = 1;
+        }
         if (min == max) {
-            row.append($("<td>" + getRangeText(cand) + "</td>"));
+            row.append($("<td>" + getRangeText(cand, fixed) + "</td>"));
         } else {
-            row.append($("<td>" + getRangeText(cand) + "</td>"));
+            row.append($("<td>" + getRangeText(cand, fixed) + "</td>"));
         }
         return row;
     }
-    var clipboard = new Clipboard('#copy-result');
+    /*var clipboard = new Clipboard('#copy-result');
 
     clipboard.on('success', function(e) {
         e.clearSelection();
-    });
+    });*/
 })
