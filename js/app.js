@@ -16,6 +16,16 @@ $(document).ready(function(){
             !$.isNumeric($('input[name="hp"]').val())) {
             return false;
         }
+        $('input[name="cp"]').val(
+            $('input[name="cp"]').val().replace(/[０-９]/g,function(s){
+                return String.fromCharCode(s.charCodeAt(0)-0xFEE0)
+            })
+        );
+        $('input[name="hp"]').val(
+            $('input[name="hp"]').val().replace(/[０-９]/g,function(s){
+                return String.fromCharCode(s.charCodeAt(0)-0xFEE0)
+            })
+        );
         return true;
     }
 
@@ -633,7 +643,7 @@ $(document).ready(function(){
             return;
         }
         localStorage.clear();
-        $("#history-body").empty();
+        renderHistory();
     })
 
     $('#history').on('click', 'button.history-restore', function() {
