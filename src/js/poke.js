@@ -145,7 +145,7 @@ var pokedex = [
 	{name: 'ケンタロス', base: { stamina: 150, attack: 198, defense: 197 }, hira: 'けんたろす' },
 	{name: 'コイキング', base: { stamina: 40, attack: 29, defense: 102 }, hira: 'こいきんぐ', evo: ['ギャラドス'] },
 	{name: 'ギャラドス', base: { stamina: 190, attack: 237, defense: 197 }, hira: 'ぎゃらどす' },
-	{name: 'ラプラス', base: { stamina: 260, attack: 186, defense: 190 }, hira: 'らぷらす' },
+	{name: 'ラプラス', base: { stamina: 260, attack: 165, defense: 180 }, hira: 'らぷらす' },
 	{name: 'メタモン', base: { stamina: 96, attack: 91, defense: 91 }, hira: 'めたもん' },
 	{name: 'イーブイ', base: { stamina: 110, attack: 104, defense: 121 }, hira: 'いーぶい', evo: ['シャワーズ', 'サンダース', 'ブースター', 'エーフィ', 'ブラッキー'] },
 	{name: 'シャワーズ', base: { stamina: 260, attack: 205, defense: 177 }, hira: 'しゃわーず' },
