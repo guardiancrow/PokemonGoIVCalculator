@@ -270,6 +270,7 @@ $(document).ready(function(){
 
     var restoreInput = function(input) {
         $('input[name="name"]').val(input.name);
+        $('#select-name').val(input.name);
         $('input[name="cp"]').val(input.cp);
         $('input[name="hp"]').val(input.hp);
         $('#stardust').val(input.stardustIndex);
@@ -575,6 +576,10 @@ $(document).ready(function(){
 
     $('#select-name').change(function() {
         $('input[name="name"]').val($(this).val());
+    })
+
+    $('input[name="name"]').change(function() {
+        $('#select-name').val($(this).val());
     })
 
     //ラジオボタン二度押しで初期化する仕組み
