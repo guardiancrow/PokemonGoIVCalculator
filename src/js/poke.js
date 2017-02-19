@@ -127,7 +127,7 @@ var pokedex = [
 	{name: 'マタドガス', base: { stamina: 130, attack: 174, defense: 221 }, hira: 'またどがす' },
 	{name: 'サイホーン', base: { stamina: 160, attack: 140, defense: 157 }, hira: 'さいほーん', evo: ['サイドン'] },
 	{name: 'サイドン', base: { stamina: 210, attack: 222, defense: 206 }, hira: 'さいどん' },
-	{name: 'ラッキー', base: { stamina: 500, attack: 60, defense: 176 }, hira: 'らっきー' },
+	{name: 'ラッキー', base: { stamina: 500, attack: 60, defense: 176 }, hira: 'らっきー',evo: ['ハピナス'] },
 	{name: 'モンジャラ', base: { stamina: 130, attack: 183, defense: 205 }, hira: 'もんじゃら' },
 	{name: 'ガルーラ', base: { stamina: 210, attack: 181, defense: 165 }, hira: 'がるーら' },
 	{name: 'タッツー', base: { stamina: 60, attack: 129, defense: 125 }, hira: 'たっつー', evo: ['シードラ'] },
