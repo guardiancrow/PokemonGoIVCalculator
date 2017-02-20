@@ -305,14 +305,24 @@ $(document).ready(function(){
 
     var restoreDisplay = function(value) {
         candIVs = null;
+        initCalc();
         var input = JSON.parse(localStorage.getItem(value));
         restoreInput(input);
         refineIV(input);
+        var uniqueIV = searcUniqueIV(input);
 
         renderRangeIV();
         renderCandIV();
         renderStackedBar();
-        renderTrialCalculation(input);
+        renderTrialCalculation(input, uniqueIV);
+
+        $('#attention').attr({class: 'alert alert-info'});
+        $('#attention').text('履歴から計算結果を復元しました。')
+        $('html,body').animate({
+            scrollTop: $('#attention').offset().top - $('#navbar').height()
+        },{
+            queue: false
+        })
     }
 
     var addHistory = function(input, candIVs) {
@@ -338,6 +348,77 @@ $(document).ready(function(){
         localStorage.setItem(key.toString(), JSON.stringify(ext));
     }
 
+    var searcUniqueIV = function(input) {
+        if (candIVs == null) {
+            return;
+        }
+        if (candIVs.length <= 1 || candIVs.length > 5) {
+            return;
+        }
+
+        var base = getBaseStats(input.name);
+        var uniqueIVLevel = [];
+        var prev = 0;
+        var i;
+        for (i = 0; i < candIVs.length; i++) {
+            uniqueIVLevel[i] = 0;
+        }
+
+        for (i = candIVs[0]['level']; i < CPM.length; i++) {
+            var cpary = [];
+            var counter = [];
+            var count = 0;
+            var j;
+            for (j = 0; j < candIVs.length; j++) {
+                if (uniqueIVLevel[j] > 0) {
+                    cpary[j] = 0;
+                    continue;
+                }
+                var cp = Math.max(10, Math.floor(sum(base, candIVs[j], 'attack') * Math.sqrt(sum(base, candIVs[j], 'defense')) * Math.sqrt(sum(base, candIVs[j], 'stamina')) * CPM[i] * CPM[i] / 10.0));
+                cpary[j] = cp;
+                if (counter.length > 0) {
+                    var flag = false;
+                    for (var k = 0; k < counter.length; k++) {
+                        if (counter[k]['cp'] == cp) {
+                            counter[k]['count']++;
+                            count++;
+                            flag = true;
+                        }
+                    }
+                    if (!flag) {
+                        counter.push({key: j, cp: cp, count: 1});
+                        count++;
+                    }
+                } else {
+                    counter.push({key: j, cp: cp, count: 1});
+                    count++;
+                }
+            }
+
+            if (Math.max.apply(null, cpary) == 0) {
+                break;
+            }
+
+            if (count == 1 && counter.length == 1) {
+                uniqueIVLevel[counter[0]['key']] = prev;
+            } else {
+                for (j = 0; j < counter.length; j++) {
+                    if (counter[j]['count'] == 1 && counter[j]['cp'] >= 10) {
+                        uniqueIVLevel[counter[j]['key']] = i / 2.0 + 1.0;
+                        prev = i / 2.0 + 1.0;
+                    }
+                }
+            }
+        }
+        return uniqueIVLevel;
+    }
+
+    var initCalc = function () {
+        $('#attention').removeAttr('class');
+        $('#attention').empty();
+        $('#reinforcement').empty();
+    }
+
     //renderer
 
     var renderCandIV = function() {
@@ -355,6 +436,7 @@ $(document).ready(function(){
         }
 
         if (candIVs.length == 0) {
+            $('#attention').attr({class: 'alert alert-warning'});
             $('#attention').text('個体値を計算できませんでした。入力値が間違っていませんか？　ステータス言及とステータス評価はどちらか片方ではいけません。')
         }
         else {
@@ -406,7 +488,7 @@ $(document).ready(function(){
         $("#text-result").val(textResult);*/
     }
 
-    var renderTrialCalculation = function(input) {
+    var renderTrialCalculation = function(input, uniqueIV) {
         var base = getBaseStats(input.name);
         var reinforce = $("#reinforcement");
         var singletable = null;
@@ -436,7 +518,11 @@ $(document).ready(function(){
                 candy = requireCandy[Math.floor(j / 2)];
                 var cp = Math.max(10, Math.floor(sum(base, candIVs[i], 'attack') * Math.sqrt(sum(base, candIVs[i], 'defense')) * Math.sqrt(sum(base, candIVs[i], 'stamina')) * CPM[j] * CPM[j] / 10.0));
                 var cpMax = Math.max(10, Math.floor((base['attack'] + 15) * Math.sqrt(base['defense'] + 15) * Math.sqrt(base['stamina'] + 15) * CPM[j] * CPM[j] / 10.0));
-                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
+                var unique = false;
+                if (uniqueIV != null && uniqueIV.length > 1 && uniqueIV[i] == j / 2.0 + 1.0) {
+                    unique = true;
+                }
+                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
             }
 
             singletable = $('<div class="reinforcetable"></div>');
@@ -449,6 +535,9 @@ $(document).ready(function(){
             var tbody = $("<tbody></tbody>");
             var row = $.map(ary, function(value) {
                 var row = $("<tr></tr>");
+                if (value['unique']) {
+                    row = $('<tr style="background-color: lightcoral;"></tr>');
+                }
                 row.append("<td>" + value['tlevel'] + "</td>")
                 row.append("<td>" + value['plevel'] + "</td>")
                 row.append("<td>" + value['cp'] + "</td>")
@@ -462,6 +551,13 @@ $(document).ready(function(){
             singletable.append(title);
             singletable.append('<p class="text-right small">ポケモンレベル1から'+(candIVs[i]['level'] / 2.0 + 1.0)+'までに必要だった ほしのすな：'+consumedstardust+' / アメ：'+consumedcandy+'</p>');
             singletable.append(table);
+            if (uniqueIV != null && uniqueIV.length > 1) {
+                if (uniqueIV[i] == 0) {
+                    singletable.append('<p class="text-right small">CPが他の候補と重複するため強化しても個体値が一意に定まらない可能性があります。</p>');
+                } else {
+                    singletable.append('<p class="text-right small">色つきの行は他候補とは異なるCPを示しています。<br/>つまりここまで強化してそのCPならば一意に定まり正確な個体値がわかります。</p>');
+                }
+            }
             singletable.append('<hr/>');
             reinforce.append(singletable);
         }
@@ -543,7 +639,9 @@ $(document).ready(function(){
 
     $('#calcCP').on('click', function() {
         candIVs = null;
+        initCalc();
         if (!checkInput()) {
+            $('#attention').attr({class: 'alert alert-warning'});
             $('#attention').text('入力値に間違いはありませんか？空白文字などはエラーになります。')
             return;
         }
@@ -551,17 +649,26 @@ $(document).ready(function(){
         //clearInputHistory();
 
         refineIV(input);
+        var diffLevel = searcUniqueIV(input);
 
         //renderInputHistory(input);
         renderRangeIV();
         renderCandIV();
         renderStackedBar();
-        renderTrialCalculation(input);
+        renderTrialCalculation(input, diffLevel);
 
         if (candIVs.length > 0) {
             addHistory(input, candIVs);
             renderHistory();
         }
+
+        $('#attention').attr({class: 'alert alert-info'});
+        $('#attention').text('計算が終了しました。結果を表示します。')
+        $('html,body').animate({
+            scrollTop: $('#attention').offset().top - $('#navbar').height()
+        },{
+            queue: false
+        })
     })
 
     /*$('#refine').on('click', function() {
@@ -656,11 +763,11 @@ $(document).ready(function(){
             return;
         }
         restoreDisplay(parseInt($(this).attr('value')));
-        $('html,body').animate({
+        /*$('html,body').animate({
             scrollTop: 0
         },{
             queue: false
-        })
+        })*/
     })
 
     $('#history').on('click', 'button.history-remove', function() {
