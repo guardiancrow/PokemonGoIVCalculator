@@ -1,5 +1,3 @@
-/*global requireStardust, requireCandy, pokedex, CPM */
-
 $(document).ready(function(){
     var getBaseStats = function(name) {
         var base = null
@@ -7,7 +5,7 @@ $(document).ready(function(){
             if (name == data['name'])
                 base = data['base'];
         });
-        return base
+        return base;
     }
 
     var checkInput = function() {
@@ -254,20 +252,6 @@ $(document).ready(function(){
         });
     }
 
-    /*var clearInputHistory = function() {
-        $("#input-history").empty();
-    }
-
-    var renderInputHistory = function(input) {
-        var $inputHistory = $("#input-history");
-
-        var row = $("<tr></tr>");
-        row.append("<td>" + input.cp + "</td>");
-        row.append("<td>" + input.hp + "</td>");
-        row.append("<td>" + requireStardust[input.stardustIndex] + "</td>");
-        $inputHistory.append(row);
-    }*/
-
     var restoreInput = function(input) {
         $('input[name="name"]').val(input.name);
         $('#select-name').val(input.name);
@@ -466,26 +450,6 @@ $(document).ready(function(){
             });
             rangeResult.append(makeRow(value, result[key]));
         });
-
-        /*var mod = function(ary) {
-            var str = getRangeText(ary);
-
-            if (str.indexOf('〜') == -1) {
-                return str;
-            }
-            else {
-                return "[" + str + "]";
-            }
-        }
-
-        var textResult = "";
-        textResult += $('input[name="name"]').val();
-        textResult += "(" + getRangeText(result['percent']) + "%) | "
-        textResult += "(Lv" + getRangeText(result['level']) + ") : ATK"
-        textResult +=  mod(result['attack']) + " / DEF";
-        textResult +=  mod(result['defense']) + " / STA";
-        textResult +=  mod(result['stamina']);
-        $("#text-result").val(textResult);*/
     }
 
     var renderTrialCalculation = function(input, uniqueIV) {
@@ -555,7 +519,7 @@ $(document).ready(function(){
                 if (uniqueIV[i] == 0) {
                     singletable.append('<p class="text-right small">CPが他の候補と重複するため強化しても個体値が一意に定まらない可能性があります。</p>');
                 } else {
-                    singletable.append('<p class="text-right small">色つきの行は他候補とは異なるCPを示しています。<br/>つまりここまで強化してそのCPならば一意に定まり正確な個体値がわかります。</p>');
+                    singletable.append('<p class="text-right small">色付きの行は他候補とは異なるCPを示しています。<br/>つまりここまで強化してそのCPならば一意に定まり正確な個体値がわかります。</p>');
                 }
             }
             singletable.append('<hr/>');
@@ -646,12 +610,10 @@ $(document).ready(function(){
             return;
         }
         var input = getInput();
-        //clearInputHistory();
 
         refineIV(input);
         var diffLevel = searcUniqueIV(input);
 
-        //renderInputHistory(input);
         renderRangeIV();
         renderCandIV();
         renderStackedBar();
@@ -670,16 +632,6 @@ $(document).ready(function(){
             queue: false
         })
     })
-
-    /*$('#refine').on('click', function() {
-        var input = getInput();
-
-        refineIV(input);
-
-        renderInputHistory(input);
-        renderRangeIV();
-        renderCandIV();
-    })*/
 
     $('#select-name').change(function() {
         $('input[name="name"]').val($(this).val());
@@ -763,11 +715,6 @@ $(document).ready(function(){
             return;
         }
         restoreDisplay(parseInt($(this).attr('value')));
-        /*$('html,body').animate({
-            scrollTop: 0
-        },{
-            queue: false
-        })*/
     })
 
     $('#history').on('click', 'button.history-remove', function() {
@@ -828,9 +775,4 @@ $(document).ready(function(){
         }
         return row;
     }
-    /*var clipboard = new Clipboard('#copy-result');
-
-    clipboard.on('success', function(e) {
-        e.clearSelection();
-    });*/
 })

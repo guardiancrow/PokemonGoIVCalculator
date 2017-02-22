@@ -1,5 +1,3 @@
-/*global requireStardust, requireCandy, pokedex, CPM */
-
 $(document).ready(function(){
     $('#name').autocomplete( {
         source: function(request, response) {

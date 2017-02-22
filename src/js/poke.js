@@ -1,5 +1,3 @@
-/*eslint no-unused-vars: ["error", { "vars": "local" }]*/
-
 var requireStardust = [ // x4
 	200,	400,	600,	800,	1000,
 	1300,	1600,	1900,	2200,	2500,
