@@ -63,6 +63,31 @@ $(document).ready(function(){
         return res;
     }
 
+    var getEvolutionData = function(name, candy) {
+        var res = null;
+        $.each(pokedex, function(idx, data) {
+            if (name == data['name']) {
+                if (data['evo']) {
+                    res = [];
+                    for (var i = 0; i < data['evo'].length; i++) {
+                        var returns = getEvolutionData(data['evo'][i]['name'], data['evo'][i]['candy']);
+                        if (!returns) {
+                            res = $.extend(true, {}, data['evo']);
+                        } else {
+                            res = returns;
+                        }
+                        if (candy > 0) {
+                            $.each(res, function() {
+                                this['candy'] += candy;
+                            });
+                        }
+                    }
+                }
+            }
+        });
+        return res;
+    }
+
     var checkInput = function() {
         if (getBaseStats($('input[name="name"]').val()) == null) {
             return false;
@@ -85,13 +110,13 @@ $(document).ready(function(){
     var renderTrialCalculation = function(futurearray, input) {
         var evolvednameary = [];
         if (input.no_evolution) {
-            evolvednameary.push(input.name);
+            evolvednameary.push({name: input.name, candy: 0});
         } else {
-            var evoary = getEvolutionName(input.name);
+            var evoary = getEvolutionData(input.name, 0);
             if (evoary) {
                 evolvednameary = evoary;
             } else {
-                evolvednameary.push(input.name);
+                evolvednameary.push({name: input.name, candy: 0});
             }
         }
 
@@ -99,13 +124,15 @@ $(document).ready(function(){
         var singletable = null;
         reinforce.empty();
 
-        for (var i = 0; i < evolvednameary.length; i++) {
+        for (var i = 0; i < Object.keys(evolvednameary).length; i++) {
             singletable = $("<div></div>");
             var title = $('<p class="lead"></p>');
-            if (input.name == evolvednameary[i]) {
+            if (input.name == evolvednameary[i]['name']) {
                 title.append(input.name + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
-            }else {
-                title.append(input.name + " >> " + evolvednameary[i] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
+            } else if (evolvednameary[i]['item']) {
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp'] + " 必要アイテム:" + evolvednameary[i]['item']);
+            } else {
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             }
             var table = $('<table class="table table-bordered table-striped"></table>');
             var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
@@ -126,7 +153,6 @@ $(document).ready(function(){
             table.append(tbody);
             singletable.append(title);
             singletable.append(table);
-            singletable.append('<p class="small text-right">（進化に必要なアメは考慮されていません）</p>');
             reinforce.append(singletable);
         }
     }
@@ -134,20 +160,20 @@ $(document).ready(function(){
     var tellTheFuture = function(result, input) {
         var evolvednameary = [];
         if (input.no_evolution) {
-            evolvednameary.push(input.name);
+            evolvednameary.push({name: input.name, candy: 0});
         } else {
-            var evoary = getEvolutionName(input.name);
+            var evoary = getEvolutionData(input.name, 0);
             if (evoary) {
                 evolvednameary = evoary;
             } else {
-                evolvednameary.push(input.name);
+                evolvednameary.push({name: input.name, candy: 0});
             }
         }
 
-        for (var i = 0; i < evolvednameary.length; i++){
+        for (var i = 0; i < Object.keys(evolvednameary).length; i++){
             var ary = [];
-            var base = getBaseStats(evolvednameary[i]);
-            for (var j = input.level_base, totalstardust = 0, stardust = 0, totalcandy = 0, candy = 0; j < CPM.length; j++, totalstardust += stardust, totalcandy += candy) {
+            var base = getBaseStats(evolvednameary[i]['name']);
+            for (var j = input.level_base, totalstardust = 0, stardust = 0, totalcandy = evolvednameary[i]['candy'], candy = 0; j < CPM.length; j++, totalstardust += stardust, totalcandy += candy) {
                 stardust = requireStardust[Math.floor(j / 4.0)];
                 candy = requireCandy[Math.floor(j / 2.0)];
                 var cp = Math.max(10, Math.floor((base['attack'] + input.atk) * Math.sqrt(base['defense'] + input.def) * Math.sqrt(base['stamina'] + input.sta) * CPM[j] * CPM[j] / 10.0));
