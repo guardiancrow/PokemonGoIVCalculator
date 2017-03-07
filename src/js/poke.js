@@ -209,7 +209,7 @@ var pokedex = [
 	{name: 'エイパム', base: { stamina: 110, attack: 136, defense: 112}, hira: 'えいぱむ'},
 	{name: 'ヒマナッツ', base: { stamina: 60, attack: 55, defense: 55}, hira: 'ひまなっつ', evo: [{ name: 'キマワリ', candy: 50, item: 'たいようのいし' }] },
 	{name: 'キマワリ', base: { stamina: 150, attack: 185, defense: 148}, hira: 'きまわり' },
-	{name: 'ヤンヤンマ', base: { stamina: 130, attack: 154, defense: 96}, hira: 'やんやんま' },
+	{name: 'ヤンヤンマ', base: { stamina: 130, attack: 154, defense: 94}, hira: 'やんやんま' },
 	{name: 'ウパー', base: { stamina: 110, attack: 75, defense: 75}, hira: 'うぱー', evo: [{ name: 'ヌオー', candy: 50 }] },
 	{name: 'ヌオー', base: { stamina: 190, attack: 152, defense: 152}, hira: 'ぬおー' },
 	{name: 'エーフィ', base: { stamina: 130, attack: 261, defense: 194}, hira: 'えーふぃ' },
