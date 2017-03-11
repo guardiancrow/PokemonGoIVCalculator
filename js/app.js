@@ -116,9 +116,9 @@ $(document).ready(function(){
         var minDefense = 0;
         var maxDefense = 15;
 
-        if ((input.status != 0 && input.noteworthy.length == 0) || (input.status == 0 && input.noteworthy.length != 0) ){
+        /*if ((input.status != 0 && input.noteworthy.length == 0) || (input.status == 0 && input.noteworthy.length != 0) ){
             return;
-        }
+        }*/
 
         switch(input.status) {
             case 1:
@@ -657,6 +657,18 @@ $(document).ready(function(){
 
     $('input[name=team]').change(function() {
         var id = $(this).attr('id');
+
+        $('#label-eval-best').removeClass('active');
+        $('#label-eval-good').removeClass('active');
+        $('#label-eval-average').removeClass('active');
+        $('#label-eval-bad').removeClass('active');
+        $('#label-status-best').removeClass('active');
+        $('#label-status-good').removeClass('active');
+        $('#label-status-average').removeClass('active');
+        $('#label-status-bad').removeClass('active');
+        $('#label-nw-hp').removeClass('active');
+        $('#label-nw-attack').removeClass('active');
+        $('#label-nw-defense').removeClass('active');
 
         switch(id){
             case 'btn-team-blue':
