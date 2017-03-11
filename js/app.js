@@ -116,9 +116,9 @@ $(document).ready(function(){
         var minDefense = 0;
         var maxDefense = 15;
 
-        /*if ((input.status != 0 && input.noteworthy.length == 0) || (input.status == 0 && input.noteworthy.length != 0) ){
+        if ((input.status != 0 && input.noteworthy.length == 0) || (input.status == 0 && input.noteworthy.length != 0) ){
             return;
-        }*/
+        }
 
         switch(input.status) {
             case 1:
@@ -418,14 +418,6 @@ $(document).ready(function(){
             row.append("<td>" + candIVs[i]['stamina'] + "</td>")
             result.append(row);
         }
-
-        if (candIVs.length == 0) {
-            $('#attention').attr({class: 'alert alert-warning'});
-            $('#attention').text('個体値を計算できませんでした。入力値が間違っていませんか？　ステータス言及とステータス評価はどちらか片方ではいけません。')
-        }
-        else {
-            $('#attention').text('');
-        }
     }
 
     var renderRangeIV = function() {
@@ -603,10 +595,11 @@ $(document).ready(function(){
 
     $('#calcCP').on('click', function() {
         candIVs = null;
+        $('#attention').text('');
         initCalc();
         if (!checkInput()) {
             $('#attention').attr({class: 'alert alert-warning'});
-            $('#attention').text('入力値に間違いはありませんか？空白文字などはエラーになります。')
+            $('#attention').text('入力値に間違いはありませんか？ 空白文字などはエラーになります。')
             return;
         }
         var input = getInput();
@@ -622,10 +615,12 @@ $(document).ready(function(){
         if (candIVs.length > 0) {
             addHistory(input, candIVs);
             renderHistory();
+            $('#attention').attr({class: 'alert alert-info'});
+            $('#attention').text('計算が終了しました。結果を表示します。')
+        }else{
+            $('#attention').attr({class: 'alert alert-warning'});
+            $('#attention').text('個体値を計算できませんでした。入力値が間違っていませんか？ ステータス言及とステータス評価はどちらか片方ではいけません。')
         }
-
-        $('#attention').attr({class: 'alert alert-info'});
-        $('#attention').text('計算が終了しました。結果を表示します。')
         $('html,body').animate({
             scrollTop: $('#attention').offset().top - $('#navbar').height()
         },{
