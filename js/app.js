@@ -416,6 +416,7 @@ $(document).ready(function(){
             row.append("<td>" + candIVs[i]['attack'] + "</td>")
             row.append("<td>" + candIVs[i]['defense'] + "</td>")
             row.append("<td>" + candIVs[i]['stamina'] + "</td>")
+            row.append("<td><a href='evo_sim.html?atk=" + candIVs[i]['attack'] + "&def=" + candIVs[i]['defense'] + "&sta=" + candIVs[i]['stamina'] + "&level=" + (candIVs[i]['level'] / 2 + 1) + "&name=" + encodeURIComponent($('input[name="name"]').val()) + "'>&gt;&gt;sim</a></td>")
             result.append(row);
         }
 

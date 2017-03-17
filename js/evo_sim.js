@@ -15,6 +15,53 @@ $(document).ready(function(){
         minLength: 1
     });
 
+    var getQueries = function() {
+        if (location.search.length == 0 || location.search.length > 256) {
+            return null;
+        }
+        var queryhash = {};
+        var queries = location.search.replace("?", "").split("&");
+        $.each(queries, function(idx, value) {
+            var ary = value.split("=");
+            queryhash[ary[0]] = ary[1];
+        })
+        return queryhash;
+    }
+
+    var applyQueries = function() {
+        var queries = getQueries();
+        if (queries) {
+            if (queries["name"]) {
+                var t = decodeURIComponent(queries["name"]);
+                var found = false;
+                $.each(pokedex, function(idx, value) {
+                    if (value['name'] == t) {
+                        found = true;
+                    }
+                })
+                if (found) {
+                    $('input[name="name"]').val(t);
+                    $('#select-name').val(t);
+                }
+            }
+            if (queries["level"] && queries["level"] >= 1 && queries["level"] < 41 && Math.round(queries["level"] * 2) == queries["level"] * 2) {
+                $('#select-level').val((queries["level"] - 1) * 2);
+            }
+            if (queries["atk"] && queries["atk"] >= 0 && queries["atk"] <= 15) {
+                $('#select-atk').val(queries["atk"]);
+            }
+            if (queries["def"] && queries["def"] >= 0 && queries["def"] <= 15) {
+                $('#select-def').val(queries["def"]);
+            }
+            if (queries["sta"] && queries["sta"] >= 0 && queries["sta"] <= 15) {
+                $('#select-sta').val(queries["sta"]);
+            }
+            if (queries["noevo"] == "true") {
+                $('#no-evolution').prop('checked', true);
+            }
+        }
+    }
+
     var init = function() {
         var atk = $('#select-atk');
         var def = $('#select-def');
@@ -35,6 +82,8 @@ $(document).ready(function(){
             var name = value['name'];
             selectName.append($("<option>").val(name).text(name));
         })
+
+        applyQueries();
     }
     init();
 
