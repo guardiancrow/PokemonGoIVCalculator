@@ -456,7 +456,7 @@ $(document).ready(function(){
     var renderTrialCalculation = function(input, uniqueIV) {
         var base = getBaseStats(input.name);
         var reinforce = $("#reinforcement");
-        var singletable = null;
+        var singlesheet = null;
         reinforce.empty();
 
         if (candIVs.length > 5) {
@@ -490,8 +490,11 @@ $(document).ready(function(){
                 ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
             }
 
-            singletable = $('<div class="reinforcetable"></div>');
-            var title = $('<p class="lead"></p>');
+            singlesheet = $('<div class="reinforcesheet"></div>');
+            var singletable = $('<div class="reinforcetable"></div>');
+            var grid = $('<div class="row"></div>');
+            var title = $('<p class="col-xs-11 lead"></p>');
+            var toggle = $('<button class="slidebutton col-xs-1 btn btn-sm">閉じる</button>');
             title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " | 最大CP : " + ary[ary.length-1]['cp']);
             var table = $('<table class="table table-bordered table-striped"></table>');
             var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
@@ -503,17 +506,19 @@ $(document).ready(function(){
                 if (value['unique']) {
                     row = $('<tr style="background-color: lightcoral;"></tr>');
                 }
-                row.append("<td>" + value['tlevel'] + "</td>")
-                row.append("<td>" + value['plevel'] + "</td>")
-                row.append("<td>" + value['cp'] + "</td>")
-                row.append("<td>" + value['cpmax'] + "</td>")
-                row.append("<td>" + value['totalstardust'] + "</td>")
-                row.append("<td>" + value['totalcandy'] + "</td>")
+                row.append('<td><div class="text-right">' + value['tlevel'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
+                row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['totalstardust'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['totalcandy'] + '</div></td>');
                 return row;
             });
             tbody.append(row);
             table.append(tbody);
-            singletable.append(title);
+            grid.append(title);
+            grid.append(toggle);
+            singlesheet.append(grid);
             singletable.append('<p class="text-right small">ポケモンレベル1から'+(candIVs[i]['level'] / 2.0 + 1.0)+'までに必要だった ほしのすな：'+consumedstardust+' / アメ：'+consumedcandy+'</p>');
             singletable.append(table);
             if (uniqueIV != null && uniqueIV.length > 1) {
@@ -523,8 +528,9 @@ $(document).ready(function(){
                     singletable.append('<p class="text-right small">色付きの行は他候補とは異なるCPを示しています。<br/>つまりここまで強化してそのCPならば一意に定まり正確な個体値がわかります。</p>');
                 }
             }
-            singletable.append('<hr/>');
-            reinforce.append(singletable);
+            singlesheet.append(singletable);
+            singlesheet.append('<hr/>');
+            reinforce.append(singlesheet);
         }
     }
 
@@ -601,6 +607,17 @@ $(document).ready(function(){
     }
 
     //events
+
+    $('#reinforcement').on('click', '.slidebutton', function() {
+        var table = $(this).parent().parent().find('.reinforcetable');
+        if (table.is(':visible')){
+            table.hide();
+            $(this).text('開く');
+        } else {
+            table.show();
+            $(this).text('閉じる');
+        }
+    })
 
     $('#calcCP').on('click', function() {
         candIVs = null;
