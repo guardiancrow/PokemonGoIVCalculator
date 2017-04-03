@@ -82,10 +82,7 @@ $(document).ready(function(){
             var name = value['name'];
             selectName.append($("<option>").val(name).text(name));
         })
-
-        applyQueries();
     }
-    init();
 
     var getBaseStats = function(name) {
         var base = null;
@@ -264,4 +261,13 @@ $(document).ready(function(){
     $('#select-name').change(function() {
         $('input[name="name"]').val($(this).val());
     })
+
+    $(window).load(function(){
+        init();
+
+        if(getQueries()) {
+            applyQueries();
+            $('#calcIt').click();
+        }
+    });
 })
