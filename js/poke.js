@@ -196,7 +196,7 @@ var pokedex = [
 	{name: 'ネイティ', base: { stamina: 80, attack: 134, defense: 89}, hira: 'ねいてぃ', evo: [{ name: 'ネイティオ', candy: 50 }] },
 	{name: 'ネイティオ', base: { stamina: 130, attack: 192, defense: 146}, hira: 'ねいてぃ' },
 	{name: 'メリープ', base: { stamina: 110, attack: 114, defense: 82}, hira: 'めりーぷ', evo: [{ name: 'モココ', candy: 25 }] },
-	{name: 'モココ', base: { stamina: 140, attack: 145, defense: 112}, hira: 'ももこ', evo: [{ name: 'デンリュウ', candy: 100 }] },
+	{name: 'モココ', base: { stamina: 140, attack: 145, defense: 112}, hira: 'もここ', evo: [{ name: 'デンリュウ', candy: 100 }] },
 	{name: 'デンリュウ', base: { stamina: 180, attack: 211, defense: 172}, hira: 'でんりゅう' },
 	{name: 'キレイハナ', base: { stamina: 150, attack: 169, defense: 189}, hira: 'きれいはな' },
 	{name: 'マリル', base: { stamina: 140, attack: 37, defense: 93}, hira: 'まりる', evo: [{ name: 'マリルリ', candy: 25 }] },
