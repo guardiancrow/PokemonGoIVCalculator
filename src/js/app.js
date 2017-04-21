@@ -497,7 +497,7 @@ $(document).ready(function(){
             var toggle = $('<button class="slidebutton col-xs-1 btn btn-sm">閉じる</button>');
             title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " | 最大CP : " + ary[ary.length-1]['cp']);
             var table = $('<table class="table table-bordered table-striped"></table>');
-            var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
+            var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">このポケモンのCP</div></th><th><div class="text-center">個体値100%のCP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
 
             table.prepend(thead);
             var tbody = $("<tbody></tbody>");
