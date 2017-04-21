@@ -243,7 +243,7 @@ var pokedex = [
 	{name: 'オクタン', base: { stamina: 150, attack: 197, defense: 141}, hira: 'おくたん' },
 	{name: 'デリバード', base: { stamina: 90, attack: 128, defense: 90}, hira: 'でりばーど' },
 	{name: 'マンタイン', base: { stamina: 130, attack: 149, defense: 260}, hira: 'まんたいん' },
-	{name: 'エアームド', base: { stamina: 130, attack: 149, defense: 260}, hira: 'えあーむど' },
+	{name: 'エアームド', base: { stamina: 130, attack: 148, defense: 260}, hira: 'えあーむど' },
 	{name: 'デルビル', base: { stamina: 90, attack: 152, defense: 93}, hira: 'でるびる', evo: [{ name: 'ヘルガー', candy: 50 }] },
 	{name: 'ヘルガー', base: { stamina: 150, attack: 224, defense: 159}, hira: 'へるがー' },
 	{name: 'キングドラ', base: { stamina: 150, attack: 194, defense: 194}, hira: 'きんぐどら' },
