@@ -15,6 +15,53 @@ $(document).ready(function(){
         minLength: 1
     });
 
+    var getQueries = function() {
+        if (location.search.length == 0 || location.search.length > 256) {
+            return null;
+        }
+        var queryhash = {};
+        var queries = location.search.replace("?", "").split("&");
+        $.each(queries, function(idx, value) {
+            var ary = value.split("=");
+            queryhash[ary[0]] = ary[1];
+        })
+        return queryhash;
+    }
+
+    var applyQueries = function() {
+        var queries = getQueries();
+        if (queries) {
+            if (queries["name"]) {
+                var t = decodeURIComponent(queries["name"]);
+                var found = false;
+                $.each(pokedex, function(idx, value) {
+                    if (value['name'] == t) {
+                        found = true;
+                    }
+                })
+                if (found) {
+                    $('input[name="name"]').val(t);
+                    $('#select-name').val(t);
+                }
+            }
+            if (queries["level"] && queries["level"] >= 1 && queries["level"] < 41 && Math.round(queries["level"] * 2) == queries["level"] * 2) {
+                $('#select-level').val((queries["level"] - 1) * 2);
+            }
+            if (queries["atk"] && queries["atk"] >= 0 && queries["atk"] <= 15) {
+                $('#select-atk').val(queries["atk"]);
+            }
+            if (queries["def"] && queries["def"] >= 0 && queries["def"] <= 15) {
+                $('#select-def').val(queries["def"]);
+            }
+            if (queries["sta"] && queries["sta"] >= 0 && queries["sta"] <= 15) {
+                $('#select-sta').val(queries["sta"]);
+            }
+            if (queries["noevo"] == "true") {
+                $('#no-evolution').prop('checked', true);
+            }
+        }
+    }
+
     var init = function() {
         var atk = $('#select-atk');
         var def = $('#select-def');
@@ -36,7 +83,6 @@ $(document).ready(function(){
             selectName.append($("<option>").val(name).text(name));
         })
     }
-    init();
 
     var getBaseStats = function(name) {
         var base = null;
@@ -128,25 +174,25 @@ $(document).ready(function(){
             singletable = $("<div></div>");
             var title = $('<p class="lead"></p>');
             if (input.name == evolvednameary[i]['name']) {
-                title.append(input.name + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
+                title.append(input.name + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             } else if (evolvednameary[i]['item']) {
-                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp'] + " 必要アイテム:" + evolvednameary[i]['item']);
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp'] + " 必要アイテム:" + evolvednameary[i]['item']);
             } else {
-                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             }
             var table = $('<table class="table table-bordered table-striped"></table>');
-            var thead = $("<thead><tr><th>トレーナーレベル</th><th>ポケモンのレベル</th><th>このポケモンのCP</th><th>個体値100%のCP</th><th>ほしのすな累計</th><th>アメ累計</th></tr></thead>");
+            var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">このポケモンのCP</div></th><th><div class="text-center">個体値100%のCP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
 
             table.prepend(thead);
             var tbody = $("<tbody></tbody>");
             var row = $.map(futurearray[i], function(value) {
                 var row = $("<tr></tr>");
-                row.append("<td>" + Math.floor(value['level_base'] / 2.0) + "</td>")
-                row.append("<td>" + value['plevel'] + "</td>")
-                row.append("<td>" + value['cp'] + "</td>")
-                row.append("<td>" + value['cpmax'] + "</td>")
-                row.append("<td>" + value['totalstardust'] + "</td>")
-                row.append("<td>" + value['totalcandy'] + "</td>")
+                row.append('<td><div class="text-right">' + Math.floor(value['level_base'] / 2.0) + '</div></td>');
+                row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
+                row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['totalstardust'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['totalcandy'] + '</div></td>');
                 return row;
             });
             tbody.append(row);
@@ -215,4 +261,13 @@ $(document).ready(function(){
     $('#select-name').change(function() {
         $('input[name="name"]').val($(this).val());
     })
+
+    $(window).load(function(){
+        init();
+
+        if(getQueries()) {
+            applyQueries();
+            $('#calcIt').click();
+        }
+    });
 })
