@@ -259,7 +259,7 @@ var pokedex = [
 	{name: 'エレキッド', base: { stamina: 90, attack: 135, defense: 110 }, hira: 'えれきっど', evo: [{ name: 'エレブー', candy: 25 }] },
 	{name: 'ブビィ', base: { stamina: 90, attack: 151, defense: 108 }, hira: 'ぶびぃ', evo: [{ name: 'ブーバー', candy: 25 }] },
 
-	{name: 'ミルタンク', base: { stamina: 190, attack: 158, defense: 211}, hira: 'みるたんく' },
+	{name: 'ミルタンク', base: { stamina: 190, attack: 157, defense: 211}, hira: 'みるたんく' },
 	{name: 'ハピナス', base: { stamina: 510, attack: 129, defense: 229}, hira: 'はぴなす' },
 	{name: 'ライコウ', base: { stamina: 180, attack: 241, defense: 210}, hira: 'らいこう' },
 	{name: 'エンテイ', base: { stamina: 230, attack: 235, defense: 176}, hira: 'えんてい' },
