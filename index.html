@@ -8,11 +8,12 @@
         <title>ポケモンGO 個体値計算機</title>
 
         <!-- CDN -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/cupertino/jquery-ui.min.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
         <link rel="stylesheet" href="./css/dashboard.css">
         <script src="./js/poke.js"></script>
@@ -52,8 +53,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <p>
-                        ポケモンGOの個体値を計算します。<!--使い方は<a href="./usage.html">こちら</a>。--><br>
-                        表示される結果についての正確性は保証いたしかねます。
+                        ポケモンGOの個体値を計算します<!--使い方は<a href="./usage.html">こちら</a>。-->
                     </p>
                     <hr><br>
 
@@ -148,17 +148,23 @@
                     </div>
 
                     <h2>概要</h2>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>範囲</th>
-                            </tr>
-                        </thead>
-                        <tbody id="rangeResult">
-                        </tbody>
-                    </table>
-                    <div id="stackedbar"></div>
+                    <div class="col-sm-8">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>範囲</th>
+                                    <!-- <th></th> -->
+                                </tr>
+                            </thead>
+                            <tbody id="rangeResult">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="doughnutchart"><canvas id="chart-canvas" /></div>
+                    </div>
+                    <!-- <div id="stackedbar"></div> -->
 
                     <br>
                     <h2>詳細</h2>
@@ -170,6 +176,7 @@
                                 <th>攻撃</th>
                                 <th>防御</th>
                                 <th>HP</th>
+                                <th>確定レベル</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -200,6 +207,7 @@
                                 <div id="qr"><img alt ="QR" class="img-thumbnail" style="display: block; margin-left: auto; margin-right: auto;" src="images/poke_qr.png"></img></div>
                                 <p class="small text-center">スマフォ・ご紹介など用<br/>（当サイトURLのQRコードです）</p>
                                 <div><p class="small text-center">なにかありましたら<a href="https://twitter.com/guardiancrow">＠こちら</a>に</p></div>
+                                <div><p class="small text-center">表示される結果についての正確性は保証いたしかねます</p></div>
                             </div>
                         </div>
                     </footer>
