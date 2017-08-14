@@ -456,6 +456,10 @@ $(document).ready(function(){
             });
             rangeResult.append(makeRow(key, value, result[key]));
         });
+
+        var toplist = $('#go_toplist');
+        toplist.empty();
+        toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + result['level'] +'">&gt;&gt;' + $('input[name="name"]').val() +'のCPランキングへ</a></p>');
     }
 
     var renderTrialCalculation = function(input, uniqueIV) {
