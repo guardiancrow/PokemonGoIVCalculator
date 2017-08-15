@@ -459,7 +459,12 @@ $(document).ready(function(){
 
         var toplist = $('#go_toplist');
         toplist.empty();
-        toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + result['level'] +'">&gt;&gt;' + $('input[name="name"]').val() +'のCPランキングへ</a></p>');
+        var ary = result['level'].filter(function (i, j, self) {
+            return self.indexOf(i) === j;
+        });
+        $.map(ary, function(value) {
+            toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + value +'">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + value.toFixed(1) +'）のCPランキングへ</a></p>');
+        });
     }
 
     var renderTrialCalculation = function(input, uniqueIV) {
@@ -842,7 +847,7 @@ $(document).ready(function(){
         var min = Math.min.apply(null, cand);
         var max = Math.max.apply(null, cand);
         var fixed = 0;
-        if (key == 'percent') {
+        if (key == 'percent' || key == 'level') {
             fixed = 1;
         }
         if (min == max) {
