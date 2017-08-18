@@ -28,6 +28,10 @@ $(document).ready(function(){
         return queryhash;
     }
 
+    var qAtk = -1;
+    var qDef = -1;
+    var qSta = -1;
+
     var applyQueries = function() {
         var queries = getQueries();
         if (queries) {
@@ -46,6 +50,15 @@ $(document).ready(function(){
             }
             if (queries["level"] && queries["level"] >= 1 && queries["level"] < 41 && Math.round(queries["level"] * 2) == queries["level"] * 2) {
                 $('#select-level').val((queries["level"] - 1) * 2);
+            }
+            if (queries["atk"] && queries["atk"] >= 0 && queries["atk"] <= 15) {
+                qAtk = +queries["atk"];
+            }
+            if (queries["def"] && queries["def"] >= 0 && queries["def"] <= 15) {
+                qDef = +queries["def"];
+            }
+            if (queries["sta"] && queries["sta"] >= 0 && queries["sta"] <= 15) {
+                qSta = +queries["sta"];
             }
         }
     }
@@ -74,47 +87,6 @@ $(document).ready(function(){
         });
         return base
     }
-
-    //戻り値は複数の進化先がある場合（イーブイ）のためにArray型です。
-    /*var getEvolutionName = function(name) {
-        var res = null;
-        $.each(pokedex, function(idx, data) {
-            if (name == data['name']) {
-                if (data['evo']) {
-                    res = getEvolutionName(data['evo']);
-                    if (!res) {
-                        res = data['evo'];
-                    }
-                }
-            }
-        });
-        return res;
-    }
-
-    var getEvolutionData = function(name, candy) {
-        var res = null;
-        $.each(pokedex, function(idx, data) {
-            if (name == data['name']) {
-                if (data['evo']) {
-                    res = [];
-                    for (var i = 0; i < data['evo'].length; i++) {
-                        var returns = getEvolutionData(data['evo'][i]['name'], data['evo'][i]['candy']);
-                        if (!returns) {
-                            res = $.extend(true, {}, data['evo']);
-                        } else {
-                            res = returns;
-                        }
-                        if (candy > 0) {
-                            $.each(res, function() {
-                                this['candy'] += candy;
-                            });
-                        }
-                    }
-                }
-            }
-        });
-        return res;
-    }*/
 
     var checkInput = function() {
         if (getBaseStats($('input[name="name"]').val()) == null) {
@@ -145,6 +117,9 @@ $(document).ready(function(){
         var tbody = $("<tbody></tbody>");
         var row = $.map(result, function(value) {
             var row = $("<tr></tr>");
+            if (qSta == value['stamina'] && qAtk == value['attack'] && qDef == value['defense']) {
+                row = $('<tr style="background-color: lightcoral;"></tr>');
+            }
             row.append('<td><div class="text-right">' + i++ + '</div></td>');
             row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
