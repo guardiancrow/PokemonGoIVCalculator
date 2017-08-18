@@ -459,12 +459,17 @@ $(document).ready(function(){
 
         var toplist = $('#go_toplist');
         toplist.empty();
-        var ary = result['level'].filter(function (i, j, self) {
-            return self.indexOf(i) === j;
-        });
-        $.map(ary, function(value) {
-            toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + value +'">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + value.toFixed(1) +'）のCPランキングへ</a></p>');
-        });
+
+        if (candIVs.length == 1) {
+            toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + result['level'][0] +'&atk=' + result['attack'][0] + '&def=' + result['defense'][0] + '&sta=' + result['stamina'][0] + '">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + result['level'][0].toFixed(1) +'）のCPランキングへ</a></p>');
+        } else {
+            var ary = result['level'].filter(function (i, j, self) {
+                return self.indexOf(i) === j;
+            });
+            $.map(ary, function(value) {
+                toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + value +'">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + value.toFixed(1) +'）のCPランキングへ</a></p>');
+            });
+        }
     }
 
     var renderTrialCalculation = function(input, uniqueIV) {
