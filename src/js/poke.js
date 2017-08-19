@@ -237,7 +237,7 @@ var pokedex = [
 	{name: 'マグマッグ', base: { stamina: 80, attack: 118, defense: 71}, hira: 'まぐまっぐ', evo: [{ name: 'マグカルゴ', candy: 50 }] },
 	{name: 'マグカルゴ', base: { stamina: 100, attack: 139, defense: 209}, hira: 'まぐかるご' },
 	{name: 'ウリムー', base: { stamina: 100, attack: 90, defense: 74}, hira: 'うりむー', evo: [{ name: 'イノムー', candy: 50 }] },
-	{name: 'イノムー', base: { stamina: 200, attack: 163, defense: 133}, hira: 'いのむー' },
+	{name: 'イノムー', base: { stamina: 200, attack: 181, defense: 147}, hira: 'いのむー' },
 	{name: 'サニーゴ', base: { stamina: 110, attack: 118, defense: 156}, hira: 'さにーご' },
 	{name: 'テッポウオ', base: { stamina: 70, attack: 127, defense: 69}, hira: 'てっぽうお', evo: [{ name: 'オクタン', candy: 50 }] },
 	{name: 'オクタン', base: { stamina: 150, attack: 197, defense: 141}, hira: 'おくたん' },
@@ -288,5 +288,5 @@ var CPM = [
 	0.7377695, 0.7407856, 0.7437894, 0.7467812, 0.749761,
 	0.7527291, 0.7556855, 0.7586304, 0.7615638, 0.7644861,
 	0.7673972, 0.7702973, 0.7731865, 0.776065, 0.7789328,
-	0.7817901, 0.784637, 0.7874736, 0.7903/*, 0.7931164*/
+	0.7817901, 0.784637/*, 0.7874736, 0.7903, 0.7931164*/
 ]

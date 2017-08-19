@@ -296,7 +296,7 @@ $(document).ready(function(){
         var uniqueIV = searcUniqueIV(input);
 
         renderRangeIV();
-        renderCandIV();
+        renderCandIV(uniqueIV);
         renderStackedBar();
         renderTrialCalculation(input, uniqueIV);
 
@@ -405,18 +405,23 @@ $(document).ready(function(){
 
     //renderer
 
-    var renderCandIV = function() {
+    var renderCandIV = function(uniqueIV) {
         var result = $("#result");
         result.empty();
 
         for(var i = 0; i < candIVs.length; i++) {
             var row = $("<tr></tr>");
             row.append("<td>" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;</td>")
-            row.append("<td>" + (candIVs[i]['level'] / 2 + 1) + "</td>")
+            row.append("<td>" + (candIVs[i]['level'] / 2 + 1).toFixed(1) + "</td>")
             row.append("<td>" + candIVs[i]['attack'] + "</td>")
             row.append("<td>" + candIVs[i]['defense'] + "</td>")
             row.append("<td>" + candIVs[i]['stamina'] + "</td>")
-            row.append("<td><a href='evo_sim.html?atk=" + candIVs[i]['attack'] + "&def=" + candIVs[i]['defense'] + "&sta=" + candIVs[i]['stamina'] + "&level=" + (candIVs[i]['level'] / 2 + 1) + "&name=" + encodeURIComponent($('input[name="name"]').val()) + "'>&gt;&gt;sim</a></td>")
+            if (uniqueIV != null && uniqueIV.length > 1) {
+                row.append('<td>' + uniqueIV[i].toFixed(1) + '</td>')
+            } else {
+                row.append('<td></td>')
+            }
+            row.append("<td><a href='evo_sim.html?atk=" + candIVs[i]['attack'] + "&def=" + candIVs[i]['defense'] + "&sta=" + candIVs[i]['stamina'] + "&level=" + (candIVs[i]['level'] / 2 + 1) + "&name=" + encodeURIComponent($('input[name="name"]').val()) + "'>&gt;&gt;進化シム</a></td>")
             result.append(row);
         }
     }
@@ -427,7 +432,7 @@ $(document).ready(function(){
         rangeResult.empty();
 
         var result = {};
-        var iter = {percent: 'パーセント', level: 'レベル', attack: '攻撃', defense: '防御', stamina: 'HP'};
+        var iter = {percent: '％', level: 'レベル', attack: '攻撃', defense: '防御', stamina: 'HP'};
 
         $.each(iter, function(key, value) {
             result[key] = $.map(candIVs, function(v) {
@@ -441,8 +446,22 @@ $(document).ready(function(){
                     return v[key];
                 }
             });
-            rangeResult.append(makeRow(value, result[key]));
+            rangeResult.append(makeRow(key, value, result[key]));
         });
+
+        var toplist = $('#go_toplist');
+        toplist.empty();
+
+        if (candIVs.length == 1) {
+            toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + result['level'][0] +'&atk=' + result['attack'][0] + '&def=' + result['defense'][0] + '&sta=' + result['stamina'][0] + '">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + result['level'][0].toFixed(1) +'）のCPランキングへ</a></p>');
+        } else {
+            var ary = result['level'].filter(function (i, j, self) {
+                return self.indexOf(i) === j;
+            });
+            $.map(ary, function(value) {
+                toplist.append('<p class="small"><a href="./cp_toplist.html?name='+ encodeURIComponent($('input[name="name"]').val()) + '&level=' + value +'">&gt;&gt;' + $('input[name="name"]').val() + '（レベル' + value.toFixed(1) +'）のCPランキングへ</a></p>');
+            });
+        }
     }
 
     var renderTrialCalculation = function(input, uniqueIV) {
@@ -544,6 +563,56 @@ $(document).ready(function(){
         } else {
             stackedbar.append('<h3>個体値イメージ</h3><div class="progress" style="background-color:dimgray !important;"><div class="progress-bar progress-bar-primary" style="width:'+minatk+'%">攻撃</div><div class="progress-bar progress-bar-danger" style="width:'+mindef+'%">防御</div><div class="progress-bar progress-bar-warning" style="width:'+minsta+'%">HP</div><div class="progress-bar progress-bar-success progress-bar-striped active" style="width:'+indeterminate+'%">不定</div></div>');
         }
+
+        minatk = Math.min.apply(null, candIVs.map(function (v) {return v.attack;}));
+        mindef = Math.min.apply(null, candIVs.map(function (v) {return v.defense;}));
+        minsta = Math.min.apply(null, candIVs.map(function (v) {return v.stamina;}));
+        indeterminate = Math.max.apply(null, candIVs.map(function (v) {return v.attack + v.defense + v.stamina;})) - (minatk + mindef + minsta);
+
+        var ctx = $("#chart-canvas");
+        ctx.empty();
+        if (window.dough_chart) {
+            window.dough_chart.destroy();
+        }
+        window.dough_chart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        minatk,
+                        mindef,
+                        minsta,
+                        indeterminate,
+                        45 - (minatk + mindef + minsta + indeterminate)
+                    ],
+                    backgroundColor: [
+                        'rgb(51, 122, 183)',
+                        'rgb(217, 83, 79)',
+                        'rgb(240, 173, 78)',
+                        'rgb(92, 184, 92)',
+                        'rgb(105, 105, 105)'
+                    ]
+                }],
+                labels: [
+                    "攻撃",
+                    "防御",
+                    "HP",
+                    "不定",
+                    ""
+                ]
+            },
+            options: {
+                tooltips: {
+                    enabled: false
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: '個体値イメージ'
+                }
+            }
+        });
+        window.dough_chart.update();
     }
 
     var renderHistory = function() {
@@ -626,7 +695,7 @@ $(document).ready(function(){
         var diffLevel = searcUniqueIV(input);
 
         renderRangeIV();
-        renderCandIV();
+        renderCandIV(diffLevel);
         renderStackedBar();
         renderTrialCalculation(input, diffLevel);
 
@@ -783,14 +852,14 @@ $(document).ready(function(){
 
     init();
 
-    var makeRow = function(label, cand) {
+    var makeRow = function(key, label, cand) {
         var row = $("<tr></tr>");
         row.append("<td>" + label + "</td>");
 
         var min = Math.min.apply(null, cand);
         var max = Math.max.apply(null, cand);
         var fixed = 0;
-        if (label == 'パーセント') {
+        if (key == 'percent' || key == 'level') {
             fixed = 1;
         }
         if (min == max) {
