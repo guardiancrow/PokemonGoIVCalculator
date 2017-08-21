@@ -111,7 +111,7 @@ $(document).ready(function(){
         title.append(input.name + "(レベル" + input.level.toFixed(1) + ")");
 
         var table = $('<table class="table table-bordered table-striped"></table>');
-        var thead = $('<thead><tr><th><div class="text-center">順位</div></th><th><div class="text-center">CP</div></th><th><div class="text-center">CPMax</div></th><th><div class="text-center">％</div></th><th><div class="text-center">HP</div></th><th><div class="text-center">体力</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th></tr></thead>');
+        var thead = $('<thead><tr><th><div class="text-center">順位</div></th><th><div class="text-center">CP</div></th><th><div class="text-center">CPMax</div></th><th><div class="text-center">％</div></th><th><div class="text-center">HP</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th><th><div class="text-center">体力</div></th></tr></thead>');
         table.prepend(thead);
         var i = 1;
         var tbody = $("<tbody></tbody>");
@@ -123,11 +123,11 @@ $(document).ready(function(){
             row.append('<td><div class="text-right">' + i++ + '</div></td>');
             row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['percent'].toFixed(1) + '\%</div></td>');
+            row.append('<td><div class="text-right">' + value['percent'].toFixed(0) + '\%</div></td>');
             row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['attack'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['defense'] + '</div></td>');
+            row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
             return row;
         });
         tbody.append(row);
