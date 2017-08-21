@@ -174,11 +174,11 @@ $(document).ready(function(){
             singletable = $("<div></div>");
             var title = $('<p class="lead"></p>');
             if (input.name == evolvednameary[i]['name']) {
-                title.append(input.name + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
+                title.append(input.name + "(" + input.atk + "/" + input.def + "/" + input.sta + ":" + input.atk.toString(16).toUpperCase() + input.def.toString(16).toUpperCase() + input.sta.toString(16).toUpperCase() + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             } else if (evolvednameary[i]['item']) {
-                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp'] + " 必要アイテム:" + evolvednameary[i]['item']);
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ":" + input.atk.toString(16).toUpperCase() + input.def.toString(16).toUpperCase() + input.sta.toString(16).toUpperCase() + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp'] + " 必要アイテム:" + evolvednameary[i]['item']);
             } else {
-                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
+                title.append(input.name + " >> " + evolvednameary[i]['name'] + "(" + input.atk + "/" + input.def + "/" + input.sta + ":" + input.atk.toString(16).toUpperCase() + input.def.toString(16).toUpperCase() + input.sta.toString(16).toUpperCase() + ") | 最大CP:" + futurearray[i][futurearray[i].length-1]['cp']);
             }
             var table = $('<table class="table table-bordered table-striped"></table>');
             var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">このポケモンのCP</div></th><th><div class="text-center">個体値100%のCP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
