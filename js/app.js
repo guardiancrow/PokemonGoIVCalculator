@@ -336,7 +336,7 @@ $(document).ready(function(){
         if (candIVs == null) {
             return;
         }
-        if (candIVs.length <= 1 || candIVs.length > 5) {
+        if (candIVs.length <= 1 || candIVs.length > 30) {
             return;
         }
 
@@ -506,7 +506,7 @@ $(document).ready(function(){
             var grid = $('<div class="row"></div>');
             var title = $('<p class="col-xs-11 lead"></p>');
             var toggle = $('<button class="slidebutton col-xs-1 btn btn-sm">閉じる</button>');
-            title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " | 最大CP : " + ary[ary.length-1]['cp']);
+            title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " (hex:" + candIVs[i]['attack'].toString(16).toUpperCase() + candIVs[i]['defense'].toString(16).toUpperCase() + candIVs[i]['stamina'].toString(16).toUpperCase() + ") | 最大CP : " + ary[ary.length-1]['cp']);
             var table = $('<table class="table table-bordered table-striped"></table>');
             var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">このポケモンのCP</div></th><th><div class="text-center">個体値100%のCP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
 
