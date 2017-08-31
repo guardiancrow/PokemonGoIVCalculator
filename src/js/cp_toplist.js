@@ -111,23 +111,32 @@ $(document).ready(function(){
         title.append(input.name + "(レベル" + input.level.toFixed(1) + ")");
 
         var table = $('<table class="table table-bordered table-striped"></table>');
-        var thead = $('<thead><tr><th><div class="text-center">順位</div></th><th><div class="text-center">CP</div></th><th><div class="text-center">CPMax</div></th><th><div class="text-center">％</div></th><th><div class="text-center">HP</div></th><th><div class="text-center">体力</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th></tr></thead>');
+        var thead = $('<thead><tr><th><div class="text-center">順位</div></th><th><div class="text-center">CP</div></th><th><div class="text-center">CPMax</div></th><th><div class="text-center">％</div></th><th><div class="text-center">HP</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th><th><div class="text-center">体力</div></th></tr></thead>');
         table.prepend(thead);
-        var i = 1;
+        var rank = 0;
+        var prevcpmax = 0;
+        var equivalent = 1;
         var tbody = $("<tbody></tbody>");
         var row = $.map(result, function(value) {
             var row = $("<tr></tr>");
             if (qSta == value['stamina'] && qAtk == value['attack'] && qDef == value['defense']) {
                 row = $('<tr style="background-color: lightcoral;"></tr>');
             }
-            row.append('<td><div class="text-right">' + i++ + '</div></td>');
+            if (prevcpmax == value['cpmax']) {
+                equivalent++;
+            } else {
+                rank += equivalent;
+                equivalent = 1;
+            }
+            prevcpmax = value['cpmax'];
+            row.append('<td><div class="text-right">' + rank + '</div></td>');
             row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['percent'].toFixed(1) + '\%</div></td>');
+            row.append('<td><div class="text-right">' + value['percent'].toFixed(0) + '\%</div></td>');
             row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['attack'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['defense'] + '</div></td>');
+            row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
             return row;
         });
         tbody.append(row);

@@ -162,7 +162,7 @@ var pokedex = [
 	{name: 'ミニリュウ', base: { stamina: 82, attack: 119, defense: 94 }, hira: 'みにりゅう', evo: [{ name: 'ハクリュー', candy: 25 }] },
 	{name: 'ハクリュー', base: { stamina: 122, attack: 163, defense: 138 }, hira: 'はくりゅー', evo: [{ name: 'カイリュー', candy: 100 }] },
 	{name: 'カイリュー', base: { stamina: 182, attack: 263, defense: 201 }, hira: 'かいりゅー' },
-	{name: 'ミュウツー', base: { stamina: 212, attack: 330, defense: 200 }, hira: 'みゅうつー' },
+	{name: 'ミュウツー', base: { stamina: 193, attack: 300, defense: 182 }, hira: 'みゅうつー' },
 	{name: 'ミュウ', base: { stamina: 200, attack: 210, defense: 209 }, hira: 'みゅう' },
 
 	//ジョウト
