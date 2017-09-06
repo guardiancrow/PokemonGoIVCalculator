@@ -63,6 +63,20 @@ $(document).ready(function(){
         }
     }
 
+    var buildQueriesForEvoName = function(name) {
+        var result = "name=" + name + "&level=" + (+$('#select-level').val() / 2.0 + 1.0);
+        if (qAtk >= 0) {
+            result += "&atk=" + qAtk;
+        }
+        if (qDef >= 0) {
+            result += "&def=" + qDef;
+        }
+        if (qSta >= 0) {
+            result += "&sta=" + qSta;
+        }
+        return result;
+    }
+
     var init = function() {
         var i = 0;
 
@@ -77,15 +91,6 @@ $(document).ready(function(){
             var name = value['name'];
             selectName.append($("<option>").val(name).text(name));
         })
-    }
-
-    var getBaseStats = function(name) {
-        var base = null;
-        $.each(pokedex, function(idx, data) {
-            if (name == data['name'])
-                base = data['base'];
-        });
-        return base
     }
 
     var checkInput = function() {
@@ -106,6 +111,14 @@ $(document).ready(function(){
     var renderList = function(result, input) {
         var resultlist = $("#resultlist");
         resultlist.empty();
+
+        var evo = $('<div id="evocase"></div>');
+        var evolvednameary = getEvolutionData(input.name, 0);
+        if (evolvednameary) {
+            $.each(evolvednameary, function() {
+                evo.append('<p class="text-right small">進化ポケモンがいます：<a href="cp_toplist.html?'+ buildQueriesForEvoName(this['name']) +'">'+ this['name'] +'のランキングを表示</a></p>');
+            });
+        }
 
         var title = $('<p class="lead"></p>');
         title.append(input.name + "(レベル" + input.level.toFixed(1) + ")");
@@ -142,6 +155,7 @@ $(document).ready(function(){
         tbody.append(row);
         table.append(tbody);
         resultlist.append(title);
+        resultlist.append(evo);
         resultlist.append(table);
     }
 
