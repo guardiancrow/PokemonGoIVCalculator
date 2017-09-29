@@ -360,21 +360,22 @@ $(document).ready(function(){
                 }
                 var cp = Math.max(10, Math.floor(sum(base, candIVs[j], 'attack') * Math.sqrt(sum(base, candIVs[j], 'defense')) * Math.sqrt(sum(base, candIVs[j], 'stamina')) * CPM[i] * CPM[i] / 10.0));
                 cpary[j] = cp;
+                var hp = Math.max(10, Math.floor(sum(base, candIVs[j], 'stamina') * CPM[i]));
                 if (counter.length > 0) {
                     var flag = false;
                     for (var k = 0; k < counter.length; k++) {
-                        if (counter[k]['cp'] == cp) {
+                        if (counter[k]['cp'] == cp && counter[k]['hp'] == hp) {
                             counter[k]['count']++;
                             count++;
                             flag = true;
                         }
                     }
                     if (!flag) {
-                        counter.push({key: j, cp: cp, count: 1});
+                        counter.push({key: j, cp: cp, hp: hp, count: 1});
                         count++;
                     }
                 } else {
-                    counter.push({key: j, cp: cp, count: 1});
+                    counter.push({key: j, cp: cp, hp: hp, count: 1});
                     count++;
                 }
             }
@@ -501,12 +502,12 @@ $(document).ready(function(){
                 stardust = requireStardust[Math.floor(j / 4)];
                 candy = requireCandy[Math.floor(j / 2)];
                 var cp = Math.max(10, Math.floor(sum(base, candIVs[i], 'attack') * Math.sqrt(sum(base, candIVs[i], 'defense')) * Math.sqrt(sum(base, candIVs[i], 'stamina')) * CPM[j] * CPM[j] / 10.0));
-                var cpMax = Math.max(10, Math.floor((base['attack'] + 15) * Math.sqrt(base['defense'] + 15) * Math.sqrt(base['stamina'] + 15) * CPM[j] * CPM[j] / 10.0));
+                var hp = Math.max(10, Math.floor(sum(base, candIVs[i], 'stamina') * CPM[j]));
                 var unique = false;
                 if (uniqueIV != null && uniqueIV.length > 1 && uniqueIV[i] == j / 2.0 + 1.0) {
                     unique = true;
                 }
-                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
+                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, hp: hp, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
             }
 
             singlesheet = $('<div class="reinforcesheet"></div>');
@@ -516,7 +517,7 @@ $(document).ready(function(){
             var toggle = $('<button class="slidebutton col-xs-1 btn btn-sm">閉じる</button>');
             title.append(input.name + "(" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;) | (Lv" + (candIVs[i]['level'] / 2.0 + 1.0) + ") : 攻撃" + candIVs[i]['attack'] + " / 防御"+ candIVs[i]['defense'] + " / HP" + candIVs[i]['stamina'] + " (hex:" + candIVs[i]['attack'].toString(16).toUpperCase() + candIVs[i]['defense'].toString(16).toUpperCase() + candIVs[i]['stamina'].toString(16).toUpperCase() + ") | 最大CP : " + ary[ary.length-1]['cp']);
             var table = $('<table class="table table-bordered table-striped"></table>');
-            var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">このポケモンのCP</div></th><th><div class="text-center">個体値100%のCP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
+            var thead = $('<thead><tr><th><div class="text-center">トレーナーレベル</div></th><th><div class="text-center">ポケモンレベル</div></th><th><div class="text-center">ポケモンのCP</div></th><th><div class="text-center">ポケモンのHP</div></th><th><div class="text-center">ほしのすな累計</div></th><th><div class="text-center">アメ累計</div></th></tr></thead>');
 
             table.prepend(thead);
             var tbody = $("<tbody></tbody>");
@@ -528,7 +529,7 @@ $(document).ready(function(){
                 row.append('<td><div class="text-right">' + value['tlevel'] + '</div></td>');
                 row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
                 row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
-                row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
+                row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
                 row.append('<td><div class="text-right">' + value['totalstardust'] + '</div></td>');
                 row.append('<td><div class="text-right">' + value['totalcandy'] + '</div></td>');
                 return row;
@@ -831,7 +832,11 @@ $(document).ready(function(){
     var init = function() {
         var stardust = $('#stardust')
         for (var i = 0; i < requireStardust.length; i++) {
-            stardust.append($("<option>").val(i).text(requireStardust[i]));
+            if (requireStardust[i] == 10000) {
+                stardust.append($("<option>").val(i).text("強化上限("+requireStardust[i]+")"));
+            } else {
+                stardust.append($("<option>").val(i).text(requireStardust[i]));
+            }
         }
 
         var selectName = $('#select-name');

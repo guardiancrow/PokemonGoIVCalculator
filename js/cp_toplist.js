@@ -145,7 +145,7 @@ $(document).ready(function(){
             row.append('<td><div class="text-right">' + rank + '</div></td>');
             row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['percent'].toFixed(0) + '\%</div></td>');
+            row.append('<td><div class="text-right">' + value['percent'].toFixed(0) + '%</div></td>');
             row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['attack'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['defense'] + '</div></td>');
