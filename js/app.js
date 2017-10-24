@@ -837,7 +837,7 @@ $(document).ready(function(){
     });
 
     var init = function() {
-        var stardust = $('#stardust')
+        var stardust = $('#stardust');
         for (var i = 0; i < requireStardust.length; i++) {
             if (requireStardust[i] == 10000) {
                 stardust.append($("<option>").val(i).text("強化上限("+requireStardust[i]+")"));
@@ -845,6 +845,10 @@ $(document).ready(function(){
                 stardust.append($("<option>").val(i).text(requireStardust[i]));
             }
         }
+
+        $('#stardust option').filter(function(index){
+            return $(this).text() === '2500';
+        }).prop('selected', true);
 
         var selectName = $('#select-name');
         $.each(pokedex, function(idx, value) {
