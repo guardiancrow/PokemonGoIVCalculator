@@ -269,7 +269,14 @@ var pokedex = [
 	{name: 'バンギラス', base: { stamina: 200, attack: 251, defense: 212}, hira: 'ばんぎらす' },
 	{name: 'ルギア', base: { stamina: 212, attack: 193, defense: 323}, hira: 'るぎあ' },
 	{name: 'ホウオウ', base: { stamina: 212, attack: 263, defense: 301}, hira: 'ほうおう' },
-	{name: 'セレビィ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'せれびぃ' }
+	{name: 'セレビィ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'せれびぃ' },
+
+	//ホウエン
+	{name: 'ヤミラミ', base: { stamina: 100, attack: 141, defense: 141}, hira: 'やみらみ' },
+	{name: 'カゲボウズ', base: { stamina: 88, attack: 138, defense: 66}, hira: 'かげぼうず' },
+	{name: 'ジュペッタ', base: { stamina: 128, attack: 218, defense: 127}, hira: 'じゅぺった' },
+	{name: 'ヨマワル', base: { stamina: 40, attack: 70, defense: 162}, hira: 'よまわる' },
+	{name: 'サマヨール', base: { stamina: 80, attack: 124, defense: 234}, hira: 'さまよーる' }
 ]
 
 var CPM = [
