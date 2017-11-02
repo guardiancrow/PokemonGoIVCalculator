@@ -81,7 +81,7 @@ $(document).ready(function(){
         var i = 0;
 
         var level = $('#select-level');
-        for (i = 0; i < 77; i++) {
+        for (i = 0; i < 78; i++) {
             level.append($("<option>").val(i).text((i / 2.0 + 1.0).toFixed(1).toString()));
         }
         $('#select-level').val((20 - 1) * 2);
