@@ -518,7 +518,11 @@ $(document).ready(function(){
                 if (value['unique']) {
                     row = $('<tr style="background-color: lightcoral;"></tr>');
                 }
-                row.append('<td><div class="text-right">' + value['tlevel'] + '</div></td>');
+                if (value['tlevel'] > 38) {
+                    row.append('<td><div class="text-right">' + 38 + '</div></td>');
+                } else {
+                    row.append('<td><div class="text-right">' + value['tlevel'] + '</div></td>');
+                }
                 row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
                 row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
                 row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
@@ -839,11 +843,11 @@ $(document).ready(function(){
     var init = function() {
         var stardust = $('#stardust');
         for (var i = 0; i < requireStardust.length; i++) {
-            if (requireStardust[i] == 10000) {
+            /*if (requireStardust[i] == 10000) {
                 stardust.append($("<option>").val(i).text("強化上限("+requireStardust[i]+")"));
-            } else {
+            } else {*/
                 stardust.append($("<option>").val(i).text(requireStardust[i]));
-            }
+            //}
         }
 
         $('#stardust option').filter(function(index){
