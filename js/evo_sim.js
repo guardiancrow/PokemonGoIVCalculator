@@ -73,7 +73,7 @@ $(document).ready(function(){
         }
 
         var level = $('#select-level');
-        for (i = 0; i < 78; i++) {
+        for (i = 0; i < 79; i++) {
             level.append($("<option>").val(i).text((i / 2.0 + 1.0).toFixed(1).toString()));
         }
         $('#select-level').val((20 - 1) * 2);
@@ -138,7 +138,11 @@ $(document).ready(function(){
             var tbody = $("<tbody></tbody>");
             var row = $.map(futurearray[i], function(value) {
                 var row = $("<tr></tr>");
-                row.append('<td><div class="text-right">' + Math.floor(value['level_base'] / 2.0) + '</div></td>');
+                if (Math.floor(value['level_base'] / 2.0) > 38) {
+                    row.append('<td><div class="text-right">' + 38 + '</div></td>');
+                } else {
+                    row.append('<td><div class="text-right">' + Math.floor(value['level_base'] / 2.0) + '</div></td>');
+                }
                 row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
                 row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
                 row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
