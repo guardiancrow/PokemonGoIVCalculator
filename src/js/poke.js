@@ -268,7 +268,7 @@ var pokedex = [
 	{name: 'サナギラス', base: { stamina: 140, attack: 155, defense: 133}, hira: 'さなぎらす', evo: [{ name: 'バンギラス', candy: 100 }] },
 	{name: 'バンギラス', base: { stamina: 200, attack: 251, defense: 212}, hira: 'ばんぎらす' },
 	{name: 'ルギア', base: { stamina: 212, attack: 193, defense: 323}, hira: 'るぎあ' },
-	{name: 'ホウオウ', base: { stamina: 212, attack: 263, defense: 301}, hira: 'ほうおう' },
+	{name: 'ホウオウ', base: { stamina: 193, attack: 239, defense: 274}, hira: 'ほうおう' },
 	{name: 'セレビィ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'せれびぃ' },
 
 	//ホウエン
