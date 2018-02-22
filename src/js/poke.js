@@ -296,10 +296,15 @@ var pokedex = [
 	{name: 'タネボー', base: { stamina: 80, attack: 71, defense: 86}, hira: 'たねぼー', evo: [{ name: 'コノハナ', candy: 25}] },
 	{name: 'コノハナ', base: { stamina: 140, attack: 134, defense: 78}, hira: 'このはな', evo: [{ name: 'ダーテング', candy: 100}] },
 	{name: 'ダーテング', base: { stamina: 180, attack: 200, defense: 121}, hira: 'だーてんぐ'},
+	{name: 'スバメ', base: { stamina: 80, attack: 106, defense: 61}, hira: 'すばめ', evo: [{ name: 'オオスバメ', candy: 50}] },
+	{name: 'オオスバメ', base: { stamina: 120, attack: 185, defense: 130}, hira: 'おおすばめ'},
+	{name: 'キャモメ', base: { stamina: 80, attack: 106, defense: 61}, hira: 'きゃもめ', evo: [{ name: 'ペリッパー', candy: 50}] },
+	{name: 'ペリッパー', base: { stamina: 120, attack: 175, defense: 189}, hira: 'ぺりっぱー'},
 	{name: 'ラルトス', base: { stamina: 56, attack: 79, defense: 63}, hira: 'らるとす', evo: [{ name: 'キルリア', candy: 25}] },
 	{name: 'キルリア', base: { stamina: 76, attack: 117, defense: 100}, hira: 'きるりあ', evo: [{ name: 'サーナイト', candy: 100}] },
 	{name: 'サーナイト', base: { stamina: 136, attack: 237, defense: 220}, hira: 'さーないと'},
-
+	{name: 'アメタマ', base: { stamina: 80, attack: 93, defense: 97}, hira: 'あめたま', evo: [{ name: 'アメモース', candy: 50}] },
+	{name: 'アメモース', base: { stamina: 140, attack: 192, defense: 161}, hira: 'あめもーす'},
 	{name: 'キノココ', base: { stamina: 120, attack: 74, defense: 110}, hira: 'きのここ', evo: [{ name: 'キノガッサ', candy: 50}] },
 	{name: 'キノガッサ', base: { stamina: 120, attack: 241, defense: 153}, hira: 'きのがっさ'},
 	{name: 'ナマケロ', base: { stamina: 120, attack: 104, defense: 104}, hira: 'なまけろ', evo: [{ name: 'ヤルキモノ', candy: 25}] },
@@ -326,13 +331,14 @@ var pokedex = [
 	{name: 'ライボルト', base: { stamina: 140, attack: 215, defense: 127}, hira: 'らいぼると'},
 	{name: 'プラスル', base: { stamina: 120, attack: 167, defense: 147}, hira: 'ぷらする'},
 	{name: 'マイナン', base: { stamina: 120, attack: 147, defense: 167}, hira: 'まいなん'},
-
+	{name: 'バルビート', base: { stamina: 130, attack: 143, defense: 171}, hira: 'ばるびーと'},
+	{name: 'イルミーゼ', base: { stamina: 130, attack: 143, defense: 171}, hira: 'いるみーぜ'},
 	{name: 'ロゼリア', base: { stamina: 100, attack: 186, defense: 148}, hira: 'ろぜりあ'},
 	{name: 'ゴクリン', base: { stamina: 140, attack: 80, defense: 99}, hira: 'ごくりん', evo: [{ name: 'マルノーム', candy: 50}] },
 	{name: 'マルノーム', base: { stamina: 200, attack: 140, defense: 159}, hira: 'まるのーむ'},
 	{name: 'キバニア', base: { stamina: 90, attack: 171, defense: 39}, hira: 'きばにあ', evo: [{ name: 'サメハダー', candy: 50}] },
 	{name: 'サメハダー', base: { stamina: 140, attack: 243, defense: 83}, hira: 'さめはだー'},
-	{name: 'ホエルコ', base: { stamina: 260, attack: 136, defense: 63}, hira: 'ほえるこ', evo: [{ name: 'ホエルオー', candy: 50}] },
+	{name: 'ホエルコ', base: { stamina: 260, attack: 136, defense: 63}, hira: 'ほえるこ', evo: [{ name: 'ホエルオー', candy: 400}] },
 	{name: 'ホエルオー', base: { stamina: 340, attack: 175, defense: 87}, hira: 'ほえるおー'},
 	{name: 'ドンメル', base: { stamina: 120, attack: 119, defense: 82}, hira: 'どんめる', evo: [{ name: 'バクーダ', candy: 50}] },
 	{name: 'バクーダ', base: { stamina: 140, attack: 194, defense: 139}, hira: 'ばくーだ'},
@@ -345,7 +351,8 @@ var pokedex = [
 	{name: 'フライゴン', base: { stamina: 160, attack: 205, defense: 168}, hira: 'ふらいごん'},
 	{name: 'サボネア', base: { stamina: 76, attack: 117, defense: 100}, hira: 'さぼねあ', evo: [{ name: 'ノクタス', candy: 50}] },
 	{name: 'ノクタス', base: { stamina: 140, attack: 221, defense: 115}, hira: 'のくたす'},
-
+	{name: 'チルット', base: { stamina: 90, attack: 76, defense: 139}, hira: 'ちるっと', evo: [{ name: 'チルタリス', candy: 400}] },
+	{name: 'チルタリス', base: { stamina: 150, attack: 141, defense: 208}, hira: 'ちるたりす'},
 	{name: 'ザングース', base: { stamina: 146, attack: 222, defense: 124}, hira: 'ざんぐーす'},
 	{name: 'ハブネーク', base: { stamina: 146, attack: 196, defense: 118}, hira: 'はぶねーく'},
 	{name: 'ルナトーン', base: { stamina: 180, attack: 178, defense: 163}, hira: 'るなとーん'},
@@ -362,6 +369,7 @@ var pokedex = [
 	{name: 'アーマルド', base: { stamina: 150, attack: 222, defense: 183}, hira: 'あーまるど'},
 	{name: 'ヒンバス', base: { stamina: 40, attack: 29, defense: 102}, hira: 'ひんばす', evo: [{ name: 'ミロカロス', candy: 50}] },
 	{name: 'ミロカロス', base: { stamina: 190, attack: 192, defense: 242}, hira: 'みろかろす'},
+	{name: 'ポワルン', base: { stamina: 140, attack: 139, defense: 139}, hira: 'ぽわるん'},
 
 	{name: 'カゲボウズ', base: { stamina: 88, attack: 138, defense: 66}, hira: 'かげぼうず', evo: [{ name: 'ジュペッタ', candy: 50 }] },
 	{name: 'ジュペッタ', base: { stamina: 128, attack: 218, defense: 127}, hira: 'じゅぺった' },
@@ -377,9 +385,16 @@ var pokedex = [
 
 	{name: 'ジーランス', base: { stamina: 200, attack: 162, defense: 234}, hira: 'じーらんす'},
 	{name: 'ラブカス', base: { stamina: 86, attack: 81, defense: 134}, hira: 'らぶかす'},
+	{name: 'タツベイ', base: { stamina: 90, attack: 134, defense: 107}, hira: 'たつべい', evo: [{ name: 'コモルー', candy: 25}] },
+	{name: 'コモルー', base: { stamina: 130, attack: 172, defense: 179}, hira: 'こもるー', evo: [{ name: 'ボーマンダ', candy: 100}] },
+	{name: 'ボーマンダ', base: { stamina: 190, attack: 277, defense: 168}, hira: 'ぼーまんだ'},
+	{name: 'ダンバル', base: { stamina: 80, attack: 96, defense: 141}, hira: 'だんばる', evo: [{ name: 'メタング', candy: 25}] },
+	{name: 'メタング', base: { stamina: 120, attack: 138, defense: 185}, hira: 'めたんぐ', evo: [{ name: 'メタグロス', candy: 100}] },
+	{name: 'メタグロス', base: { stamina: 160, attack: 257, defense: 247}, hira: 'めたぐろす'},
 
 	{name: 'グラードン', base: { stamina: 182, attack: 270, defense: 251}, hira: 'ぐらーどん'},
-	{name: 'カイオーガ', base: { stamina: 182, attack: 270, defense: 251}, hira: 'かいおーが'}
+	{name: 'カイオーガ', base: { stamina: 182, attack: 270, defense: 251}, hira: 'かいおーが'},
+	{name: 'レックウザ', base: { stamina: 191, attack: 284, defense: 170}, hira: 'れっくうざ'}
 ]
 
 var CPM = [
