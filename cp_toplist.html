@@ -48,7 +48,8 @@
                 <div class="col-sm-12">
                     <p>
                         指定されたポケモンのCPを上位から列挙します<br>
-                        リーダーの評価で最高評価（個体値８２％以上）の個体のみを表示します<br>
+                        「野良を含む」場合はリーダーの評価で最高評価（個体値８２％以上）の個体のみを表示します<br>
+                        含まない場合はたまごで産まれるかレイドで捕獲できる可能性がある個体のみを表示します<br>
                     </p>
                     <hr><br>
 
@@ -65,16 +66,21 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-9">
-                            <p class="small">
-                                ポケモン名を入力してみましょう。ポケモンのレベルを指定することもできます。<br>
-                                たまごから孵化したときやレイドでゲットしたときのレベルは20になります。<br>
-                            </p>
+                        <div class="col-sm-6 form-group">
+                            <label class="checkbox-inline">
+                            <input type="checkbox" id="inc-wild" checked/>野良を含む
+                            </label>
                         </div>
-                        <div class="col-sm-3 btn-group">
+                        <div class="col-sm-6 btn-group">
                             <input type="button" class="col-xs-12 btn btn-success btn-sm" value="表示" id="calcIt"/>
                         </div>
                     </div>
+
+                    <p class="text-right small">
+                        ポケモン名を入力してみましょう。ポケモンのレベルを指定することもできます。<br>
+                        たまご孵化・レイド（天候ブースト無し）の時はレベルは20.0になります。<br>
+                        レイド（天候ブースト有り）の時はレベルは25.0になります。<br>
+                    </p>
 
                     <br>
                     <div id="attention">

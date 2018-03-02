@@ -104,7 +104,8 @@ $(document).ready(function(){
         return {
             name: $('input[name="name"]').val(),
             level_base: +$('#select-level').val(),
-            level: +$('#select-level').val() / 2.0 + 1.0
+            level: +$('#select-level').val() / 2.0 + 1.0,
+            inc_wild: +$('#inc-wild').prop('checked')
         };
     }
 
@@ -189,6 +190,33 @@ $(document).ready(function(){
         });
     }
 
+    var buildListForRaid = function(result, input) {
+        var base = getBaseStats(input.name);
+        for (var sta = 10; sta <= 15; sta++) {
+            for (var atk = 10; atk <= 15; atk++) {
+                for (var def = 10; def <= 15; def++) {
+                    var cp = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[input.level_base] * CPM[input.level_base] / 10.0));
+                    var cpmax = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[CPM.length-1] * CPM[CPM.length-1] / 10.0));
+                    var hp = Math.max(10, Math.floor((base['stamina'] + sta) * CPM[input.level_base]));
+                    var percent = Math.round((atk + def+ sta) * 1000.0 / 45.0) / 10.0;
+                    result.push({name: input.name, level_base: input.level_base, plevel: input.level, stamina: sta, attack: atk, defense: def, cp: cp, hp: hp, percent: percent, cpmax: cpmax});
+                }
+            }
+        }
+        result.sort(function cpCompare(a, b) {
+            if (b['cp'] - a['cp'] == 0) {
+                if (b['cpmax'] - a['cpmax'] == 0) {
+                    if(b['percent'] - a['percent'] == 0) {
+                        return b['hp'] - a['hp'];
+                    }
+                    return b['percent'] - a['percent'];
+                }
+                return b['cpmax'] - a['cpmax'];
+            }
+            return b['cp'] - a['cp'];
+        });
+    }
+
     var initCalc = function () {
         $('#attention').removeAttr('class');
         $('#attention').empty();
@@ -205,7 +233,11 @@ $(document).ready(function(){
         var input = getInput();
 
         var res = [];
-        buildList(res, input);
+        if (input.inc_wild) {
+            buildList(res, input);
+        } else {
+            buildListForRaid(res, input);
+        }
         renderList(res, input);
 
         $('#attention').attr({class: 'alert alert-info'});
