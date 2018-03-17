@@ -311,8 +311,8 @@ var pokedex = [
 	{name: 'ヤルキモノ', base: { stamina: 160, attack: 159, defense: 159}, hira: 'やるきもの', evo: [{ name: 'ケッキング', candy: 100}] },
 	{name: 'ケッキング', base: { stamina: 273, attack: 290, defense: 183}, hira: 'けっきんぐ'},
 
-	{name: 'ゴニョニョ', base: { stamina: 128, attack: 92, defense: 42}, hira: 'ごにょにょ', evo: [{ name: 'ドゴーム', candy: 25}] },
-	{name: 'ドゴーム', base: { stamina: 168, attack: 134, defense: 81}, hira: 'どごーむ', evo: [{ name: 'バクオング', candy: 100}] },
+	{name: 'ゴニョニョ', base: { stamina: 128, attack: 92, defense: 42}, hira: 'ごにょにょ', evo: [{ name: 'ドゴーム', candy: 12}] },
+	{name: 'ドゴーム', base: { stamina: 168, attack: 134, defense: 81}, hira: 'どごーむ', evo: [{ name: 'バクオング', candy: 50}] },
 	{name: 'バクオング', base: { stamina: 208, attack: 179, defense: 142}, hira: 'ばくおんぐ'},
 	{name: 'マクノシタ', base: { stamina: 144, attack: 99, defense: 54}, hira: 'まくのした', evo: [{ name: 'ハリテヤマ', candy: 50}] },
 	{name: 'ハリテヤマ', base: { stamina: 288, attack: 209, defense: 114}, hira: 'はりてやま'},
@@ -338,7 +338,7 @@ var pokedex = [
 	{name: 'マルノーム', base: { stamina: 200, attack: 140, defense: 159}, hira: 'まるのーむ'},
 	{name: 'キバニア', base: { stamina: 90, attack: 171, defense: 39}, hira: 'きばにあ', evo: [{ name: 'サメハダー', candy: 50}] },
 	{name: 'サメハダー', base: { stamina: 140, attack: 243, defense: 83}, hira: 'さめはだー'},
-	{name: 'ホエルコ', base: { stamina: 260, attack: 136, defense: 63}, hira: 'ほえるこ', evo: [{ name: 'ホエルオー', candy: 400}] },
+	{name: 'ホエルコ', base: { stamina: 260, attack: 136, defense: 68}, hira: 'ほえるこ', evo: [{ name: 'ホエルオー', candy: 400}] },
 	{name: 'ホエルオー', base: { stamina: 340, attack: 175, defense: 87}, hira: 'ほえるおー'},
 	{name: 'ドンメル', base: { stamina: 120, attack: 119, defense: 82}, hira: 'どんめる', evo: [{ name: 'バクーダ', candy: 50}] },
 	{name: 'バクーダ', base: { stamina: 140, attack: 194, defense: 139}, hira: 'ばくーだ'},
@@ -375,6 +375,8 @@ var pokedex = [
 	{name: 'ジュペッタ', base: { stamina: 128, attack: 218, defense: 127}, hira: 'じゅぺった' },
 	{name: 'ヨマワル', base: { stamina: 40, attack: 70, defense: 162}, hira: 'よまわる', evo: [{ name: 'サマヨール', candy: 50 }] },
 	{name: 'サマヨール', base: { stamina: 80, attack: 124, defense: 234}, hira: 'さまよーる' },
+	
+	{name: 'チリーン', base: { stamina: 150, attack: 175, defense: 174}, hira: 'ちりーん'},
 	{name: 'アブソル', base: { stamina: 130, attack: 246, defense: 120}, hira: 'あぶそる'},
 	{name: 'ソーナノ', base: { stamina: 190, attack: 41, defense: 86}, hira: 'そーなの', evo: [{ name: 'ソーナンス', candy: 25 }] },
 	{name: 'ユキワラシ', base: { stamina: 100, attack: 95, defense: 95}, hira: 'ゆきわらし', evo: [{ name: 'オニゴーリ', candy: 50}] },
