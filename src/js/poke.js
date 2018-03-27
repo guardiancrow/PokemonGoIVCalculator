@@ -349,7 +349,7 @@ var pokedex = [
 	{name: 'ナックラー', base: { stamina: 90, attack: 162, defense: 78}, hira: 'なっくらー', evo: [{ name: 'ビブラーバ', candy: 25}] },
 	{name: 'ビブラーバ', base: { stamina: 100, attack: 134, defense: 99}, hira: 'びぶらーば', evo: [{ name: 'フライゴン', candy: 100}] },
 	{name: 'フライゴン', base: { stamina: 160, attack: 205, defense: 168}, hira: 'ふらいごん'},
-	{name: 'サボネア', base: { stamina: 76, attack: 117, defense: 100}, hira: 'さぼねあ', evo: [{ name: 'ノクタス', candy: 50}] },
+	{name: 'サボネア', base: { stamina: 100, attack: 156, defense: 74}, hira: 'さぼねあ', evo: [{ name: 'ノクタス', candy: 50}] },
 	{name: 'ノクタス', base: { stamina: 140, attack: 221, defense: 115}, hira: 'のくたす'},
 	{name: 'チルット', base: { stamina: 90, attack: 76, defense: 139}, hira: 'ちるっと', evo: [{ name: 'チルタリス', candy: 400}] },
 	{name: 'チルタリス', base: { stamina: 150, attack: 141, defense: 208}, hira: 'ちるたりす'},
@@ -375,7 +375,7 @@ var pokedex = [
 	{name: 'ジュペッタ', base: { stamina: 128, attack: 218, defense: 127}, hira: 'じゅぺった' },
 	{name: 'ヨマワル', base: { stamina: 40, attack: 70, defense: 162}, hira: 'よまわる', evo: [{ name: 'サマヨール', candy: 50 }] },
 	{name: 'サマヨール', base: { stamina: 80, attack: 124, defense: 234}, hira: 'さまよーる' },
-	
+
 	{name: 'チリーン', base: { stamina: 150, attack: 175, defense: 174}, hira: 'ちりーん'},
 	{name: 'アブソル', base: { stamina: 130, attack: 246, defense: 120}, hira: 'あぶそる'},
 	{name: 'ソーナノ', base: { stamina: 190, attack: 41, defense: 86}, hira: 'そーなの', evo: [{ name: 'ソーナンス', candy: 25 }] },
