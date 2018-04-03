@@ -163,7 +163,7 @@ var pokedex = [
 	{name: 'ハクリュー', base: { stamina: 122, attack: 163, defense: 138 }, hira: 'はくりゅー', evo: [{ name: 'カイリュー', candy: 100 }] },
 	{name: 'カイリュー', base: { stamina: 182, attack: 263, defense: 201 }, hira: 'かいりゅー' },
 	{name: 'ミュウツー', base: { stamina: 193, attack: 300, defense: 182 }, hira: 'みゅうつー' },
-	{name: 'ミュウ', base: { stamina: 200, attack: 210, defense: 209 }, hira: 'みゅう' },
+	{name: 'ミュウ', base: { stamina: 200, attack: 210, defense: 210 }, hira: 'みゅう' },
 
 	//ジョウト
 	{name: 'チコリータ', base: { stamina: 90, attack: 92, defense: 122}, hira: 'ちこりーた', evo: [{ name: 'ベイリーフ', candy: 25 }] },
@@ -394,6 +394,8 @@ var pokedex = [
 	{name: 'メタング', base: { stamina: 120, attack: 138, defense: 185}, hira: 'めたんぐ', evo: [{ name: 'メタグロス', candy: 100}] },
 	{name: 'メタグロス', base: { stamina: 160, attack: 257, defense: 247}, hira: 'めたぐろす'},
 
+	{name: 'ラティアス', base: { stamina: 160, attack: 228, defense: 268}, hira: 'らてぃあす'},
+	{name: 'ラティオス', base: { stamina: 160, attack: 268, defense: 228}, hira: 'らてぃおす'},
 	{name: 'グラードン', base: { stamina: 182, attack: 270, defense: 251}, hira: 'ぐらーどん'},
 	{name: 'カイオーガ', base: { stamina: 182, attack: 270, defense: 251}, hira: 'かいおーが'},
 	{name: 'レックウザ', base: { stamina: 191, attack: 284, defense: 170}, hira: 'れっくうざ'}
