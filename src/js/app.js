@@ -45,6 +45,13 @@ $(document).ready(function(){
         };
     }
 
+    var isWild = function(base) {
+        if (base['attack'] < 10 || base['defense'] < 10 || base['stamina'] < 10) {
+            return true;
+        }
+        return false;
+    }
+
     var sum = function(base, iv, type) {
         return base[type] + iv[type];
     }
@@ -412,6 +419,9 @@ $(document).ready(function(){
 
         for(var i = 0; i < candIVs.length; i++) {
             var row = $("<tr></tr>");
+            if (isWild(candIVs[i])) {
+                row = $('<tr style="background-color: lightgreen;"></tr>');
+            }
             row.append("<td>" + ((candIVs[i]['attack'] + candIVs[i]['defense'] + candIVs[i]['stamina']) * 100.0 / 45.0).toFixed(1) + "&#37;</td>")
             row.append("<td>" + (candIVs[i]['level'] / 2 + 1).toFixed(1) + "</td>")
             row.append("<td>" + candIVs[i]['attack'] + "</td>")
@@ -836,11 +846,7 @@ $(document).ready(function(){
     var init = function() {
         var stardust = $('#stardust');
         for (var i = 0; i < requireStardust.length; i++) {
-            /*if (requireStardust[i] == 10000) {
-                stardust.append($("<option>").val(i).text("強化上限("+requireStardust[i]+")"));
-            } else {*/
-                stardust.append($("<option>").val(i).text(requireStardust[i]));
-            //}
+            stardust.append($("<option>").val(i).text(requireStardust[i]));
         }
 
         $('#stardust option').filter(function(index){

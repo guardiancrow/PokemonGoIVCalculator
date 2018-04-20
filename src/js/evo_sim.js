@@ -78,6 +78,16 @@ $(document).ready(function(){
         }
         $('#select-level').val((20 - 1) * 2);
 
+        $('#select-atk option').filter(function(index){
+            return $(this).text() === '15';
+        }).prop('selected', true);
+        $('#select-def option').filter(function(index){
+            return $(this).text() === '15';
+        }).prop('selected', true);
+        $('#select-sta option').filter(function(index){
+            return $(this).text() === '15';
+        }).prop('selected', true);
+
         var selectName = $('#select-name');
         $.each(pokedex, function(idx, value) {
             var name = value['name'];
