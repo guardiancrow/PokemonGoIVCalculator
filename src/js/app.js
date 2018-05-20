@@ -509,7 +509,7 @@ $(document).ready(function(){
                 if (uniqueIV != null && uniqueIV.length > 1 && uniqueIV[i] == j / 2.0 + 1.0) {
                     unique = true;
                 }
-                ary.push({tlevel: Math.floor(j / 2.0), plevel: j / 2.0 + 1.0, cp: cp, hp: hp, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
+                ary.push({tlevel: Math.floor((j - 1.0) / 2.0), plevel: j / 2.0 + 1.0, cp: cp, hp: hp, totalstardust: totalstardust, totalcandy: totalcandy, unique: unique});
             }
 
             singlesheet = $('<div class="reinforcesheet"></div>');
