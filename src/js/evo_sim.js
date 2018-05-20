@@ -151,7 +151,7 @@ $(document).ready(function(){
                 if (Math.floor(value['level_base'] / 2.0) > 38) {
                     row.append('<td><div class="text-right">' + 38 + '</div></td>');
                 } else {
-                    row.append('<td><div class="text-right">' + Math.floor(value['level_base'] / 2.0) + '</div></td>');
+                    row.append('<td><div class="text-right">' + Math.floor((value['level_base'] - 1.0) / 2.0) + '</div></td>');
                 }
                 row.append('<td><div class="text-right">' + value['plevel'].toFixed(1) + '</div></td>');
                 row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
