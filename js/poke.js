@@ -365,7 +365,7 @@ var pokedex = [
 	{name: 'ユレイドル', base: { stamina: 172, attack: 152, defense: 198}, hira: 'ゆれいどる'},
 	{name: 'アノプス', base: { stamina: 90, attack: 176, defense: 100}, hira: 'あのぷす', evo: [{ name: 'アーマルド', candy: 50}] },
 	{name: 'アーマルド', base: { stamina: 150, attack: 222, defense: 183}, hira: 'あーまるど'},
-	{name: 'ヒンバス', base: { stamina: 40, attack: 29, defense: 102}, hira: 'ひんばす', evo: [{ name: 'ミロカロス', candy: 50}] },
+	{name: 'ヒンバス', base: { stamina: 40, attack: 29, defense: 102}, hira: 'ひんばす', evo: [{ name: 'ミロカロス', candy: 100}] },
 	{name: 'ミロカロス', base: { stamina: 190, attack: 192, defense: 242}, hira: 'みろかろす'},
 	{name: 'ポワルン', base: { stamina: 140, attack: 139, defense: 139}, hira: 'ぽわるん'},
 	//{name: 'カクレオン', base: { stamina: 120, attack: 161, defense: 212}, hira: 'かくれおん'},
@@ -400,9 +400,11 @@ var pokedex = [
 	{name: 'ラティオス', base: { stamina: 160, attack: 268, defense: 228}, hira: 'らてぃおす'},
 	{name: 'グラードン', base: { stamina: 182, attack: 270, defense: 251}, hira: 'ぐらーどん'},
 	{name: 'カイオーガ', base: { stamina: 182, attack: 270, defense: 251}, hira: 'かいおーが'},
-	{name: 'レックウザ', base: { stamina: 191, attack: 284, defense: 170}, hira: 'れっくうざ'}
+	{name: 'レックウザ', base: { stamina: 191, attack: 284, defense: 170}, hira: 'れっくうざ'},
 	//,{name: 'ジラーチ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'じらーち'},
-	//{name: 'デオキシス', base: { stamina: 100, attack: 345, defense: 115}, hira: 'でおきしす'}
+	//{name: 'デオキシス', base: { stamina: 100, attack: 345, defense: 115}, hira: 'でおきしす'},
+
+	{name: 'ナッシー（アローラ）', base: { stamina: 190, attack: 230, defense: 158}, hira: 'なっしー（あろーら）'}
 ]
 
 var CPM = [
