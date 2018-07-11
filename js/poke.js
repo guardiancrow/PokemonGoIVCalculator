@@ -373,7 +373,7 @@ var pokedex = [
 	{name: 'ジュペッタ', base: { stamina: 128, attack: 218, defense: 127}, hira: 'じゅぺった' },
 	{name: 'ヨマワル', base: { stamina: 40, attack: 70, defense: 162}, hira: 'よまわる', evo: [{ name: 'サマヨール', candy: 50 }] },
 	{name: 'サマヨール', base: { stamina: 80, attack: 124, defense: 234}, hira: 'さまよーる' },
-	//{name: 'トロピウス', base: { stamina: 198, attack: 136, defense: 165}, hira: 'とろぴうす' },
+	{name: 'トロピウス', base: { stamina: 198, attack: 136, defense: 165}, hira: 'とろぴうす' },
 	{name: 'チリーン', base: { stamina: 150, attack: 175, defense: 174}, hira: 'ちりーん'},
 	{name: 'アブソル', base: { stamina: 130, attack: 246, defense: 120}, hira: 'あぶそる'},
 	{name: 'ソーナノ', base: { stamina: 190, attack: 41, defense: 86}, hira: 'そーなの', evo: [{ name: 'ソーナンス', candy: 25 }] },
@@ -404,6 +404,16 @@ var pokedex = [
 	//,{name: 'ジラーチ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'じらーち'},
 	//{name: 'デオキシス', base: { stamina: 100, attack: 345, defense: 115}, hira: 'でおきしす'},
 
+	{name: 'コラッタ（アローラ）', base: { stamina: 60, attack: 103, defense: 70 }, hira: 'こらった（あろーら）', evo: [{ name: 'ラッタ（アローラ）', candy: 25 }] },
+	{name: 'ラッタ（アローラ）', base: { stamina: 150, attack: 135, defense: 159 }, hira: 'らった（あろーら）' },
+	{name: 'サンド（アローラ）', base: { stamina: 100, attack: 125, defense: 154 }, hira: 'さんど（あろーら）', evo: [{ name: 'サンドパン（アローラ）', candy: 50 }] },
+	{name: 'サンドパン（アローラ）', base: { stamina: 150, attack: 177, defense: 221 }, hira: 'さんどぱん（あろーら）' },
+	{name: 'ロコン（アローラ）', base: { stamina: 76, attack: 96, defense: 122 }, hira: 'ろこん（あろーら）', evo: [{ name: 'キュウコン（アローラ）', candy: 50 }] },
+	{name: 'キュウコン（アローラ）', base: { stamina: 146, attack: 170, defense: 207 }, hira: 'きゅうこん（あろーら）' },
+	{name: 'ニャース（アローラ）', base: { stamina: 80, attack: 99, defense: 81 }, hira: 'にゃーす（あろーら）', evo: [{ name: 'ペルシアン（アローラ）', candy: 50 }] },
+	{name: 'ペルシアン（アローラ）', base: { stamina: 130, attack: 158, defense: 139 }, hira: 'ぺるしあん（あろーら）' },
+	{name: 'ベトベター（アローラ）', base: { stamina: 160, attack: 135, defense: 90 }, hira: 'べとべたー（あろーら）', evo: [{ name: 'ベトベトン（アローラ）', candy: 50 }] },
+	{name: 'ベトベトン（アローラ）', base: { stamina: 210, attack: 190, defense: 184 }, hira: 'べとべとん（あろーら）' },
 	{name: 'ナッシー（アローラ）', base: { stamina: 190, attack: 230, defense: 158}, hira: 'なっしー（あろーら）'}
 ]
 
