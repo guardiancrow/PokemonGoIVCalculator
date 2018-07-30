@@ -406,15 +406,22 @@ var pokedex = [
 
 	{name: 'コラッタ（アローラ）', base: { stamina: 60, attack: 103, defense: 70 }, hira: 'こらった（あろーら）', evo: [{ name: 'ラッタ（アローラ）', candy: 25 }] },
 	{name: 'ラッタ（アローラ）', base: { stamina: 150, attack: 135, defense: 159 }, hira: 'らった（あろーら）' },
+	{name: 'ライチュウ（アローラ）', base: { stamina: 120, attack: 201, defense: 172 }, hira: 'らいちゅう（あろーら）' },
 	{name: 'サンド（アローラ）', base: { stamina: 100, attack: 125, defense: 154 }, hira: 'さんど（あろーら）', evo: [{ name: 'サンドパン（アローラ）', candy: 50 }] },
 	{name: 'サンドパン（アローラ）', base: { stamina: 150, attack: 177, defense: 221 }, hira: 'さんどぱん（あろーら）' },
 	{name: 'ロコン（アローラ）', base: { stamina: 76, attack: 96, defense: 122 }, hira: 'ろこん（あろーら）', evo: [{ name: 'キュウコン（アローラ）', candy: 50 }] },
 	{name: 'キュウコン（アローラ）', base: { stamina: 146, attack: 170, defense: 207 }, hira: 'きゅうこん（あろーら）' },
+	{name: 'ディグダ（アローラ）', base: { stamina: 20, attack: 109, defense: 89 }, hira: 'でぃぐだ（あろーら）', evo: [{ name: 'ダグトリオ（アローラ）', candy: 50 }] },
+	{name: 'ダグトリオ（アローラ）', base: { stamina: 70, attack: 201, defense: 148 }, hira: 'だぐとりお（あろーら）' },
 	{name: 'ニャース（アローラ）', base: { stamina: 80, attack: 99, defense: 81 }, hira: 'にゃーす（あろーら）', evo: [{ name: 'ペルシアン（アローラ）', candy: 50 }] },
 	{name: 'ペルシアン（アローラ）', base: { stamina: 130, attack: 158, defense: 139 }, hira: 'ぺるしあん（あろーら）' },
+	{name: 'イシツブテ（アローラ）', base: { stamina: 80, attack: 132, defense: 163 }, hira: 'いしつぶて（あろーら）', evo: [{ name: 'ゴローン（アローラ）', candy: 25 }] },
+	{name: 'ゴローン（アローラ）', base: { stamina: 110, attack: 164, defense: 196 }, hira: 'ごろーん（あろーら）', evo: [{ name: 'ゴローニャ（アローラ）', candy: 100 }] },
+	{name: 'ゴローニャ（アローラ）', base: { stamina: 160, attack: 211, defense: 229 }, hira: 'ごろーにゃ（あろーら）' },
 	{name: 'ベトベター（アローラ）', base: { stamina: 160, attack: 135, defense: 90 }, hira: 'べとべたー（あろーら）', evo: [{ name: 'ベトベトン（アローラ）', candy: 50 }] },
 	{name: 'ベトベトン（アローラ）', base: { stamina: 210, attack: 190, defense: 184 }, hira: 'べとべとん（あろーら）' },
-	{name: 'ナッシー（アローラ）', base: { stamina: 190, attack: 230, defense: 158}, hira: 'なっしー（あろーら）'}
+	{name: 'ナッシー（アローラ）', base: { stamina: 190, attack: 230, defense: 158}, hira: 'なっしー（あろーら）'},
+	{name: 'ガラガラ（アローラ）', base: { stamina: 120, attack: 144, defense: 200 }, hira: 'がらがら（あろーら）' }
 ]
 
 var CPM = [
