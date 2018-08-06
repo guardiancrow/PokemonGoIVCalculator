@@ -343,7 +343,7 @@ var pokedex = [
 	{name: 'コータス', base: { stamina: 140, attack: 151, defense: 234}, hira: 'こーたす'},
 	{name: 'バネブー', base: { stamina: 120, attack: 125, defense: 145}, hira: 'ばねぶー', evo: [{ name: 'ブーピッグ', candy: 50}] },
 	{name: 'ブーピッグ', base: { stamina: 160, attack: 171, defense: 211}, hira: 'ぶーぴっぐ'},
-	//{name: 'パッチール', base: { stamina: 120, attack: 116, defense: 116}, hira: 'ぱっちーる'},
+	{name: 'パッチール', base: { stamina: 120, attack: 116, defense: 116}, hira: 'ぱっちーる'},
 	{name: 'ナックラー', base: { stamina: 90, attack: 162, defense: 78}, hira: 'なっくらー', evo: [{ name: 'ビブラーバ', candy: 25}] },
 	{name: 'ビブラーバ', base: { stamina: 100, attack: 134, defense: 99}, hira: 'びぶらーば', evo: [{ name: 'フライゴン', candy: 100}] },
 	{name: 'フライゴン', base: { stamina: 160, attack: 205, defense: 168}, hira: 'ふらいごん'},
