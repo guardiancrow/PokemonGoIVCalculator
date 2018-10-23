@@ -65,7 +65,7 @@ $(document).ready(function(){
     var init = function() {
         //jsonを読み込みpokedexをオーバーライド
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '../poke_rebalanced.json', true);
+        xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/poke_rebalanced.json', true);
         xhr.send(null);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200){
