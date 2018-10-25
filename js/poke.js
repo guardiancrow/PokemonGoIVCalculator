@@ -403,6 +403,7 @@ var pokedex = [
 	{name: 'レックウザ', base: { stamina: 191, attack: 284, defense: 170}, hira: 'れっくうざ'},
 	//{name: 'ジラーチ', base: { stamina: 200, attack: 210, defense: 210}, hira: 'じらーち'},
 	{name: 'デオキシス', base: { stamina: 100, attack: 345, defense: 115}, hira: 'でおきしす'},
+	{name: 'ギラティナ（アナザー）', base: { stamina: 284, attack: 187, defense: 225}, hira: 'ぎらてぃな（あなざー）'},
 
 	{name: 'コラッタ（アローラ）', base: { stamina: 60, attack: 103, defense: 70 }, hira: 'こらった（あろーら）', evo: [{ name: 'ラッタ（アローラ）', candy: 25 }] },
 	{name: 'ラッタ（アローラ）', base: { stamina: 150, attack: 135, defense: 159 }, hira: 'らった（あろーら）' },
