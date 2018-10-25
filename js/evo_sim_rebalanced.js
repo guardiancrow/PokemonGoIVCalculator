@@ -65,12 +65,17 @@ $(document).ready(function(){
     var init = function() {
         //jsonを読み込みpokedexをオーバーライド
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/poke_rebalanced.json', true);
+        xhr.open('GET', 'poke_rebalanced.json', true);
+        //xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/js/poke_rebalanced.json', true);
         xhr.send(null);
-        xhr.onreadystatechange = function() {
+        xhr.onload = function() {
+            console.log(xhr.statusText);
             if (xhr.readyState === 4 && xhr.status === 200){
                 pokedex = JSON.parse(xhr.responseText);
             }
+        }
+        xhr.onerror = function (e) {
+            console.error(xhr.statusText);
         }
 
         var atk = $('#select-atk');
@@ -199,12 +204,10 @@ $(document).ready(function(){
                 candy = requireCandy[Math.floor(j / 2.0)];
                 var cp = Math.max(10, Math.floor((base['attack'] + input.atk) * Math.sqrt(base['defense'] + input.def) * Math.sqrt(base['stamina'] + input.sta) * CPM[j] * CPM[j] / 10.0));
                 var cpMax = Math.max(10, Math.floor((base['attack'] + 15) * Math.sqrt(base['defense'] + 15) * Math.sqrt(base['stamina'] + 15) * CPM[j] * CPM[j] / 10.0));
-                console.log(cp);
                 ary.push({level_base: j, plevel: j / 2.0 + 1.0, cp: cp, cpmax: cpMax, totalstardust: totalstardust, totalcandy: totalcandy});
             }
             result.push(ary);
         }
-        console.log(ary);
     }
 
     var initCalc = function () {
