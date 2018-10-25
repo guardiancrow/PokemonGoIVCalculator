@@ -65,13 +65,19 @@ $(document).ready(function(){
     var init = function() {
         //jsonを読み込みpokedexをオーバーライド
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'poke_rebalanced.json', true);
+        xhr.open('GET', 'js/poke_rebalanced.json', true);
         //xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/js/poke_rebalanced.json', true);
         xhr.send(null);
         xhr.onload = function() {
             console.log(xhr.statusText);
             if (xhr.readyState === 4 && xhr.status === 200){
                 pokedex = JSON.parse(xhr.responseText);
+                var selectName = $('#select-name');
+                selectName.empty();
+                $.each(pokedex, function(idx, value) {
+                    var name = value['name'];
+                    selectName.append($("<option>").val(name).text(name));
+                })
             }
         }
         xhr.onerror = function (e) {
