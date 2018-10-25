@@ -1,0 +1,6525 @@
+[
+    {
+        "base": {
+            "attack": 118,
+            "defense": 118,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "フシギソウ"
+            }
+        ],
+        "hira": "ふしぎだね",
+        "name": "フシギダネ"
+    },
+    {
+        "base": {
+            "attack": 151,
+            "defense": 151,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "フシギバナ"
+            }
+        ],
+        "hira": "ふしぎそう",
+        "name": "フシギソウ"
+    },
+    {
+        "base": {
+            "attack": 198,
+            "defense": 198,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ふしぎばな",
+        "name": "フシギバナ"
+    },
+    {
+        "base": {
+            "attack": 116,
+            "defense": 96,
+            "stamina": 78
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "リザード"
+            }
+        ],
+        "hira": "ひとかげ",
+        "name": "ヒトカゲ"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 129,
+            "stamina": 116
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "リザードン"
+            }
+        ],
+        "hira": "りざーど",
+        "name": "リザード"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 176,
+            "stamina": 156
+        },
+        "evo": [],
+        "hira": "りざーどん",
+        "name": "リザードン"
+    },
+    {
+        "base": {
+            "attack": 94,
+            "defense": 122,
+            "stamina": 88
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "カメール"
+            }
+        ],
+        "hira": "ぜにがめ",
+        "name": "ゼニガメ"
+    },
+    {
+        "base": {
+            "attack": 126,
+            "defense": 155,
+            "stamina": 118
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "カメックス"
+            }
+        ],
+        "hira": "かめーる",
+        "name": "カメール"
+    },
+    {
+        "base": {
+            "attack": 171,
+            "defense": 210,
+            "stamina": 158
+        },
+        "evo": [],
+        "hira": "かめっくす",
+        "name": "カメックス"
+    },
+    {
+        "base": {
+            "attack": 55,
+            "defense": 62,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 12,
+                "item": "",
+                "name": "トランセル"
+            }
+        ],
+        "hira": "きゃたぴー",
+        "name": "キャタピー"
+    },
+    {
+        "base": {
+            "attack": 45,
+            "defense": 94,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "バタフリー"
+            }
+        ],
+        "hira": "とらんせる",
+        "name": "トランセル"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 151,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ばたふりー",
+        "name": "バタフリー"
+    },
+    {
+        "base": {
+            "attack": 63,
+            "defense": 55,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 12,
+                "item": "",
+                "name": "コクーン"
+            }
+        ],
+        "hira": "びーどる",
+        "name": "ビードル"
+    },
+    {
+        "base": {
+            "attack": 46,
+            "defense": 86,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "スピアー"
+            }
+        ],
+        "hira": "こくーん",
+        "name": "コクーン"
+    },
+    {
+        "base": {
+            "attack": 169,
+            "defense": 150,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "すぴあー",
+        "name": "スピアー"
+    },
+    {
+        "base": {
+            "attack": 85,
+            "defense": 76,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 12,
+                "item": "",
+                "name": "ピジョン"
+            }
+        ],
+        "hira": "ぽっぽ",
+        "name": "ポッポ"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 108,
+            "stamina": 126
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ピジョット"
+            }
+        ],
+        "hira": "ぴじょん",
+        "name": "ピジョン"
+    },
+    {
+        "base": {
+            "attack": 166,
+            "defense": 157,
+            "stamina": 166
+        },
+        "evo": [],
+        "hira": "ぴじょっと",
+        "name": "ピジョット"
+    },
+    {
+        "base": {
+            "attack": 103,
+            "defense": 70,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ラッタ"
+            }
+        ],
+        "hira": "こらった",
+        "name": "コラッタ"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 144,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "らった",
+        "name": "ラッタ"
+    },
+    {
+        "base": {
+            "attack": 112,
+            "defense": 61,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オニドリル"
+            }
+        ],
+        "hira": "おにすずめ",
+        "name": "オニスズメ"
+    },
+    {
+        "base": {
+            "attack": 182,
+            "defense": 135,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "おにどりる",
+        "name": "オニドリル"
+    },
+    {
+        "base": {
+            "attack": 110,
+            "defense": 102,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アーボック"
+            }
+        ],
+        "hira": "あーぼ",
+        "name": "アーボ"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 158,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "あーぼっく",
+        "name": "アーボック"
+    },
+    {
+        "base": {
+            "attack": 112,
+            "defense": 101,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ライチュウ"
+            }
+        ],
+        "hira": "ぴかちゅう",
+        "name": "ピカチュウ"
+    },
+    {
+        "base": {
+            "attack": 193,
+            "defense": 165,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "らいちゅう",
+        "name": "ライチュウ"
+    },
+    {
+        "base": {
+            "attack": 126,
+            "defense": 145,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "サンドパン"
+            }
+        ],
+        "hira": "さんど",
+        "name": "サンド"
+    },
+    {
+        "base": {
+            "attack": 182,
+            "defense": 202,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "さんどぱん",
+        "name": "サンドパン"
+    },
+    {
+        "base": {
+            "attack": 86,
+            "defense": 94,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ニドリーナ"
+            }
+        ],
+        "hira": "にどらん♀",
+        "name": "ニドラン♀"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 126,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ニドクイン"
+            }
+        ],
+        "hira": "にどりーな",
+        "name": "ニドリーナ"
+    },
+    {
+        "base": {
+            "attack": 180,
+            "defense": 174,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "にどくいん",
+        "name": "ニドクイン"
+    },
+    {
+        "base": {
+            "attack": 105,
+            "defense": 76,
+            "stamina": 92
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ニドリーノ"
+            }
+        ],
+        "hira": "にどらん♂",
+        "name": "ニドラン♂"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 112,
+            "stamina": 122
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ニドキング"
+            }
+        ],
+        "hira": "にどりーの",
+        "name": "ニドリーノ"
+    },
+    {
+        "base": {
+            "attack": 204,
+            "defense": 157,
+            "stamina": 162
+        },
+        "evo": [],
+        "hira": "にどきんぐ",
+        "name": "ニドキング"
+    },
+    {
+        "base": {
+            "attack": 107,
+            "defense": 116,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ピクシー"
+            }
+        ],
+        "hira": "ぴっぴ",
+        "name": "ピッピ"
+    },
+    {
+        "base": {
+            "attack": 178,
+            "defense": 171,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ぴくしー",
+        "name": "ピクシー"
+    },
+    {
+        "base": {
+            "attack": 96,
+            "defense": 122,
+            "stamina": 76
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "キュウコン"
+            }
+        ],
+        "hira": "ろこん",
+        "name": "ロコン"
+    },
+    {
+        "base": {
+            "attack": 169,
+            "defense": 204,
+            "stamina": 146
+        },
+        "evo": [],
+        "hira": "きゅうこん",
+        "name": "キュウコン"
+    },
+    {
+        "base": {
+            "attack": 80,
+            "defense": 44,
+            "stamina": 230
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "プクリン"
+            }
+        ],
+        "hira": "ぷりん",
+        "name": "プリン"
+    },
+    {
+        "base": {
+            "attack": 156,
+            "defense": 93,
+            "stamina": 280
+        },
+        "evo": [],
+        "hira": "ぷくりん",
+        "name": "プクリン"
+    },
+    {
+        "base": {
+            "attack": 83,
+            "defense": 76,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ゴルバット"
+            }
+        ],
+        "hira": "ずばっと",
+        "name": "ズバット"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 153,
+            "stamina": 150
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "クロバット"
+            }
+        ],
+        "hira": "ごるばっと",
+        "name": "ゴルバット"
+    },
+    {
+        "base": {
+            "attack": 131,
+            "defense": 116,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "クサイハナ"
+            }
+        ],
+        "hira": "なぞのくさ",
+        "name": "ナゾノクサ"
+    },
+    {
+        "base": {
+            "attack": 153,
+            "defense": 139,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ラフレシア"
+            },
+            {
+                "candy": "100",
+                "item": "たいようのいし",
+                "name": "キレイハナ"
+            }
+        ],
+        "hira": "くさいはな",
+        "name": "クサイハナ"
+    },
+    {
+        "base": {
+            "attack": 202,
+            "defense": 170,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "らふれしあ",
+        "name": "ラフレシア"
+    },
+    {
+        "base": {
+            "attack": 121,
+            "defense": 99,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "パラセクト"
+            }
+        ],
+        "hira": "ぱらす",
+        "name": "パラス"
+    },
+    {
+        "base": {
+            "attack": 165,
+            "defense": 146,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ぱらせくと",
+        "name": "パラセクト"
+    },
+    {
+        "base": {
+            "attack": 100,
+            "defense": 102,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "モルフォン"
+            }
+        ],
+        "hira": "こんぱん",
+        "name": "コンパン"
+    },
+    {
+        "base": {
+            "attack": 179,
+            "defense": 150,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "もるふぉん",
+        "name": "モルフォン"
+    },
+    {
+        "base": {
+            "attack": 109,
+            "defense": 88,
+            "stamina": 20
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ダグトリオ"
+            }
+        ],
+        "hira": "でぃぐだ",
+        "name": "ディグダ"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 147,
+            "stamina": 70
+        },
+        "evo": [],
+        "hira": "だぐとりお",
+        "name": "ダグトリオ"
+    },
+    {
+        "base": {
+            "attack": 92,
+            "defense": 81,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ペルシアン"
+            }
+        ],
+        "hira": "にゃーす",
+        "name": "ニャース"
+    },
+    {
+        "base": {
+            "attack": 150,
+            "defense": 139,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぺるしあん",
+        "name": "ペルシアン"
+    },
+    {
+        "base": {
+            "attack": 122,
+            "defense": 96,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ゴルダック"
+            }
+        ],
+        "hira": "こだっく",
+        "name": "コダック"
+    },
+    {
+        "base": {
+            "attack": 191,
+            "defense": 163,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ごるだっく",
+        "name": "ゴルダック"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 87,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オコリザル"
+            }
+        ],
+        "hira": "まんきー",
+        "name": "マンキー"
+    },
+    {
+        "base": {
+            "attack": 207,
+            "defense": 144,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "おこりざる",
+        "name": "オコリザル"
+    },
+    {
+        "base": {
+            "attack": 136,
+            "defense": 96,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ウインディ"
+            }
+        ],
+        "hira": "がーでぃ",
+        "name": "ガーディ"
+    },
+    {
+        "base": {
+            "attack": 227,
+            "defense": 166,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "ういんでぃ",
+        "name": "ウインディ"
+    },
+    {
+        "base": {
+            "attack": 101,
+            "defense": 82,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ニョロゾ"
+            }
+        ],
+        "hira": "にょろも",
+        "name": "ニョロモ"
+    },
+    {
+        "base": {
+            "attack": 130,
+            "defense": 130,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ニョロボン"
+            },
+            {
+                "candy": "100",
+                "item": "おうじゃのしるし",
+                "name": "ニョロトノ"
+            }
+        ],
+        "hira": "にょろぞ",
+        "name": "ニョロゾ"
+    },
+    {
+        "base": {
+            "attack": 182,
+            "defense": 187,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "にょとぼん",
+        "name": "ニョロボン"
+    },
+    {
+        "base": {
+            "attack": 195,
+            "defense": 103,
+            "stamina": 50
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ユンゲラー"
+            }
+        ],
+        "hira": "けーしぃ",
+        "name": "ケーシィ"
+    },
+    {
+        "base": {
+            "attack": 232,
+            "defense": 138,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "フーディン"
+            }
+        ],
+        "hira": "ゆんげらー",
+        "name": "ユンゲラー"
+    },
+    {
+        "base": {
+            "attack": 271,
+            "defense": 194,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "ふーでぃん",
+        "name": "フーディン"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 88,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ゴーリキー"
+            }
+        ],
+        "hira": "わんりきー",
+        "name": "ワンリキー"
+    },
+    {
+        "base": {
+            "attack": 177,
+            "defense": 130,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "カイリキー"
+            }
+        ],
+        "hira": "ごーりきー",
+        "name": "ゴーリキー"
+    },
+    {
+        "base": {
+            "attack": 234,
+            "defense": 162,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "かいりきー",
+        "name": "カイリキー"
+    },
+    {
+        "base": {
+            "attack": 139,
+            "defense": 64,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ウツドン"
+            }
+        ],
+        "hira": "まだつぼみ",
+        "name": "マダツボミ"
+    },
+    {
+        "base": {
+            "attack": 172,
+            "defense": 95,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ウツボット"
+            }
+        ],
+        "hira": "うつどん",
+        "name": "ウツドン"
+    },
+    {
+        "base": {
+            "attack": 207,
+            "defense": 138,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "うつぼっと",
+        "name": "ウツボット"
+    },
+    {
+        "base": {
+            "attack": 97,
+            "defense": 182,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ドククラゲ"
+            }
+        ],
+        "hira": "めのくらげ",
+        "name": "メノクラゲ"
+    },
+    {
+        "base": {
+            "attack": 166,
+            "defense": 237,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "どくくらげ",
+        "name": "ドククラゲ"
+    },
+    {
+        "base": {
+            "attack": 132,
+            "defense": 163,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ゴローン"
+            }
+        ],
+        "hira": "いしつぶて",
+        "name": "イシツブテ"
+    },
+    {
+        "base": {
+            "attack": 164,
+            "defense": 196,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ゴローニャ"
+            }
+        ],
+        "hira": "ごろーん",
+        "name": "ゴローン"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 229,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ごろーにゃ",
+        "name": "ゴローニャ"
+    },
+    {
+        "base": {
+            "attack": 170,
+            "defense": 132,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ギャロップ"
+            }
+        ],
+        "hira": "ぽにーた",
+        "name": "ポニータ"
+    },
+    {
+        "base": {
+            "attack": 207,
+            "defense": 167,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぎゃろっぷ",
+        "name": "ギャロップ"
+    },
+    {
+        "base": {
+            "attack": 109,
+            "defense": 109,
+            "stamina": 180
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ヤドラン"
+            },
+            {
+                "candy": "50",
+                "item": "おうじゃのしるし",
+                "name": "ヤドキング"
+            }
+        ],
+        "hira": "やどん",
+        "name": "ヤドン"
+    },
+    {
+        "base": {
+            "attack": 177,
+            "defense": 194,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "やどらん",
+        "name": "ヤドラン"
+    },
+    {
+        "base": {
+            "attack": 165,
+            "defense": 128,
+            "stamina": 50
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "レアコイル"
+            }
+        ],
+        "hira": "こいる",
+        "name": "コイル"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 182,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "れあこいる",
+        "name": "レアコイル"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 118,
+            "stamina": 104
+        },
+        "evo": [],
+        "hira": "かもねぎ",
+        "name": "カモネギ"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 88,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ドードリオ"
+            }
+        ],
+        "hira": "どーどー",
+        "name": "ドードー"
+    },
+    {
+        "base": {
+            "attack": 218,
+            "defense": 145,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "どーどりお",
+        "name": "ドードリオ"
+    },
+    {
+        "base": {
+            "attack": 85,
+            "defense": 128,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ジュゴン"
+            }
+        ],
+        "hira": "ぱうわう",
+        "name": "パウワウ"
+    },
+    {
+        "base": {
+            "attack": 139,
+            "defense": 184,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "じゅごん",
+        "name": "ジュゴン"
+    },
+    {
+        "base": {
+            "attack": 135,
+            "defense": 90,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ベトベトン"
+            }
+        ],
+        "hira": "べとべたー",
+        "name": "ベトベター"
+    },
+    {
+        "base": {
+            "attack": 190,
+            "defense": 184,
+            "stamina": 210
+        },
+        "evo": [],
+        "hira": "べとべとん",
+        "name": "ベトベトン"
+    },
+    {
+        "base": {
+            "attack": 116,
+            "defense": 168,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "パルシェン"
+            }
+        ],
+        "hira": "しぇるだー",
+        "name": "シェルダー"
+    },
+    {
+        "base": {
+            "attack": 186,
+            "defense": 323,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "ぱるしぇん",
+        "name": "パルシェン"
+    },
+    {
+        "base": {
+            "attack": 186,
+            "defense": 70,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ゴースト"
+            }
+        ],
+        "hira": "ごーす",
+        "name": "ゴース"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 112,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ゲンガー"
+            }
+        ],
+        "hira": "ごーすと",
+        "name": "ゴースト"
+    },
+    {
+        "base": {
+            "attack": 261,
+            "defense": 156,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "げんがー",
+        "name": "ゲンガー"
+    },
+    {
+        "base": {
+            "attack": 85,
+            "defense": 288,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "メタルコート",
+                "name": "ハガネール"
+            }
+        ],
+        "hira": "いわーく",
+        "name": "イワーク"
+    },
+    {
+        "base": {
+            "attack": 89,
+            "defense": 158,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "スリーパー"
+            }
+        ],
+        "hira": "すりーぷ",
+        "name": "スリープ"
+    },
+    {
+        "base": {
+            "attack": 144,
+            "defense": 215,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "すりーぱー",
+        "name": "スリーパー"
+    },
+    {
+        "base": {
+            "attack": 181,
+            "defense": 156,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "キングラー"
+            }
+        ],
+        "hira": "くらぶ",
+        "name": "クラブ"
+    },
+    {
+        "base": {
+            "attack": 240,
+            "defense": 214,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "きんぐらー",
+        "name": "キングラー"
+    },
+    {
+        "base": {
+            "attack": 109,
+            "defense": 114,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マルマイン"
+            }
+        ],
+        "hira": "びりりだま",
+        "name": "ビリリダマ"
+    },
+    {
+        "base": {
+            "attack": 173,
+            "defense": 179,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "まるまいん",
+        "name": "マルマイン"
+    },
+    {
+        "base": {
+            "attack": 107,
+            "defense": 140,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ナッシー"
+            }
+        ],
+        "hira": "たまたま",
+        "name": "タマタマ"
+    },
+    {
+        "base": {
+            "attack": 233,
+            "defense": 158,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "なっしー",
+        "name": "ナッシー"
+    },
+    {
+        "base": {
+            "attack": 90,
+            "defense": 165,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ガラガラ"
+            }
+        ],
+        "hira": "からから",
+        "name": "カラカラ"
+    },
+    {
+        "base": {
+            "attack": 144,
+            "defense": 200,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "がらがら",
+        "name": "ガラガラ"
+    },
+    {
+        "base": {
+            "attack": 224,
+            "defense": 211,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "さわむらー",
+        "name": "サワムラー"
+    },
+    {
+        "base": {
+            "attack": 193,
+            "defense": 212,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "えびわらー",
+        "name": "エビワラー"
+    },
+    {
+        "base": {
+            "attack": 108,
+            "defense": 137,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "べろりんが",
+        "name": "ベロリンガ"
+    },
+    {
+        "base": {
+            "attack": 119,
+            "defense": 164,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マタドガス"
+            }
+        ],
+        "hira": "どがーす",
+        "name": "ドガース"
+    },
+    {
+        "base": {
+            "attack": 174,
+            "defense": 221,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "またどがす",
+        "name": "マタドガス"
+    },
+    {
+        "base": {
+            "attack": 140,
+            "defense": 157,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "サイドン"
+            }
+        ],
+        "hira": "さいほーん",
+        "name": "サイホーン"
+    },
+    {
+        "base": {
+            "attack": 222,
+            "defense": 206,
+            "stamina": 210
+        },
+        "evo": [],
+        "hira": "さいどん",
+        "name": "サイドン"
+    },
+    {
+        "base": {
+            "attack": 60,
+            "defense": 176,
+            "stamina": 500
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ハピナス"
+            }
+        ],
+        "hira": "らっきー",
+        "name": "ラッキー"
+    },
+    {
+        "base": {
+            "attack": 183,
+            "defense": 205,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "もんじゃら",
+        "name": "モンジャラ"
+    },
+    {
+        "base": {
+            "attack": 181,
+            "defense": 165,
+            "stamina": 210
+        },
+        "evo": [],
+        "hira": "がるーら",
+        "name": "ガルーラ"
+    },
+    {
+        "base": {
+            "attack": 129,
+            "defense": 125,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "シードラ"
+            }
+        ],
+        "hira": "たっつー",
+        "name": "タッツー"
+    },
+    {
+        "base": {
+            "attack": 187,
+            "defense": 182,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "りゅうのウロコ",
+                "name": "キングドラ"
+            }
+        ],
+        "hira": "しーどら",
+        "name": "シードラ"
+    },
+    {
+        "base": {
+            "attack": 123,
+            "defense": 115,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アズマオウ"
+            }
+        ],
+        "hira": "とさきんと",
+        "name": "トサキント"
+    },
+    {
+        "base": {
+            "attack": 175,
+            "defense": 154,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "あずまおう",
+        "name": "アズマオウ"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 112,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "スターミー"
+            }
+        ],
+        "hira": "ひとでまん",
+        "name": "ヒトデマン"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 184,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "すたーみー",
+        "name": "スターミー"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 233,
+            "stamina": 80
+        },
+        "evo": [],
+        "hira": "ばりやーど",
+        "name": "バリヤード"
+    },
+    {
+        "base": {
+            "attack": 218,
+            "defense": 170,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "メタルコート",
+                "name": "ハッサム"
+            }
+        ],
+        "hira": "すとらいく",
+        "name": "ストライク"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 182,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "るーじゅら",
+        "name": "ルージュラ"
+    },
+    {
+        "base": {
+            "attack": 198,
+            "defense": 173,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "えれぶー",
+        "name": "エレブー"
+    },
+    {
+        "base": {
+            "attack": 206,
+            "defense": 169,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぶーばー",
+        "name": "ブーバー"
+    },
+    {
+        "base": {
+            "attack": 238,
+            "defense": 197,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "かいろす",
+        "name": "カイロス"
+    },
+    {
+        "base": {
+            "attack": 198,
+            "defense": 197,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "けんたろす",
+        "name": "ケンタロス"
+    },
+    {
+        "base": {
+            "attack": 29,
+            "defense": 102,
+            "stamina": 40
+        },
+        "evo": [
+            {
+                "candy": 400,
+                "item": "",
+                "name": "ギャラドス"
+            }
+        ],
+        "hira": "こいきんぐ",
+        "name": "コイキング"
+    },
+    {
+        "base": {
+            "attack": 237,
+            "defense": 197,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ぎゃらどす",
+        "name": "ギャラドス"
+    },
+    {
+        "base": {
+            "attack": 165,
+            "defense": 180,
+            "stamina": 260
+        },
+        "evo": [],
+        "hira": "らぷらす",
+        "name": "ラプラス"
+    },
+    {
+        "base": {
+            "attack": 91,
+            "defense": 91,
+            "stamina": 96
+        },
+        "evo": [],
+        "hira": "めたもん",
+        "name": "メタモン"
+    },
+    {
+        "base": {
+            "attack": 104,
+            "defense": 121,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "シャワーズ"
+            },
+            {
+                "candy": "25",
+                "item": "",
+                "name": "サンダース"
+            },
+            {
+                "candy": 25,
+                "name": "ブースター"
+            },
+            {
+                "candy": "25",
+                "name": "エーフィ"
+            },
+            {
+                "candy": 25,
+                "name": "ブラッキー"
+            }
+        ],
+        "hira": "いーぶい",
+        "name": "イーブイ"
+    },
+    {
+        "base": {
+            "attack": 205,
+            "defense": 177,
+            "stamina": 260
+        },
+        "evo": [],
+        "hira": "しゃわーず",
+        "name": "シャワーズ"
+    },
+    {
+        "base": {
+            "attack": 232,
+            "defense": 201,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "さんだーす",
+        "name": "サンダース"
+    },
+    {
+        "base": {
+            "attack": 246,
+            "defense": 204,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぶーすたー",
+        "name": "ブースター"
+    },
+    {
+        "base": {
+            "attack": 153,
+            "defense": 139,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "アップグレード",
+                "name": "ポリゴン２"
+            }
+        ],
+        "hira": "ぽりごん",
+        "name": "ポリゴン"
+    },
+    {
+        "base": {
+            "attack": 155,
+            "defense": 174,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オムスター"
+            }
+        ],
+        "hira": "おむないと",
+        "name": "オムナイト"
+    },
+    {
+        "base": {
+            "attack": 207,
+            "defense": 227,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "おむすたー",
+        "name": "オムスター"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 162,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "カブトプス"
+            }
+        ],
+        "hira": "かぶと",
+        "name": "カブト"
+    },
+    {
+        "base": {
+            "attack": 220,
+            "defense": 203,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "かぶとぷす",
+        "name": "カブトプス"
+    },
+    {
+        "base": {
+            "attack": 221,
+            "defense": 164,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ぷてら",
+        "name": "プテラ"
+    },
+    {
+        "base": {
+            "attack": 190,
+            "defense": 190,
+            "stamina": 320
+        },
+        "evo": [],
+        "hira": "かびごん",
+        "name": "カビゴン"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 249,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "ふりーざー",
+        "name": "フリーザー"
+    },
+    {
+        "base": {
+            "attack": 253,
+            "defense": 188,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "さんだー",
+        "name": "サンダー"
+    },
+    {
+        "base": {
+            "attack": 251,
+            "defense": 184,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "ふぁいやー",
+        "name": "ファイヤー"
+    },
+    {
+        "base": {
+            "attack": 119,
+            "defense": 94,
+            "stamina": 82
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ハクリュー"
+            }
+        ],
+        "hira": "みにりゅう",
+        "name": "ミニリュウ"
+    },
+    {
+        "base": {
+            "attack": 163,
+            "defense": 138,
+            "stamina": 122
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "カイリュー"
+            }
+        ],
+        "hira": "はくりゅー",
+        "name": "ハクリュー"
+    },
+    {
+        "base": {
+            "attack": 263,
+            "defense": 201,
+            "stamina": 182
+        },
+        "evo": [],
+        "hira": "かいりゅー",
+        "name": "カイリュー"
+    },
+    {
+        "base": {
+            "attack": 300,
+            "defense": 182,
+            "stamina": 193
+        },
+        "evo": [],
+        "hira": "みゅうつー",
+        "name": "ミュウツー"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 210,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "みゅう",
+        "name": "ミュウ"
+    },
+    {
+        "base": {
+            "attack": 92,
+            "defense": 122,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ベイリーフ"
+            }
+        ],
+        "hira": "ちこりーた",
+        "name": "チコリータ"
+    },
+    {
+        "base": {
+            "attack": 122,
+            "defense": 155,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "メガニウム"
+            }
+        ],
+        "hira": "べいりーふ",
+        "name": "ベイリーフ"
+    },
+    {
+        "base": {
+            "attack": 168,
+            "defense": 202,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "めがにうむ",
+        "name": "メガニウム"
+    },
+    {
+        "base": {
+            "attack": 116,
+            "defense": 96,
+            "stamina": 78
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "マグマラシ"
+            }
+        ],
+        "hira": "ひのあらし",
+        "name": "ヒノアラシ"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 129,
+            "stamina": 116
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "バクフーン"
+            }
+        ],
+        "hira": "まぐまらし",
+        "name": "マグマラシ"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 176,
+            "stamina": 156
+        },
+        "evo": [],
+        "hira": "ばくふーん",
+        "name": "バクフーン"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 116,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "アリゲイツ"
+            }
+        ],
+        "hira": "わにのこ",
+        "name": "ワニノコ"
+    },
+    {
+        "base": {
+            "attack": 150,
+            "defense": 151,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "オーダイル"
+            }
+        ],
+        "hira": "ありげいつ",
+        "name": "アリゲイツ"
+    },
+    {
+        "base": {
+            "attack": 205,
+            "defense": 197,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "おーだいる",
+        "name": "オーダイル"
+    },
+    {
+        "base": {
+            "attack": 79,
+            "defense": 77,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "オオタチ"
+            }
+        ],
+        "hira": "おたち",
+        "name": "オタチ"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 130,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "おおたち",
+        "name": "オオタチ"
+    },
+    {
+        "base": {
+            "attack": 67,
+            "defense": 101,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ヨルノズク"
+            }
+        ],
+        "hira": "ほーほー",
+        "name": "ホーホー"
+    },
+    {
+        "base": {
+            "attack": 145,
+            "defense": 179,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "よるのずく",
+        "name": "ヨルノズク"
+    },
+    {
+        "base": {
+            "attack": 72,
+            "defense": 142,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "レディアン"
+            }
+        ],
+        "hira": "れでぃば",
+        "name": "レディバ"
+    },
+    {
+        "base": {
+            "attack": 107,
+            "defense": 209,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "れでぃあん",
+        "name": "レディアン"
+    },
+    {
+        "base": {
+            "attack": 105,
+            "defense": 73,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アリアドス"
+            }
+        ],
+        "hira": "いとまる",
+        "name": "イトマル"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 128,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "ありあどす",
+        "name": "アリアドス"
+    },
+    {
+        "base": {
+            "attack": 194,
+            "defense": 178,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "くろばっと",
+        "name": "クロバット"
+    },
+    {
+        "base": {
+            "attack": 106,
+            "defense": 106,
+            "stamina": 150
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ランターン"
+            }
+        ],
+        "hira": "ちょんちー",
+        "name": "チョンチー"
+    },
+    {
+        "base": {
+            "attack": 146,
+            "defense": 146,
+            "stamina": 250
+        },
+        "evo": [],
+        "hira": "らんたーん",
+        "name": "ランターン"
+    },
+    {
+        "base": {
+            "attack": 77,
+            "defense": 63,
+            "stamina": 40
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ピカチュウ"
+            }
+        ],
+        "hira": "ぴちゅー",
+        "name": "ピチュー"
+    },
+    {
+        "base": {
+            "attack": 75,
+            "defense": 91,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ピッピ"
+            }
+        ],
+        "hira": "ぴぃ",
+        "name": "ピィ"
+    },
+    {
+        "base": {
+            "attack": 69,
+            "defense": 34,
+            "stamina": 180
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "プリン"
+            }
+        ],
+        "hira": "ぷぷりん",
+        "name": "ププリン"
+    },
+    {
+        "base": {
+            "attack": 67,
+            "defense": 116,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "トゲチック"
+            }
+        ],
+        "hira": "とげぴー",
+        "name": "トゲピー"
+    },
+    {
+        "base": {
+            "attack": 140,
+            "defense": 191,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "とげちっく",
+        "name": "トゲチック"
+    },
+    {
+        "base": {
+            "attack": 134,
+            "defense": 89,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ネイティオ"
+            }
+        ],
+        "hira": "ねいてぃ",
+        "name": "ネイティ"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 146,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ねいてぃお",
+        "name": "ネイティオ"
+    },
+    {
+        "base": {
+            "attack": 114,
+            "defense": 82,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "モココ"
+            }
+        ],
+        "hira": "めりーぷ",
+        "name": "メリープ"
+    },
+    {
+        "base": {
+            "attack": 145,
+            "defense": 112,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "デンリュウ"
+            }
+        ],
+        "hira": "もここ",
+        "name": "モココ"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 172,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "でんりゅう",
+        "name": "デンリュウ"
+    },
+    {
+        "base": {
+            "attack": 169,
+            "defense": 189,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "きれいはな",
+        "name": "キレイハナ"
+    },
+    {
+        "base": {
+            "attack": 37,
+            "defense": 93,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "マリルリ"
+            }
+        ],
+        "hira": "まりる",
+        "name": "マリル"
+    },
+    {
+        "base": {
+            "attack": 112,
+            "defense": 152,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "まりるり",
+        "name": "マリルリ"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 198,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "うそっきー",
+        "name": "ウソッキー"
+    },
+    {
+        "base": {
+            "attack": 174,
+            "defense": 192,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "にょろとの",
+        "name": "ニョロトノ"
+    },
+    {
+        "base": {
+            "attack": 67,
+            "defense": 101,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ポポッコ"
+            }
+        ],
+        "hira": "はねっこ",
+        "name": "ハネッコ"
+    },
+    {
+        "base": {
+            "attack": 91,
+            "defense": 127,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ワタッコ"
+            }
+        ],
+        "hira": "ぽぽっこ",
+        "name": "ポポッコ"
+    },
+    {
+        "base": {
+            "attack": 118,
+            "defense": 197,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "わたっこ",
+        "name": "ワタッコ"
+    },
+    {
+        "base": {
+            "attack": 136,
+            "defense": 112,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "えいぱむ",
+        "name": "エイパム"
+    },
+    {
+        "base": {
+            "attack": 55,
+            "defense": 55,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "たいようのいし",
+                "name": "キマワリ"
+            }
+        ],
+        "hira": "ひまなっつ",
+        "name": "ヒマナッツ"
+    },
+    {
+        "base": {
+            "attack": 185,
+            "defense": 148,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "きまわり",
+        "name": "キマワリ"
+    },
+    {
+        "base": {
+            "attack": 154,
+            "defense": 94,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "やんやんま",
+        "name": "ヤンヤンマ"
+    },
+    {
+        "base": {
+            "attack": 75,
+            "defense": 75,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ヌオー"
+            }
+        ],
+        "hira": "うぱー",
+        "name": "ウパー"
+    },
+    {
+        "base": {
+            "attack": 152,
+            "defense": 152,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ぬおー",
+        "name": "ヌオー"
+    },
+    {
+        "base": {
+            "attack": 261,
+            "defense": 194,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "えーふぃ",
+        "name": "エーフィ"
+    },
+    {
+        "base": {
+            "attack": 126,
+            "defense": 250,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ぶらっきー",
+        "name": "ブラッキー"
+    },
+    {
+        "base": {
+            "attack": 175,
+            "defense": 87,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "やみからす",
+        "name": "ヤミカラス"
+    },
+    {
+        "base": {
+            "attack": 177,
+            "defense": 194,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "やどきんぐ",
+        "name": "ヤドキング"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 167,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "むうま",
+        "name": "ムウマ"
+    },
+    {
+        "base": {
+            "attack": 136,
+            "defense": 91,
+            "stamina": 96
+        },
+        "evo": [],
+        "hira": "あんのーん",
+        "name": "アンノーン"
+    },
+    {
+        "base": {
+            "attack": 60,
+            "defense": 106,
+            "stamina": 380
+        },
+        "evo": [],
+        "hira": "そーなんす",
+        "name": "ソーナンス"
+    },
+    {
+        "base": {
+            "attack": 182,
+            "defense": 133,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "きりんりき",
+        "name": "キリンリキ"
+    },
+    {
+        "base": {
+            "attack": 108,
+            "defense": 146,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "フォレトス"
+            }
+        ],
+        "hira": "くぬぎぬま",
+        "name": "クヌギダマ"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 242,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "ふぉれとす",
+        "name": "フォレトス"
+    },
+    {
+        "base": {
+            "attack": 131,
+            "defense": 131,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "のこっち",
+        "name": "ノコッチ"
+    },
+    {
+        "base": {
+            "attack": 143,
+            "defense": 204,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぐらいがー",
+        "name": "グライガー"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 333,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "はがねーる",
+        "name": "ハガネール"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 89,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "グランブル"
+            }
+        ],
+        "hira": "ぶるー",
+        "name": "ブルー"
+    },
+    {
+        "base": {
+            "attack": 212,
+            "defense": 137,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "ぐらんぶる",
+        "name": "グランブル"
+    },
+    {
+        "base": {
+            "attack": 184,
+            "defense": 148,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "はりーせん",
+        "name": "ハリーセン"
+    },
+    {
+        "base": {
+            "attack": 236,
+            "defense": 191,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "はっさむ",
+        "name": "ハッサム"
+    },
+    {
+        "base": {
+            "attack": 17,
+            "defense": 396,
+            "stamina": 40
+        },
+        "evo": [],
+        "hira": "つぼつぼ",
+        "name": "ツボツボ"
+    },
+    {
+        "base": {
+            "attack": 234,
+            "defense": 189,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "へらくろす",
+        "name": "ヘラクロス"
+    },
+    {
+        "base": {
+            "attack": 189,
+            "defense": 157,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "にゅーら",
+        "name": "ニューラ"
+    },
+    {
+        "base": {
+            "attack": 142,
+            "defense": 93,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "リングマ"
+            }
+        ],
+        "hira": "ひめぐま",
+        "name": "ヒメグマ"
+    },
+    {
+        "base": {
+            "attack": 236,
+            "defense": 144,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "りんぐま",
+        "name": "リングマ"
+    },
+    {
+        "base": {
+            "attack": 118,
+            "defense": 71,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マグカルゴ"
+            }
+        ],
+        "hira": "まぐまっぐ",
+        "name": "マグマッグ"
+    },
+    {
+        "base": {
+            "attack": 139,
+            "defense": 209,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "まぐかるご",
+        "name": "マグカルゴ"
+    },
+    {
+        "base": {
+            "attack": 90,
+            "defense": 74,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "イノムー"
+            }
+        ],
+        "hira": "うりむー",
+        "name": "ウリムー"
+    },
+    {
+        "base": {
+            "attack": 181,
+            "defense": 147,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "いのむー",
+        "name": "イノムー"
+    },
+    {
+        "base": {
+            "attack": 118,
+            "defense": 156,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "さにーご",
+        "name": "サニーゴ"
+    },
+    {
+        "base": {
+            "attack": 127,
+            "defense": 69,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オクタン"
+            }
+        ],
+        "hira": "てっぽうお",
+        "name": "テッポウオ"
+    },
+    {
+        "base": {
+            "attack": 197,
+            "defense": 141,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "おくたん",
+        "name": "オクタン"
+    },
+    {
+        "base": {
+            "attack": 128,
+            "defense": 90,
+            "stamina": 90
+        },
+        "evo": [],
+        "hira": "でりばーど",
+        "name": "デリバード"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 260,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "まんたいん",
+        "name": "マンタイン"
+    },
+    {
+        "base": {
+            "attack": 148,
+            "defense": 260,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "えあーむど",
+        "name": "エアームド"
+    },
+    {
+        "base": {
+            "attack": 152,
+            "defense": 93,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ヘルガー"
+            }
+        ],
+        "hira": "でるびる",
+        "name": "デルビル"
+    },
+    {
+        "base": {
+            "attack": 224,
+            "defense": 159,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "へるがー",
+        "name": "ヘルガー"
+    },
+    {
+        "base": {
+            "attack": 194,
+            "defense": 194,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "きんぐどら",
+        "name": "キングドラ"
+    },
+    {
+        "base": {
+            "attack": 107,
+            "defense": 107,
+            "stamina": 180
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ドンファン"
+            }
+        ],
+        "hira": "ごまぞう",
+        "name": "ゴマゾウ"
+    },
+    {
+        "base": {
+            "attack": 214,
+            "defense": 214,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "どんふぁん",
+        "name": "ドンファン"
+    },
+    {
+        "base": {
+            "attack": 198,
+            "defense": 183,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "ぽりごん２",
+        "name": "ポリゴン２"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 132,
+            "stamina": 146
+        },
+        "evo": [],
+        "hira": "おどしし",
+        "name": "オドシシ"
+    },
+    {
+        "base": {
+            "attack": 40,
+            "defense": 88,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "どーぶる",
+        "name": "ドーブル"
+    },
+    {
+        "base": {
+            "attack": 64,
+            "defense": 64,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "サワムラー"
+            },
+            {
+                "candy": "25",
+                "item": "",
+                "name": "エビワラー"
+            },
+            {
+                "candy": 25,
+                "name": "カポエラー"
+            }
+        ],
+        "hira": "ばるきー",
+        "name": "バルキー"
+    },
+    {
+        "base": {
+            "attack": 173,
+            "defense": 214,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "かぽえらー",
+        "name": "カポエラー"
+    },
+    {
+        "base": {
+            "attack": 153,
+            "defense": 116,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ルージュラ"
+            }
+        ],
+        "hira": "むちゅーる",
+        "name": "ムチュール"
+    },
+    {
+        "base": {
+            "attack": 135,
+            "defense": 110,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "エレブー"
+            }
+        ],
+        "hira": "えれきっど",
+        "name": "エレキッド"
+    },
+    {
+        "base": {
+            "attack": 151,
+            "defense": 108,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ブーバー"
+            }
+        ],
+        "hira": "ぶびぃ",
+        "name": "ブビィ"
+    },
+    {
+        "base": {
+            "attack": 157,
+            "defense": 211,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "みるたんく",
+        "name": "ミルタンク"
+    },
+    {
+        "base": {
+            "attack": 129,
+            "defense": 229,
+            "stamina": 510
+        },
+        "evo": [],
+        "hira": "はぴなす",
+        "name": "ハピナス"
+    },
+    {
+        "base": {
+            "attack": 241,
+            "defense": 210,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "らいこう",
+        "name": "ライコウ"
+    },
+    {
+        "base": {
+            "attack": 235,
+            "defense": 176,
+            "stamina": 230
+        },
+        "evo": [],
+        "hira": "えんてい",
+        "name": "エンテイ"
+    },
+    {
+        "base": {
+            "attack": 180,
+            "defense": 235,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "すいくん",
+        "name": "スイクン"
+    },
+    {
+        "base": {
+            "attack": 115,
+            "defense": 93,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "サナギラス"
+            }
+        ],
+        "hira": "よーぎらす",
+        "name": "ヨーギラス"
+    },
+    {
+        "base": {
+            "attack": 155,
+            "defense": 133,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "バンギラス"
+            }
+        ],
+        "hira": "さなぎらす",
+        "name": "サナギラス"
+    },
+    {
+        "base": {
+            "attack": 251,
+            "defense": 212,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "ばんぎらす",
+        "name": "バンギラス"
+    },
+    {
+        "base": {
+            "attack": 193,
+            "defense": 323,
+            "stamina": 212
+        },
+        "evo": [],
+        "hira": "るぎあ",
+        "name": "ルギア"
+    },
+    {
+        "base": {
+            "attack": 239,
+            "defense": 274,
+            "stamina": 193
+        },
+        "evo": [],
+        "hira": "ほうおう",
+        "name": "ホウオウ"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 210,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "せれびぃ",
+        "name": "セレビィ"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 104,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ジュプトル"
+            }
+        ],
+        "hira": "きもり",
+        "name": "キモリ"
+    },
+    {
+        "base": {
+            "attack": 172,
+            "defense": 130,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ジュカイン"
+            }
+        ],
+        "hira": "じゅぷとる",
+        "name": "ジュプトル"
+    },
+    {
+        "base": {
+            "attack": 223,
+            "defense": 180,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "じゅかいん",
+        "name": "ジュカイン"
+    },
+    {
+        "base": {
+            "attack": 130,
+            "defense": 92,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ワカシャモ"
+            }
+        ],
+        "hira": "あちゃも",
+        "name": "アチャモ"
+    },
+    {
+        "base": {
+            "attack": 163,
+            "defense": 115,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "バシャーモ"
+            }
+        ],
+        "hira": "わかしゃも",
+        "name": "ワカシャモ"
+    },
+    {
+        "base": {
+            "attack": 240,
+            "defense": 141,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ばしゃーも",
+        "name": "バシャーモ"
+    },
+    {
+        "base": {
+            "attack": 126,
+            "defense": 93,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ヌマクロー"
+            }
+        ],
+        "hira": "みずごろう",
+        "name": "ミズゴロウ"
+    },
+    {
+        "base": {
+            "attack": 156,
+            "defense": 133,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ラグラージ"
+            }
+        ],
+        "hira": "ぬまくろー",
+        "name": "ヌマクロー"
+    },
+    {
+        "base": {
+            "attack": 208,
+            "defense": 175,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "らぐらーじ",
+        "name": "ラグラージ"
+    },
+    {
+        "base": {
+            "attack": 96,
+            "defense": 63,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "グラエナ"
+            }
+        ],
+        "hira": "ぽちえな",
+        "name": "ポチエナ"
+    },
+    {
+        "base": {
+            "attack": 171,
+            "defense": 137,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "ぐらえな",
+        "name": "グラエナ"
+    },
+    {
+        "base": {
+            "attack": 58,
+            "defense": 80,
+            "stamina": 76
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マッスグマ"
+            }
+        ],
+        "hira": "じぐざぐま",
+        "name": "ジグザグマ"
+    },
+    {
+        "base": {
+            "attack": 142,
+            "defense": 128,
+            "stamina": 156
+        },
+        "evo": [],
+        "hira": "まっすぐま",
+        "name": "マッスグマ"
+    },
+    {
+        "base": {
+            "attack": 75,
+            "defense": 61,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 12,
+                "item": "",
+                "name": "カラサリス"
+            },
+            {
+                "candy": "12",
+                "item": "",
+                "name": "マユルド"
+            }
+        ],
+        "hira": "けむっそ",
+        "name": "ケムッソ"
+    },
+    {
+        "base": {
+            "attack": 60,
+            "defense": 91,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アゲハント"
+            }
+        ],
+        "hira": "からさりす",
+        "name": "カラサリス"
+    },
+    {
+        "base": {
+            "attack": 189,
+            "defense": 98,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "あげはんと",
+        "name": "アゲハント"
+    },
+    {
+        "base": {
+            "attack": 60,
+            "defense": 91,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マユルド"
+            }
+        ],
+        "hira": "まゆるど",
+        "name": "マユルド"
+    },
+    {
+        "base": {
+            "attack": 98,
+            "defense": 172,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "どくけいる",
+        "name": "ドクケイル"
+    },
+    {
+        "base": {
+            "attack": 71,
+            "defense": 86,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ハスブレロ"
+            }
+        ],
+        "hira": "はすぼー",
+        "name": "ハスボー"
+    },
+    {
+        "base": {
+            "attack": 112,
+            "defense": 128,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ルンパッパ"
+            }
+        ],
+        "hira": "はすぶれろ",
+        "name": "ハスブレロ"
+    },
+    {
+        "base": {
+            "attack": 173,
+            "defense": 191,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "るんぱっぱ",
+        "name": "ルンパッパ"
+    },
+    {
+        "base": {
+            "attack": 71,
+            "defense": 86,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "コノハナ"
+            }
+        ],
+        "hira": "たねぼー",
+        "name": "タネボー"
+    },
+    {
+        "base": {
+            "attack": 134,
+            "defense": 78,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ダーテング"
+            }
+        ],
+        "hira": "このはな",
+        "name": "コノハナ"
+    },
+    {
+        "base": {
+            "attack": 200,
+            "defense": 121,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "だーてんぐ",
+        "name": "ダーテング"
+    },
+    {
+        "base": {
+            "attack": 106,
+            "defense": 61,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オオスバメ"
+            }
+        ],
+        "hira": "すばめ",
+        "name": "スバメ"
+    },
+    {
+        "base": {
+            "attack": 185,
+            "defense": 130,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "おおすばめ",
+        "name": "オオスバメ"
+    },
+    {
+        "base": {
+            "attack": 106,
+            "defense": 61,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ペリッパー"
+            }
+        ],
+        "hira": "きゃもめ",
+        "name": "キャモメ"
+    },
+    {
+        "base": {
+            "attack": 175,
+            "defense": 189,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ぺりっぱー",
+        "name": "ペリッパー"
+    },
+    {
+        "base": {
+            "attack": 79,
+            "defense": 63,
+            "stamina": 56
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "キルリア"
+            }
+        ],
+        "hira": "らるとす",
+        "name": "ラルトス"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 100,
+            "stamina": 76
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "サーナイト"
+            }
+        ],
+        "hira": "きるりあ",
+        "name": "キルリア"
+    },
+    {
+        "base": {
+            "attack": 237,
+            "defense": 220,
+            "stamina": 136
+        },
+        "evo": [],
+        "hira": "さーないと",
+        "name": "サーナイト"
+    },
+    {
+        "base": {
+            "attack": 93,
+            "defense": 97,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アメモース"
+            }
+        ],
+        "hira": "あめたま",
+        "name": "アメタマ"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 161,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "あめもーす",
+        "name": "アメモース"
+    },
+    {
+        "base": {
+            "attack": 74,
+            "defense": 110,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "キノガッサ"
+            }
+        ],
+        "hira": "きのここ",
+        "name": "キノココ"
+    },
+    {
+        "base": {
+            "attack": 241,
+            "defense": 153,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "きのがっさ",
+        "name": "キノガッサ"
+    },
+    {
+        "base": {
+            "attack": 104,
+            "defense": 104,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ヤルキモノ"
+            }
+        ],
+        "hira": "なまけろ",
+        "name": "ナマケロ"
+    },
+    {
+        "base": {
+            "attack": 159,
+            "defense": 159,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ケッキング"
+            }
+        ],
+        "hira": "やるきもの",
+        "name": "ヤルキモノ"
+    },
+    {
+        "base": {
+            "attack": 290,
+            "defense": 183,
+            "stamina": 273
+        },
+        "evo": [],
+        "hira": "けっきんぐ",
+        "name": "ケッキング"
+    },
+    {
+        "base": {
+            "attack": 80,
+            "defense": 153,
+            "stamina": 62
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "テッカニン"
+            },
+            {
+                "candy": "50",
+                "item": "",
+                "name": "ヌケニン"
+            }
+        ],
+        "hira": "つちにん",
+        "name": "ツチニン"
+    },
+    {
+        "base": {
+            "attack": 199,
+            "defense": 116,
+            "stamina": 122
+        },
+        "evo": [],
+        "hira": "てっかにん",
+        "name": "テッカニン"
+    },
+    {
+        "base": {
+            "attack": 153,
+            "defense": 80,
+            "stamina": 2
+        },
+        "evo": [],
+        "hira": "ぬけにん",
+        "name": "ヌケニン"
+    },
+    {
+        "base": {
+            "attack": 92,
+            "defense": 42,
+            "stamina": 128
+        },
+        "evo": [
+            {
+                "candy": 12,
+                "item": "",
+                "name": "ドゴーム"
+            }
+        ],
+        "hira": "ごにょにょ",
+        "name": "ゴニョニョ"
+    },
+    {
+        "base": {
+            "attack": 134,
+            "defense": 81,
+            "stamina": 168
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "バクオング"
+            }
+        ],
+        "hira": "どごーむ",
+        "name": "ドゴーム"
+    },
+    {
+        "base": {
+            "attack": 179,
+            "defense": 142,
+            "stamina": 208
+        },
+        "evo": [],
+        "hira": "ばくおんぐ",
+        "name": "バクオング"
+    },
+    {
+        "base": {
+            "attack": 99,
+            "defense": 54,
+            "stamina": 144
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ハリテヤマ"
+            }
+        ],
+        "hira": "まくのした",
+        "name": "マクノシタ"
+    },
+    {
+        "base": {
+            "attack": 209,
+            "defense": 114,
+            "stamina": 288
+        },
+        "evo": [],
+        "hira": "はりてやま",
+        "name": "ハリテヤマ"
+    },
+    {
+        "base": {
+            "attack": 36,
+            "defense": 71,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "マリル"
+            }
+        ],
+        "hira": "るりり",
+        "name": "ルリリ"
+    },
+    {
+        "base": {
+            "attack": 82,
+            "defense": 236,
+            "stamina": 60
+        },
+        "evo": [],
+        "hira": "のずぱす",
+        "name": "ノズパス"
+    },
+    {
+        "base": {
+            "attack": 84,
+            "defense": 84,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "エネコロロ"
+            }
+        ],
+        "hira": "えねこ",
+        "name": "エネコ"
+    },
+    {
+        "base": {
+            "attack": 127,
+            "defense": 127,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "えねころろ",
+        "name": "エネコロロ"
+    },
+    {
+        "base": {
+            "attack": 141,
+            "defense": 141,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "やみらみ",
+        "name": "ヤミラミ"
+    },
+    {
+        "base": {
+            "attack": 155,
+            "defense": 155,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "くちーと",
+        "name": "クチート"
+    },
+    {
+        "base": {
+            "attack": 121,
+            "defense": 168,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "コドラ"
+            }
+        ],
+        "hira": "ここどら",
+        "name": "ココドラ"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 240,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ボスゴドラ"
+            }
+        ],
+        "hira": "こどら",
+        "name": "コドラ"
+    },
+    {
+        "base": {
+            "attack": 198,
+            "defense": 314,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "ぼすごどら",
+        "name": "ボスゴドラ"
+    },
+    {
+        "base": {
+            "attack": 78,
+            "defense": 107,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "チャーレム"
+            }
+        ],
+        "hira": "あさなん",
+        "name": "アサナン"
+    },
+    {
+        "base": {
+            "attack": 121,
+            "defense": 152,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ちゃーれむ",
+        "name": "チャーレム"
+    },
+    {
+        "base": {
+            "attack": 123,
+            "defense": 78,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ライボルト"
+            }
+        ],
+        "hira": "らくらい",
+        "name": "ラクライ"
+    },
+    {
+        "base": {
+            "attack": 215,
+            "defense": 127,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "らいぼると",
+        "name": "ライボルト"
+    },
+    {
+        "base": {
+            "attack": 167,
+            "defense": 147,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ぷらする",
+        "name": "プラスル"
+    },
+    {
+        "base": {
+            "attack": 147,
+            "defense": 167,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "まいなん",
+        "name": "マイナン"
+    },
+    {
+        "base": {
+            "attack": 143,
+            "defense": 171,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ばるびーと",
+        "name": "バルビート"
+    },
+    {
+        "base": {
+            "attack": 143,
+            "defense": 171,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "いるみーぜ",
+        "name": "イルミーゼ"
+    },
+    {
+        "base": {
+            "attack": 186,
+            "defense": 148,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "ろぜりあ",
+        "name": "ロゼリア"
+    },
+    {
+        "base": {
+            "attack": 80,
+            "defense": 99,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "マルノーム"
+            }
+        ],
+        "hira": "ごくりん",
+        "name": "ゴクリン"
+    },
+    {
+        "base": {
+            "attack": 140,
+            "defense": 159,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "まるのーむ",
+        "name": "マルノーム"
+    },
+    {
+        "base": {
+            "attack": 171,
+            "defense": 39,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "サメハダー"
+            }
+        ],
+        "hira": "きばにあ",
+        "name": "キバニア"
+    },
+    {
+        "base": {
+            "attack": 243,
+            "defense": 83,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "さめはだー",
+        "name": "サメハダー"
+    },
+    {
+        "base": {
+            "attack": 136,
+            "defense": 68,
+            "stamina": 260
+        },
+        "evo": [
+            {
+                "candy": 400,
+                "item": "",
+                "name": "ホエルオー"
+            }
+        ],
+        "hira": "ほえるこ",
+        "name": "ホエルコ"
+    },
+    {
+        "base": {
+            "attack": 175,
+            "defense": 87,
+            "stamina": 340
+        },
+        "evo": [],
+        "hira": "ほえるおー",
+        "name": "ホエルオー"
+    },
+    {
+        "base": {
+            "attack": 119,
+            "defense": 82,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "バクーダ"
+            }
+        ],
+        "hira": "どんめる",
+        "name": "ドンメル"
+    },
+    {
+        "base": {
+            "attack": 194,
+            "defense": 139,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "ばくーだ",
+        "name": "バクーダ"
+    },
+    {
+        "base": {
+            "attack": 151,
+            "defense": 234,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "こーたす",
+        "name": "コータス"
+    },
+    {
+        "base": {
+            "attack": 125,
+            "defense": 145,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ブーピッグ"
+            }
+        ],
+        "hira": "ばねぶー",
+        "name": "バネブー"
+    },
+    {
+        "base": {
+            "attack": 171,
+            "defense": 211,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ぶーぴっぐ",
+        "name": "ブーピッグ"
+    },
+    {
+        "base": {
+            "attack": 116,
+            "defense": 116,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ぱっちーる",
+        "name": "パッチール"
+    },
+    {
+        "base": {
+            "attack": 162,
+            "defense": 78,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ビブラーバ"
+            }
+        ],
+        "hira": "なっくらー",
+        "name": "ナックラー"
+    },
+    {
+        "base": {
+            "attack": 134,
+            "defense": 99,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "フライゴン"
+            }
+        ],
+        "hira": "びぶらーば",
+        "name": "ビブラーバ"
+    },
+    {
+        "base": {
+            "attack": 205,
+            "defense": 168,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ふらいごん",
+        "name": "フライゴン"
+    },
+    {
+        "base": {
+            "attack": 156,
+            "defense": 74,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ノクタス"
+            }
+        ],
+        "hira": "さぼねあ",
+        "name": "サボネア"
+    },
+    {
+        "base": {
+            "attack": 221,
+            "defense": 115,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "のくたす",
+        "name": "ノクタス"
+    },
+    {
+        "base": {
+            "attack": 76,
+            "defense": 139,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 400,
+                "item": "",
+                "name": "チルタリス"
+            }
+        ],
+        "hira": "ちるっと",
+        "name": "チルット"
+    },
+    {
+        "base": {
+            "attack": 141,
+            "defense": 208,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "ちるたりす",
+        "name": "チルタリス"
+    },
+    {
+        "base": {
+            "attack": 222,
+            "defense": 124,
+            "stamina": 146
+        },
+        "evo": [],
+        "hira": "ざんぐーす",
+        "name": "ザングース"
+    },
+    {
+        "base": {
+            "attack": 196,
+            "defense": 118,
+            "stamina": 146
+        },
+        "evo": [],
+        "hira": "はぶねーく",
+        "name": "ハブネーク"
+    },
+    {
+        "base": {
+            "attack": 178,
+            "defense": 163,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "るなとーん",
+        "name": "ルナトーン"
+    },
+    {
+        "base": {
+            "attack": 178,
+            "defense": 163,
+            "stamina": 180
+        },
+        "evo": [],
+        "hira": "そるろっく",
+        "name": "ソルロック"
+    },
+    {
+        "base": {
+            "attack": 93,
+            "defense": 83,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ナマズン"
+            }
+        ],
+        "hira": "どじょっち",
+        "name": "ドジョッチ"
+    },
+    {
+        "base": {
+            "attack": 151,
+            "defense": 142,
+            "stamina": 220
+        },
+        "evo": [],
+        "hira": "なまずん",
+        "name": "ナマズン"
+    },
+    {
+        "base": {
+            "attack": 141,
+            "defense": 113,
+            "stamina": 86
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "シザリガー"
+            }
+        ],
+        "hira": "へいがに",
+        "name": "ヘイガニ"
+    },
+    {
+        "base": {
+            "attack": 224,
+            "defense": 156,
+            "stamina": 126
+        },
+        "evo": [],
+        "hira": "しざりがー",
+        "name": "シザリガー"
+    },
+    {
+        "base": {
+            "attack": 77,
+            "defense": 131,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ネンドール"
+            }
+        ],
+        "hira": "やじろん",
+        "name": "ヤジロン"
+    },
+    {
+        "base": {
+            "attack": 140,
+            "defense": 236,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "ねんどーる",
+        "name": "ネンドール"
+    },
+    {
+        "base": {
+            "attack": 105,
+            "defense": 154,
+            "stamina": 132
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ユレイドル"
+            }
+        ],
+        "hira": "りりーら",
+        "name": "リリーラ"
+    },
+    {
+        "base": {
+            "attack": 152,
+            "defense": 198,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "ゆれいどる",
+        "name": "ユレイドル"
+    },
+    {
+        "base": {
+            "attack": 176,
+            "defense": 100,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "アーマルド"
+            }
+        ],
+        "hira": "あのぷす",
+        "name": "アノプス"
+    },
+    {
+        "base": {
+            "attack": 222,
+            "defense": 183,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "あーまるど",
+        "name": "アーマルド"
+    },
+    {
+        "base": {
+            "attack": 29,
+            "defense": 102,
+            "stamina": 40
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ミロカロス"
+            }
+        ],
+        "hira": "ひんばす",
+        "name": "ヒンバス"
+    },
+    {
+        "base": {
+            "attack": 192,
+            "defense": 242,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "みろかろす",
+        "name": "ミロカロス"
+    },
+    {
+        "base": {
+            "attack": 139,
+            "defense": 139,
+            "stamina": 140
+        },
+        "evo": [],
+        "hira": "ぽわるん",
+        "name": "ポワルン"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 212,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "かくれおん",
+        "name": "カクレオン"
+    },
+    {
+        "base": {
+            "attack": 138,
+            "defense": 66,
+            "stamina": 88
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ジュペッタ"
+            }
+        ],
+        "hira": "かげぼうず",
+        "name": "カゲボウズ"
+    },
+    {
+        "base": {
+            "attack": 218,
+            "defense": 127,
+            "stamina": 128
+        },
+        "evo": [],
+        "hira": "じゅぺった",
+        "name": "ジュペッタ"
+    },
+    {
+        "base": {
+            "attack": 70,
+            "defense": 162,
+            "stamina": 40
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "サマヨール"
+            }
+        ],
+        "hira": "よまわる",
+        "name": "ヨマワル"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 234,
+            "stamina": 80
+        },
+        "evo": [],
+        "hira": "さまよーる",
+        "name": "サマヨール"
+    },
+    {
+        "base": {
+            "attack": 136,
+            "defense": 165,
+            "stamina": 198
+        },
+        "evo": [],
+        "hira": "とろぴうす",
+        "name": "トロピウス"
+    },
+    {
+        "base": {
+            "attack": 175,
+            "defense": 174,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "ちりーん",
+        "name": "チリーン"
+    },
+    {
+        "base": {
+            "attack": 246,
+            "defense": 120,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "あぶそる",
+        "name": "アブソル"
+    },
+    {
+        "base": {
+            "attack": 41,
+            "defense": 86,
+            "stamina": 190
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ソーナンス"
+            }
+        ],
+        "hira": "そーなの",
+        "name": "ソーナノ"
+    },
+    {
+        "base": {
+            "attack": 95,
+            "defense": 95,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "オニゴーリ"
+            }
+        ],
+        "hira": "ゆきわらし",
+        "name": "ユキワラシ"
+    },
+    {
+        "base": {
+            "attack": 162,
+            "defense": 162,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "おにごーり",
+        "name": "オニゴーリ"
+    },
+    {
+        "base": {
+            "attack": 95,
+            "defense": 90,
+            "stamina": 140
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "トドグラー"
+            }
+        ],
+        "hira": "たまざらし",
+        "name": "タマザラシ"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 132,
+            "stamina": 180
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "トドゼルガ"
+            }
+        ],
+        "hira": "とどぐらー",
+        "name": "トドグラー"
+    },
+    {
+        "base": {
+            "attack": 182,
+            "defense": 176,
+            "stamina": 220
+        },
+        "evo": [],
+        "hira": "とどぜるが",
+        "name": "トドゼルガ"
+    },
+    {
+        "base": {
+            "attack": 133,
+            "defense": 149,
+            "stamina": 70
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ハンテール"
+            },
+            {
+                "candy": "50",
+                "item": "",
+                "name": "サクラビス"
+            }
+        ],
+        "hira": "ぱーるる",
+        "name": "パールル"
+    },
+    {
+        "base": {
+            "attack": 197,
+            "defense": 194,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "はんてーる",
+        "name": "ハンテール"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 194,
+            "stamina": 110
+        },
+        "evo": [],
+        "hira": "さくらびす",
+        "name": "サクラビス"
+    },
+    {
+        "base": {
+            "attack": 162,
+            "defense": 234,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "じーらんす",
+        "name": "ジーランス"
+    },
+    {
+        "base": {
+            "attack": 81,
+            "defense": 134,
+            "stamina": 86
+        },
+        "evo": [],
+        "hira": "らぶかす",
+        "name": "ラブカス"
+    },
+    {
+        "base": {
+            "attack": 134,
+            "defense": 107,
+            "stamina": 90
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "コモルー"
+            }
+        ],
+        "hira": "たつべい",
+        "name": "タツベイ"
+    },
+    {
+        "base": {
+            "attack": 172,
+            "defense": 179,
+            "stamina": 130
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ボーマンダ"
+            }
+        ],
+        "hira": "こもるー",
+        "name": "コモルー"
+    },
+    {
+        "base": {
+            "attack": 277,
+            "defense": 168,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ぼーまんだ",
+        "name": "ボーマンダ"
+    },
+    {
+        "base": {
+            "attack": 96,
+            "defense": 141,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "メタング"
+            }
+        ],
+        "hira": "だんばる",
+        "name": "ダンバル"
+    },
+    {
+        "base": {
+            "attack": 138,
+            "defense": 185,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "メタグロス"
+            }
+        ],
+        "hira": "めたんぐ",
+        "name": "メタング"
+    },
+    {
+        "base": {
+            "attack": 257,
+            "defense": 247,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "めたぐろす",
+        "name": "メタグロス"
+    },
+    {
+        "base": {
+            "attack": 179,
+            "defense": 356,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "れじろっく",
+        "name": "レジロック"
+    },
+    {
+        "base": {
+            "attack": 179,
+            "defense": 356,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "れじあいす",
+        "name": "レジアイス"
+    },
+    {
+        "base": {
+            "attack": 143,
+            "defense": 285,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "れじすちる",
+        "name": "レジスチル"
+    },
+    {
+        "base": {
+            "attack": 228,
+            "defense": 268,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "らてぃあす",
+        "name": "ラティアス"
+    },
+    {
+        "base": {
+            "attack": 268,
+            "defense": 228,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "らてぃおす",
+        "name": "ラティオス"
+    },
+    {
+        "base": {
+            "attack": 270,
+            "defense": 251,
+            "stamina": 182
+        },
+        "evo": [],
+        "hira": "かいおーが",
+        "name": "カイオーガ"
+    },
+    {
+        "base": {
+            "attack": 270,
+            "defense": 251,
+            "stamina": 182
+        },
+        "evo": [],
+        "hira": "ぐらーどん",
+        "name": "グラードン"
+    },
+    {
+        "base": {
+            "attack": 284,
+            "defense": 170,
+            "stamina": 191
+        },
+        "evo": [],
+        "hira": "れっくうざ",
+        "name": "レックウザ"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 210,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "じらーち",
+        "name": "ジラーチ"
+    },
+    {
+        "base": {
+            "attack": 345,
+            "defense": 115,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "でおきしす（のーまる）",
+        "name": "デオキシス（ノーマル）"
+    },
+    {
+        "base": {
+            "attack": 414,
+            "defense": 46,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "でおきしす（あたっく）",
+        "name": "デオキシス（アタック）"
+    },
+    {
+        "base": {
+            "attack": 144,
+            "defense": 330,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "でおきしす（でぃふぇんす）",
+        "name": "デオキシス（ディフェンス）"
+    },
+    {
+        "base": {
+            "attack": 230,
+            "defense": 218,
+            "stamina": 100
+        },
+        "evo": [],
+        "hira": "でおきしす（すぴーど）",
+        "name": "デオキシス（スピード）"
+    },
+    {
+        "base": {
+            "attack": 119,
+            "defense": 110,
+            "stamina": 146
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ハヤシガメ"
+            }
+        ],
+        "hira": "なえとる",
+        "name": "ナエトル"
+    },
+    {
+        "base": {
+            "attack": 157,
+            "defense": 143,
+            "stamina": 181
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ドダイトス"
+            }
+        ],
+        "hira": "はやしがめ",
+        "name": "ハヤシガメ"
+    },
+    {
+        "base": {
+            "attack": 202,
+            "defense": 188,
+            "stamina": 216
+        },
+        "evo": [],
+        "hira": "どだいとす",
+        "name": "ドダイトス"
+    },
+    {
+        "base": {
+            "attack": 113,
+            "defense": 86,
+            "stamina": 127
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "モウカザル"
+            }
+        ],
+        "hira": "ひこざる",
+        "name": "ヒコザル"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 105,
+            "stamina": 162
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ゴウカザル"
+            }
+        ],
+        "hira": "もうかざる",
+        "name": "モウカザル"
+    },
+    {
+        "base": {
+            "attack": 222,
+            "defense": 151,
+            "stamina": 183
+        },
+        "evo": [],
+        "hira": "ごうかざる",
+        "name": "ゴウカザル"
+    },
+    {
+        "base": {
+            "attack": 112,
+            "defense": 102,
+            "stamina": 142
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ポッタイシ"
+            }
+        ],
+        "hira": "ぽっちゃま",
+        "name": "ポッチャマ"
+    },
+    {
+        "base": {
+            "attack": 150,
+            "defense": 139,
+            "stamina": 162
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "エンペルト"
+            }
+        ],
+        "hira": "ぽったいし",
+        "name": "ポッタイシ"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 186,
+            "stamina": 197
+        },
+        "evo": [],
+        "hira": "えんぺると",
+        "name": "エンペルト"
+    },
+    {
+        "base": {
+            "attack": 101,
+            "defense": 58,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ムクバード"
+            }
+        ],
+        "hira": "むっくる",
+        "name": "ムックル"
+    },
+    {
+        "base": {
+            "attack": 142,
+            "defense": 94,
+            "stamina": 146
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ムクホーク"
+            }
+        ],
+        "hira": "むくばーど",
+        "name": "ムクバード"
+    },
+    {
+        "base": {
+            "attack": 234,
+            "defense": 131,
+            "stamina": 198
+        },
+        "evo": [],
+        "hira": "むくほーく",
+        "name": "ムクホーク"
+    },
+    {
+        "base": {
+            "attack": 80,
+            "defense": 73,
+            "stamina": 153
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ビーダル"
+            }
+        ],
+        "hira": "びっぱ",
+        "name": "ビッパ"
+    },
+    {
+        "base": {
+            "attack": 162,
+            "defense": 119,
+            "stamina": 188
+        },
+        "evo": [],
+        "hira": "びーだる",
+        "name": "ビーダル"
+    },
+    {
+        "base": {
+            "attack": 45,
+            "defense": 74,
+            "stamina": 114
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "コロトック"
+            }
+        ],
+        "hira": "ころぼーし",
+        "name": "コロボーシ"
+    },
+    {
+        "base": {
+            "attack": 160,
+            "defense": 100,
+            "stamina": 184
+        },
+        "evo": [],
+        "hira": "ころとっく",
+        "name": "コロトック"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 64,
+            "stamina": 128
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ルクシオ"
+            }
+        ],
+        "hira": "こりんく",
+        "name": "コリンク"
+    },
+    {
+        "base": {
+            "attack": 159,
+            "defense": 95,
+            "stamina": 155
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "レントラー"
+            }
+        ],
+        "hira": "るくしお",
+        "name": "ルクシオ"
+    },
+    {
+        "base": {
+            "attack": 232,
+            "defense": 156,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "れんとらー",
+        "name": "レントラー"
+    },
+    {
+        "base": {
+            "attack": 91,
+            "defense": 109,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ロズレイド"
+            }
+        ],
+        "hira": "すぼみー",
+        "name": "スボミー"
+    },
+    {
+        "base": {
+            "attack": 243,
+            "defense": 178,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "ろずれいど",
+        "name": "ロズレイド"
+    },
+    {
+        "base": {
+            "attack": 218,
+            "defense": 71,
+            "stamina": 167
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ラムパルド"
+            }
+        ],
+        "hira": "ずがいどす",
+        "name": "ズガイドス"
+    },
+    {
+        "base": {
+            "attack": 295,
+            "defense": 109,
+            "stamina": 219
+        },
+        "evo": [],
+        "hira": "らむぱるど",
+        "name": "ラムパルド"
+    },
+    {
+        "base": {
+            "attack": 76,
+            "defense": 195,
+            "stamina": 102
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "トリデプス"
+            }
+        ],
+        "hira": "たてとぷす",
+        "name": "タテトプス"
+    },
+    {
+        "base": {
+            "attack": 94,
+            "defense": 286,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "とりでぷす",
+        "name": "トリデプス"
+    },
+    {
+        "base": {
+            "attack": 53,
+            "defense": 83,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ミノマダム（くさきのミノ）"
+            },
+            {
+                "candy": "ミノマダム（すなちのミノ）",
+                "item": "50",
+                "name": ""
+            },
+            {
+                "candy": 50,
+                "name": "ミノマダム（ゴミのミノ）"
+            },
+            {
+                "candy": "ガーメイル",
+                "name": ""
+            },
+            {
+                "candy": 0,
+                "name": "50"
+            }
+        ],
+        "hira": "みのむっち",
+        "name": "ミノムッチ"
+    },
+    {
+        "base": {
+            "attack": 141,
+            "defense": 180,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "みのまだむ（くさきのみの）",
+        "name": "ミノマダム（くさきのミノ）"
+    },
+    {
+        "base": {
+            "attack": 141,
+            "defense": 180,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "みのまだむ（すなちのみの）",
+        "name": "ミノマダム（すなちのミノ）"
+    },
+    {
+        "base": {
+            "attack": 127,
+            "defense": 175,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "みのまだむ（ごみのみの）",
+        "name": "ミノマダム（ゴミのミノ）"
+    },
+    {
+        "base": {
+            "attack": 185,
+            "defense": 98,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "がーめいる",
+        "name": "ガーメイル"
+    },
+    {
+        "base": {
+            "attack": 59,
+            "defense": 83,
+            "stamina": 102
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ビークイン"
+            }
+        ],
+        "hira": "みつはにー",
+        "name": "ミツハニー"
+    },
+    {
+        "base": {
+            "attack": 149,
+            "defense": 190,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "びーくいん",
+        "name": "ビークイン"
+    },
+    {
+        "base": {
+            "attack": 94,
+            "defense": 172,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "ぱちりす",
+        "name": "パチリス"
+    },
+    {
+        "base": {
+            "attack": 132,
+            "defense": 67,
+            "stamina": 146
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "フローゼル"
+            }
+        ],
+        "hira": "ぶいぜる",
+        "name": "ブイゼル"
+    },
+    {
+        "base": {
+            "attack": 221,
+            "defense": 114,
+            "stamina": 198
+        },
+        "evo": [],
+        "hira": "ふろーぜる",
+        "name": "フローゼル"
+    },
+    {
+        "base": {
+            "attack": 108,
+            "defense": 92,
+            "stamina": 128
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "チェリム"
+            }
+        ],
+        "hira": "ちゅりんぼ",
+        "name": "チェリンボ"
+    },
+    {
+        "base": {
+            "attack": 170,
+            "defense": 153,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "ちゅりむ",
+        "name": "チェリム"
+    },
+    {
+        "base": {
+            "attack": 103,
+            "defense": 105,
+            "stamina": 183
+        },
+        "evo": [],
+        "hira": "からなくし",
+        "name": "カラナクシ"
+    },
+    {
+        "base": {
+            "attack": 169,
+            "defense": 143,
+            "stamina": 244
+        },
+        "evo": [],
+        "hira": "とりとどん",
+        "name": "トリトドン"
+    },
+    {
+        "base": {
+            "attack": 205,
+            "defense": 143,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "えてぼーす",
+        "name": "エテボース"
+    },
+    {
+        "base": {
+            "attack": 117,
+            "defense": 80,
+            "stamina": 207
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "フワライド"
+            }
+        ],
+        "hira": "ふわんて",
+        "name": "フワンテ"
+    },
+    {
+        "base": {
+            "attack": 180,
+            "defense": 102,
+            "stamina": 312
+        },
+        "evo": [],
+        "hira": "ふわらんど",
+        "name": "フワライド"
+    },
+    {
+        "base": {
+            "attack": 130,
+            "defense": 105,
+            "stamina": 146
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ミミロップ"
+            }
+        ],
+        "hira": "みみろる",
+        "name": "ミミロル"
+    },
+    {
+        "base": {
+            "attack": 156,
+            "defense": 194,
+            "stamina": 163
+        },
+        "evo": [],
+        "hira": "みみろっぷ",
+        "name": "ミミロップ"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 187,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "むうまーじ",
+        "name": "ムウマージ"
+    },
+    {
+        "base": {
+            "attack": 243,
+            "defense": 103,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "どんからす",
+        "name": "ドンカラス"
+    },
+    {
+        "base": {
+            "attack": 109,
+            "defense": 82,
+            "stamina": 135
+        },
+        "evo": [],
+        "hira": "にゃるまー",
+        "name": "ニャルマー"
+    },
+    {
+        "base": {
+            "attack": 172,
+            "defense": 133,
+            "stamina": 174
+        },
+        "evo": [],
+        "hira": "ぶにゃっと",
+        "name": "ブニャット"
+    },
+    {
+        "base": {
+            "attack": 114,
+            "defense": 94,
+            "stamina": 128
+        },
+        "evo": [],
+        "hira": "りーしゃん",
+        "name": "リーシャン"
+    },
+    {
+        "base": {
+            "attack": 121,
+            "defense": 90,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "スカタンク"
+            }
+        ],
+        "hira": "すかんぷー",
+        "name": "スカンプー"
+    },
+    {
+        "base": {
+            "attack": 184,
+            "defense": 132,
+            "stamina": 230
+        },
+        "evo": [],
+        "hira": "すかたんく",
+        "name": "スカタンク"
+    },
+    {
+        "base": {
+            "attack": 43,
+            "defense": 154,
+            "stamina": 149
+        },
+        "evo": [],
+        "hira": "どーみらー",
+        "name": "ドーミラー"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 213,
+            "stamina": 167
+        },
+        "evo": [],
+        "hira": "どーたくん",
+        "name": "ドータクン"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 133,
+            "stamina": 137
+        },
+        "evo": [],
+        "hira": "うそはち",
+        "name": "ウソハチ"
+    },
+    {
+        "base": {
+            "attack": 125,
+            "defense": 142,
+            "stamina": 85
+        },
+        "evo": [],
+        "hira": "まねね",
+        "name": "マネネ"
+    },
+    {
+        "base": {
+            "attack": 25,
+            "defense": 77,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "ぴんぷく",
+        "name": "ピンプク"
+    },
+    {
+        "base": {
+            "attack": 183,
+            "defense": 91,
+            "stamina": 183
+        },
+        "evo": [],
+        "hira": "ぺらっぷ",
+        "name": "ペラップ"
+    },
+    {
+        "base": {
+            "attack": 169,
+            "defense": 199,
+            "stamina": 137
+        },
+        "evo": [],
+        "hira": "みかるげ",
+        "name": "ミカルゲ"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 84,
+            "stamina": 151
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ガバイト"
+            }
+        ],
+        "hira": "ふかまる",
+        "name": "フカマル"
+    },
+    {
+        "base": {
+            "attack": 172,
+            "defense": 125,
+            "stamina": 169
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ガブリアス"
+            }
+        ],
+        "hira": "がばいと",
+        "name": "ガバイト"
+    },
+    {
+        "base": {
+            "attack": 261,
+            "defense": 193,
+            "stamina": 239
+        },
+        "evo": [],
+        "hira": "がぶりあす",
+        "name": "ガブリアス"
+    },
+    {
+        "base": {
+            "attack": 137,
+            "defense": 117,
+            "stamina": 286
+        },
+        "evo": [],
+        "hira": "ごんべ",
+        "name": "ゴンベ"
+    },
+    {
+        "base": {
+            "attack": 127,
+            "defense": 78,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ルカリオ"
+            }
+        ],
+        "hira": "りおる",
+        "name": "リオル"
+    },
+    {
+        "base": {
+            "attack": 236,
+            "defense": 144,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "るかりお",
+        "name": "ルカリオ"
+    },
+    {
+        "base": {
+            "attack": 124,
+            "defense": 118,
+            "stamina": 169
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "カバルドン"
+            }
+        ],
+        "hira": "ひぽぽたす",
+        "name": "ヒポポタス"
+    },
+    {
+        "base": {
+            "attack": 201,
+            "defense": 191,
+            "stamina": 239
+        },
+        "evo": [],
+        "hira": "かばるどん",
+        "name": "カバルドン"
+    },
+    {
+        "base": {
+            "attack": 93,
+            "defense": 151,
+            "stamina": 120
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ドラピオン"
+            }
+        ],
+        "hira": "すこるぴ",
+        "name": "スコルピ"
+    },
+    {
+        "base": {
+            "attack": 180,
+            "defense": 202,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "どらぴおん",
+        "name": "ドラピオン"
+    },
+    {
+        "base": {
+            "attack": 116,
+            "defense": 76,
+            "stamina": 134
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ドクロッグ"
+            }
+        ],
+        "hira": "ぐれっぐる",
+        "name": "グレッグル"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 133,
+            "stamina": 195
+        },
+        "evo": [],
+        "hira": "どくろっぐ",
+        "name": "ドクロッグ"
+    },
+    {
+        "base": {
+            "attack": 187,
+            "defense": 136,
+            "stamina": 179
+        },
+        "evo": [],
+        "hira": "ますきっぱ",
+        "name": "マスキッパ"
+    },
+    {
+        "base": {
+            "attack": 96,
+            "defense": 116,
+            "stamina": 135
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ネオラント"
+            }
+        ],
+        "hira": "けいこうお",
+        "name": "ケイコウオ"
+    },
+    {
+        "base": {
+            "attack": 142,
+            "defense": 170,
+            "stamina": 170
+        },
+        "evo": [],
+        "hira": "ねおらんと",
+        "name": "ネオラント"
+    },
+    {
+        "base": {
+            "attack": 105,
+            "defense": 179,
+            "stamina": 128
+        },
+        "evo": [],
+        "hira": "たまんた",
+        "name": "タマンタ"
+    },
+    {
+        "base": {
+            "attack": 115,
+            "defense": 105,
+            "stamina": 155
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ユキノオー"
+            }
+        ],
+        "hira": "ゆきかぶり",
+        "name": "ユキカブリ"
+    },
+    {
+        "base": {
+            "attack": 178,
+            "defense": 158,
+            "stamina": 207
+        },
+        "evo": [],
+        "hira": "ゆきのおー",
+        "name": "ユキノオー"
+    },
+    {
+        "base": {
+            "attack": 243,
+            "defense": 171,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "まにゅーら",
+        "name": "マニューラ"
+    },
+    {
+        "base": {
+            "attack": 238,
+            "defense": 205,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "じばこいる",
+        "name": "ジバコイル"
+    },
+    {
+        "base": {
+            "attack": 161,
+            "defense": 181,
+            "stamina": 242
+        },
+        "evo": [],
+        "hira": "べろべると",
+        "name": "ベロベルト"
+    },
+    {
+        "base": {
+            "attack": 241,
+            "defense": 190,
+            "stamina": 251
+        },
+        "evo": [],
+        "hira": "どさいどん",
+        "name": "ドサイドン"
+    },
+    {
+        "base": {
+            "attack": 207,
+            "defense": 184,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "もじゃんぼ",
+        "name": "モジャンボ"
+    },
+    {
+        "base": {
+            "attack": 249,
+            "defense": 163,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "えれきぶる",
+        "name": "エレキブル"
+    },
+    {
+        "base": {
+            "attack": 247,
+            "defense": 172,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "ぶーばーん",
+        "name": "ブーバーン"
+    },
+    {
+        "base": {
+            "attack": 225,
+            "defense": 217,
+            "stamina": 198
+        },
+        "evo": [],
+        "hira": "とげきっす",
+        "name": "トゲキッス"
+    },
+    {
+        "base": {
+            "attack": 231,
+            "defense": 156,
+            "stamina": 200
+        },
+        "evo": [],
+        "hira": "めがやんま",
+        "name": "メガヤンマ"
+    },
+    {
+        "base": {
+            "attack": 216,
+            "defense": 219,
+            "stamina": 163
+        },
+        "evo": [],
+        "hira": "りーふぃあ",
+        "name": "リーフィア"
+    },
+    {
+        "base": {
+            "attack": 238,
+            "defense": 205,
+            "stamina": 163
+        },
+        "evo": [],
+        "hira": "ぐれいしあ",
+        "name": "グレイシア"
+    },
+    {
+        "base": {
+            "attack": 185,
+            "defense": 222,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "ぐらいおん",
+        "name": "グライオン"
+    },
+    {
+        "base": {
+            "attack": 247,
+            "defense": 146,
+            "stamina": 242
+        },
+        "evo": [],
+        "hira": "まんむー",
+        "name": "マンムー"
+    },
+    {
+        "base": {
+            "attack": 264,
+            "defense": 150,
+            "stamina": 198
+        },
+        "evo": [],
+        "hira": "ぽりごんZ",
+        "name": "ポリゴンZ"
+    },
+    {
+        "base": {
+            "attack": 237,
+            "defense": 195,
+            "stamina": 169
+        },
+        "evo": [],
+        "hira": "えるれいど",
+        "name": "エルレイド"
+    },
+    {
+        "base": {
+            "attack": 135,
+            "defense": 275,
+            "stamina": 155
+        },
+        "evo": [],
+        "hira": "だいのーず",
+        "name": "ダイノーズ"
+    },
+    {
+        "base": {
+            "attack": 180,
+            "defense": 254,
+            "stamina": 128
+        },
+        "evo": [],
+        "hira": "よのわーる",
+        "name": "ヨノワール"
+    },
+    {
+        "base": {
+            "attack": 171,
+            "defense": 150,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "ゆきめのこ",
+        "name": "ユキメノコ"
+    },
+    {
+        "base": {
+            "attack": 185,
+            "defense": 159,
+            "stamina": 137
+        },
+        "evo": [],
+        "hira": "ろとむ（つうじょう）",
+        "name": "ロトム（通常）"
+    },
+    {
+        "base": {
+            "attack": 204,
+            "defense": 219,
+            "stamina": 137
+        },
+        "evo": [],
+        "hira": "ろとむ（そのた）",
+        "name": "ロトム（その他）"
+    },
+    {
+        "base": {
+            "attack": 156,
+            "defense": 270,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "ゆくしー",
+        "name": "ユクシー"
+    },
+    {
+        "base": {
+            "attack": 212,
+            "defense": 212,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "えむりっと",
+        "name": "エムリット"
+    },
+    {
+        "base": {
+            "attack": 270,
+            "defense": 151,
+            "stamina": 181
+        },
+        "evo": [],
+        "hira": "あぐのむ",
+        "name": "アグノム"
+    },
+    {
+        "base": {
+            "attack": 302,
+            "defense": 232,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "でぃあるが",
+        "name": "ディアルガ"
+    },
+    {
+        "base": {
+            "attack": 308,
+            "defense": 236,
+            "stamina": 207
+        },
+        "evo": [],
+        "hira": "ぱるきあ",
+        "name": "パルキア"
+    },
+    {
+        "base": {
+            "attack": 251,
+            "defense": 213,
+            "stamina": 209
+        },
+        "evo": [],
+        "hira": "ひーどらん",
+        "name": "ヒードラン"
+    },
+    {
+        "base": {
+            "attack": 286,
+            "defense": 210,
+            "stamina": 220
+        },
+        "evo": [],
+        "hira": "れじぎがす",
+        "name": "レジギガス"
+    },
+    {
+        "base": {
+            "attack": 187,
+            "defense": 225,
+            "stamina": 284
+        },
+        "evo": [],
+        "hira": "ぎらてぃな（あなざー）",
+        "name": "ギラティナ（アナザー）"
+    },
+    {
+        "base": {
+            "attack": 225,
+            "defense": 187,
+            "stamina": 284
+        },
+        "evo": [],
+        "hira": "ぎらてぃな（おりじん）",
+        "name": "ギラティナ（オリジン）"
+    },
+    {
+        "base": {
+            "attack": 152,
+            "defense": 258,
+            "stamina": 260
+        },
+        "evo": [],
+        "hira": "くれせりあ",
+        "name": "クレセリア"
+    },
+    {
+        "base": {
+            "attack": 162,
+            "defense": 162,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "ふぃおね",
+        "name": "フィオネ"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 210,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "まなふぃ",
+        "name": "マナフィ"
+    },
+    {
+        "base": {
+            "attack": 285,
+            "defense": 198,
+            "stamina": 172
+        },
+        "evo": [],
+        "hira": "だーくらい",
+        "name": "ダークライ"
+    },
+    {
+        "base": {
+            "attack": 210,
+            "defense": 210,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "しぇいみ（らんど）",
+        "name": "シェイミ（ランド）"
+    },
+    {
+        "base": {
+            "attack": 261,
+            "defense": 166,
+            "stamina": 225
+        },
+        "evo": [],
+        "hira": "しぇいみ（すかい）",
+        "name": "シェイミ（スカイ）"
+    },
+    {
+        "base": {
+            "attack": 238,
+            "defense": 238,
+            "stamina": 236
+        },
+        "evo": [],
+        "hira": "あるせうす",
+        "name": "アルセウス"
+    },
+    {
+        "base": {
+            "attack": 103,
+            "defense": 70,
+            "stamina": 60
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ラッタ（アローラ）"
+            }
+        ],
+        "hira": "こらった（あろーら）",
+        "name": "コラッタ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 135,
+            "defense": 159,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "らった（あろーら）",
+        "name": "ラッタ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 201,
+            "defense": 172,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "らいちゅう（あろーら）",
+        "name": "ライチュウ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 125,
+            "defense": 154,
+            "stamina": 100
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "サンドパン（アローラ）"
+            }
+        ],
+        "hira": "さんど（あろーら）",
+        "name": "サンド（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 177,
+            "defense": 221,
+            "stamina": 150
+        },
+        "evo": [],
+        "hira": "さんどぱん（あろーら）",
+        "name": "サンドパン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 96,
+            "defense": 122,
+            "stamina": 76
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "キュウコン（アローラ）"
+            }
+        ],
+        "hira": "ろこん（あろーら）",
+        "name": "ロコン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 170,
+            "defense": 207,
+            "stamina": 146
+        },
+        "evo": [],
+        "hira": "きゅうこん（あろーら）",
+        "name": "キュウコン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 109,
+            "defense": 89,
+            "stamina": 20
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ダグトリオ（アローラ）"
+            }
+        ],
+        "hira": "でぃぐだ（あろーら）",
+        "name": "ディグダ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 201,
+            "defense": 148,
+            "stamina": 70
+        },
+        "evo": [],
+        "hira": "だぐとりお（あろーら）",
+        "name": "ダグトリオ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 99,
+            "defense": 81,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ペルシアン（アローラ）"
+            }
+        ],
+        "hira": "にゃーす（あろーら）",
+        "name": "ニャース（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 158,
+            "defense": 139,
+            "stamina": 130
+        },
+        "evo": [],
+        "hira": "ぺるしあん（あろーら）",
+        "name": "ペルシアン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 132,
+            "defense": 163,
+            "stamina": 80
+        },
+        "evo": [
+            {
+                "candy": 25,
+                "item": "",
+                "name": "ゴローン（アローラ）"
+            }
+        ],
+        "hira": "いしつぶて（あろーら）",
+        "name": "イシツブテ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 164,
+            "defense": 196,
+            "stamina": 110
+        },
+        "evo": [
+            {
+                "candy": 100,
+                "item": "",
+                "name": "ゴローニャ（アローラ）"
+            }
+        ],
+        "hira": "ごろーん（あろーら）",
+        "name": "ゴローン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 211,
+            "defense": 229,
+            "stamina": 160
+        },
+        "evo": [],
+        "hira": "ごろーにゃ（あろーら）",
+        "name": "ゴローニャ（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 135,
+            "defense": 90,
+            "stamina": 160
+        },
+        "evo": [
+            {
+                "candy": 50,
+                "item": "",
+                "name": "ベトベトン（アローラ）"
+            }
+        ],
+        "hira": "べとべたー（あろーら）",
+        "name": "ベトベター（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 190,
+            "defense": 184,
+            "stamina": 210
+        },
+        "evo": [],
+        "hira": "べとべとん（あろーら）",
+        "name": "ベトベトン（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 230,
+            "defense": 158,
+            "stamina": 190
+        },
+        "evo": [],
+        "hira": "なっしー（あろーら）",
+        "name": "ナッシー（アローラ）"
+    },
+    {
+        "base": {
+            "attack": 144,
+            "defense": 200,
+            "stamina": 120
+        },
+        "evo": [],
+        "hira": "がらがら（あろーら）",
+        "name": "ガラガラ（アローラ）"
+    }
+]
