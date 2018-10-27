@@ -83,7 +83,7 @@ $(document).ready(function(){
         xhr.onerror = function (e) {
             console.error(xhr.statusText);
         }
-        
+
         var atk = $('#select-atk');
         var def = $('#select-def');
         var sta = $('#select-sta');
@@ -141,7 +141,7 @@ $(document).ready(function(){
             evolvednameary.push({name: input.name, candy: 0});
         } else {
             var evoary = getEvolutionData(input.name, 0);
-            if (evoary) {
+            if (evoary && evoary.length > 0) {
                 evolvednameary = evoary;
             } else {
                 evolvednameary.push({name: input.name, candy: 0});
@@ -195,7 +195,7 @@ $(document).ready(function(){
             evolvednameary.push({name: input.name, candy: 0});
         } else {
             var evoary = getEvolutionData(input.name, 0);
-            if (evoary) {
+            if (evoary && evoary.length > 0) {
                 evolvednameary = evoary;
             } else {
                 evolvednameary.push({name: input.name, candy: 0});
