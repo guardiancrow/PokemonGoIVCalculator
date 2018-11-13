@@ -141,7 +141,7 @@ $(document).ready(function(){
             evolvednameary.push({name: input.name, candy: 0});
         } else {
             var evoary = getEvolutionData(input.name, 0);
-            if (evoary && evoary.length > 0) {
+            if (evoary && evoary[0].candy > 0) {
                 evolvednameary = evoary;
             } else {
                 evolvednameary.push({name: input.name, candy: 0});
@@ -195,7 +195,7 @@ $(document).ready(function(){
             evolvednameary.push({name: input.name, candy: 0});
         } else {
             var evoary = getEvolutionData(input.name, 0);
-            if (evoary && evoary.length > 0) {
+            if (evoary && evoary[0].candy > 0) {
                 evolvednameary = evoary;
             } else {
                 evolvednameary.push({name: input.name, candy: 0});

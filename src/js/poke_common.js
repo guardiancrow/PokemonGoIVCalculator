@@ -12,7 +12,7 @@ var getEvolutionName = function(name) {
     var res = null;
     $.each(pokedex, function(idx, data) {
         if (name == data['name']) {
-            if (data['evo']) {
+            if (data['evo'] && data['evo'].length > 0) {
                 res = getEvolutionName(data['evo']);
                 if (!res) {
                     res = data['evo'];
@@ -27,7 +27,7 @@ var getEvolutionData = function(name, candy) {
     var res = null;
     $.each(pokedex, function(idx, data) {
         if (name == data['name']) {
-            if (data['evo']) {
+            if (data['evo'] && data['evo'].length > 0) {
                 res = [];
                 for (var i = 0; i < data['evo'].length; i++) {
                     var returns = getEvolutionData(data['evo'][i]['name'], data['evo'][i]['candy']);
