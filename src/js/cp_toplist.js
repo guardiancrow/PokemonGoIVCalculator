@@ -80,7 +80,7 @@ $(document).ready(function(){
     var init = function() {
         //jsonを読み込みpokedexをオーバーライド
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'js/poke.json', true);
+        xhr.open('GET', 'js/poke_rebalanced.json', true);
         //xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/js/poke.json', true);
         xhr.send(null);
         xhr.onload = function() {
@@ -98,7 +98,7 @@ $(document).ready(function(){
         xhr.onerror = function (e) {
             console.error(xhr.statusText);
         }
-        
+
         var i = 0;
 
         var level = $('#select-level');
