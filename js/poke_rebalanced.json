@@ -5163,7 +5163,7 @@
     },
     {
         "base": {
-            "attack": 149,
+            "attack": 148,
             "defense": 226,
             "stamina": 163
         },
@@ -8751,7 +8751,7 @@
         "base": {
             "attack": 284,
             "defense": 170,
-            "stamina": 212
+            "stamina": 213
         },
         "en_name": "Rayquaza",
         "evo": [],
