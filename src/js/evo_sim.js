@@ -65,8 +65,7 @@ $(document).ready(function(){
     var init = function() {
         //jsonを読み込みpokedexをオーバーライド
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'js/poke_rebalanced.json', true);
-        //xhr.open('GET', 'https://guardiancrow.github.io/PokemonGoIVCalculator/js/poke.json', true);
+        xhr.open('GET', 'js/poke.json', true);
         xhr.send(null);
         xhr.onload = function() {
             console.log(xhr.statusText);
@@ -78,6 +77,12 @@ $(document).ready(function(){
                     var name = value['name'];
                     selectName.append($("<option>").val(name).text(name));
                 })
+
+                //クエリがある場合は再計算
+                if(getQueries()) {
+                    applyQueries();
+                    $('#calcIt').click();
+                }
             }
         }
         xhr.onerror = function (e) {
