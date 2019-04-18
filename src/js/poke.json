@@ -5779,7 +5779,7 @@
   {
     "base": {
       "attack": 239,
-      "defense": 243,
+      "defense": 244,
       "stamina": 214
     },
     "en_name": "Ho-Oh",
@@ -8200,7 +8200,7 @@
     "en_name": "Duskull",
     "evo": [
       {
-        "candy": 50,
+        "candy": 25,
         "item": "",
         "name": "サマヨール"
       }
@@ -8226,9 +8226,9 @@
     "en_name": "Dusclops",
     "evo": [
       {
-        "candy": 0,
+        "candy": 100,
         "item": "シンオウのいし",
-        "name": ""
+        "name": "ヨノワール"
       }
     ],
     "hira": "さまよーる",
@@ -8974,7 +8974,13 @@
       "stamina": 146
     },
     "en_name": "Turtwig",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ハヤシガメ"
+      }
+    ],
     "hira": "なえとる",
     "name": "ナエトル",
     "no": 387,
@@ -8994,7 +9000,13 @@
       "stamina": 181
     },
     "en_name": "Grotle",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ドダイトス"
+      }
+    ],
     "hira": "はやしがめ",
     "name": "ハヤシガメ",
     "no": 388,
@@ -9034,7 +9046,13 @@
       "stamina": 127
     },
     "en_name": "Chimchar",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "モウカザル"
+      }
+    ],
     "hira": "ひこざる",
     "name": "ヒコザル",
     "no": 390,
@@ -9054,7 +9072,13 @@
       "stamina": 162
     },
     "en_name": "Monferno",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ゴウカザル"
+      }
+    ],
     "hira": "もうかざる",
     "name": "モウカザル",
     "no": 391,
@@ -9094,7 +9118,13 @@
       "stamina": 142
     },
     "en_name": "Piplup",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ポッタイシ"
+      }
+    ],
     "hira": "ぽっちゃま",
     "name": "ポッチャマ",
     "no": 393,
@@ -9114,7 +9144,13 @@
       "stamina": 162
     },
     "en_name": "Prinplup",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "エンペルト"
+      }
+    ],
     "hira": "ぽったいし",
     "name": "ポッタイシ",
     "no": 394,
@@ -9154,7 +9190,13 @@
       "stamina": 120
     },
     "en_name": "Starly",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ムクバード"
+      }
+    ],
     "hira": "むっくる",
     "name": "ムックル",
     "no": 396,
@@ -9174,7 +9216,13 @@
       "stamina": 146
     },
     "en_name": "Staravia",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ムクホーク"
+      }
+    ],
     "hira": "むくばーど",
     "name": "ムクバード",
     "no": 397,
@@ -9214,7 +9262,13 @@
       "stamina": 153
     },
     "en_name": "Bidoof",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ビーダル"
+      }
+    ],
     "hira": "びっぱ",
     "name": "ビッパ",
     "no": 399,
@@ -9254,7 +9308,13 @@
       "stamina": 114
     },
     "en_name": "Kricketot",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "コロトック"
+      }
+    ],
     "hira": "ころぼーし",
     "name": "コロボーシ",
     "no": 401,
@@ -9294,7 +9354,13 @@
       "stamina": 128
     },
     "en_name": "Shinx",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ルクシオ"
+      }
+    ],
     "hira": "こりんく",
     "name": "コリンク",
     "no": 403,
@@ -9314,7 +9380,13 @@
       "stamina": 155
     },
     "en_name": "Luxio",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "レントラー"
+      }
+    ],
     "hira": "るくしお",
     "name": "ルクシオ",
     "no": 404,
@@ -9354,7 +9426,13 @@
       "stamina": 120
     },
     "en_name": "Budew",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ロゼリア"
+      }
+    ],
     "hira": "すぼみー",
     "name": "スボミー",
     "no": 406,
@@ -9394,7 +9472,13 @@
       "stamina": 167
     },
     "en_name": "Cranidos",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ラムパルド"
+      }
+    ],
     "hira": "ずがいどす",
     "name": "ズガイドス",
     "no": 408,
@@ -9434,7 +9518,13 @@
       "stamina": 102
     },
     "en_name": "Shieldon",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "トリデプス"
+      }
+    ],
     "hira": "たてとぷす",
     "name": "タテトプス",
     "no": 410,
@@ -9574,7 +9664,13 @@
       "stamina": 102
     },
     "en_name": "Combee",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ビークイン"
+      }
+    ],
     "hira": "みつはにー",
     "name": "ミツハニー",
     "no": 415,
@@ -9634,7 +9730,13 @@
       "stamina": 146
     },
     "en_name": "Buizel",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "フローゼル"
+      }
+    ],
     "hira": "ぶいぜる",
     "name": "ブイゼル",
     "no": 418,
@@ -9774,7 +9876,13 @@
       "stamina": 207
     },
     "en_name": "Drifloon",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "フワライド"
+      }
+    ],
     "hira": "ふわんて",
     "name": "フワンテ",
     "no": 425,
@@ -9814,7 +9922,13 @@
       "stamina": 146
     },
     "en_name": "Buneary",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ミミロップ"
+      }
+    ],
     "hira": "みみろる",
     "name": "ミミロル",
     "no": 427,
@@ -9894,7 +10008,13 @@
       "stamina": 135
     },
     "en_name": "Glameow",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ブニャット"
+      }
+    ],
     "hira": "にゃるまー",
     "name": "ニャルマー",
     "no": 431,
@@ -9954,7 +10074,13 @@
       "stamina": 160
     },
     "en_name": "Stunky",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "スカタンク"
+      }
+    ],
     "hira": "すかんぷー",
     "name": "スカンプー",
     "no": 434,
@@ -9994,7 +10120,13 @@
       "stamina": 149
     },
     "en_name": "Bronzor",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ドータクン"
+      }
+    ],
     "hira": "どーみらー",
     "name": "ドーミラー",
     "no": 436,
@@ -10034,7 +10166,13 @@
       "stamina": 137
     },
     "en_name": "Bonsly",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ウソッキー"
+      }
+    ],
     "hira": "うそはち",
     "name": "ウソハチ",
     "no": 438,
@@ -10074,7 +10212,13 @@
       "stamina": 225
     },
     "en_name": "Happiny",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ラッキー"
+      }
+    ],
     "hira": "ぴんぷく",
     "name": "ピンプク",
     "no": 440,
@@ -10194,7 +10338,13 @@
       "stamina": 286
     },
     "en_name": "Munchlax",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "カビゴン"
+      }
+    ],
     "hira": "ごんべ",
     "name": "ゴンベ",
     "no": 446,
@@ -10214,7 +10364,13 @@
       "stamina": 120
     },
     "en_name": "Riolu",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ルカリオ"
+      }
+    ],
     "hira": "りおる",
     "name": "リオル",
     "no": 447,
@@ -10294,7 +10450,13 @@
       "stamina": 120
     },
     "en_name": "Skorupi",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ドラビオン"
+      }
+    ],
     "hira": "すこるぴ",
     "name": "スコルピ",
     "no": 451,
@@ -10334,7 +10496,13 @@
       "stamina": 134
     },
     "en_name": "Croagunk",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ドグロッグ"
+      }
+    ],
     "hira": "ぐれっぐる",
     "name": "グレッグル",
     "no": 453,
@@ -10394,7 +10562,13 @@
       "stamina": 135
     },
     "en_name": "Finneon",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ネオラント"
+      }
+    ],
     "hira": "けいこうお",
     "name": "ケイコウオ",
     "no": 456,
@@ -10454,7 +10628,13 @@
       "stamina": 155
     },
     "en_name": "Snover",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ユキノオー"
+      }
+    ],
     "hira": "ゆきかぶり",
     "name": "ユキカブリ",
     "no": 459,
@@ -11009,9 +11189,9 @@
   },
   {
     "base": {
-      "attack": 286,
+      "attack": 287,
       "defense": 210,
-      "stamina": 220
+      "stamina": 221
     },
     "en_name": "Regigigas",
     "evo": [],
@@ -11191,7 +11371,7 @@
     "base": {
       "attack": 238,
       "defense": 238,
-      "stamina": 236
+      "stamina": 237
     },
     "en_name": "Arceus",
     "evo": [],
@@ -11613,6 +11793,52 @@
       "specialattack": 50,
       "specialdefense": 80,
       "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 118,
+      "defense": 99,
+      "stamina": 130
+    },
+    "en_name": "Meltan",
+    "evo": [
+      {
+        "candy": 400,
+        "item": "",
+        "name": "メルメタル"
+      }
+    ],
+    "hira": "めるたん",
+    "name": "メルタン",
+    "no": 808,
+    "original": {
+      "attack": 65,
+      "defense": 65,
+      "hp": 46,
+      "specialattack": 55,
+      "specialdefense": 35,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 226,
+      "defense": 190,
+      "stamina": 260
+    },
+    "en_name": "Melmetal",
+    "evo": [],
+    "hira": "めるめたる",
+    "name": "メルメタル",
+    "no": 809,
+    "original": {
+      "attack": 143,
+      "defense": 143,
+      "hp": 135,
+      "specialattack": 80,
+      "specialdefense": 65,
+      "speed": 34
     }
   }
 ]
