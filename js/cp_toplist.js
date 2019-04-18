@@ -60,11 +60,14 @@ $(document).ready(function(){
             if (queries["sta"] && queries["sta"] >= 0 && queries["sta"] <= 15) {
                 qSta = +queries["sta"];
             }
+            if (queries["inc_wild"] == "true") {
+                $('#inc-wild').prop('checked', true);
+            }
         }
     }
 
     var buildQueriesForEvoName = function(name) {
-        var result = "name=" + name + "&level=" + (+$('#select-level').val() / 2.0 + 1.0);
+        var result = "name=" + name + "&level=" + (+$('#select-level').val() / 2.0 + 1.0) + "&inc_wild=" + $('#inc-wild').prop('checked');
         if (qAtk >= 0) {
             result += "&atk=" + qAtk;
         }
@@ -184,6 +187,11 @@ $(document).ready(function(){
         resultlist.append(title);
         resultlist.append(evo);
         resultlist.append(table);
+
+        var uristring = location.origin + location.pathname + '?name=' + input.name + '&level=' + input.level + '&inc_wild=' + $('#inc-wild').prop('checked');
+
+        var thisurl = $('<p class="text-right small">ブックマークは：<a href="' + encodeURI(uristring) + '">' + uristring + '</a><br>（ブックマークしておけば「' + input.name + '」「レベル' + input.level + '」などと入力せずに表示できます）</p>');
+        resultlist.append(thisurl);
     }
 
     var buildList = function(result, input) {
