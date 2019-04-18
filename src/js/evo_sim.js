@@ -192,6 +192,11 @@ $(document).ready(function(){
             singletable.append(table);
             reinforce.append(singletable);
         }
+
+        var uristring = location.origin + location.pathname + '?name=' + input.name + '&level=' + (input.level_base / 2.0 + 1.0) + '&sta=' + input.sta + '&atk=' + input.atk + '&def=' + input.def + '&noevo=' + $('#no-evolution').prop('checked');
+
+        var thisurl = $('<p class="text-right small">ブックマークは：<a href="' + encodeURI(uristring) + '">' + uristring + '</a><br>（ブックマークしておけば「' + input.name + '」「レベル' + (input.level_base / 2.0 + 1.0) + '」などと入力せずに表示できます）</p>');
+        reinforce.append(thisurl);
     }
 
     var tellTheFuture = function(result, input) {
