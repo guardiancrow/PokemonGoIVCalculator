@@ -11840,5 +11840,25 @@
       "specialdefense": 65,
       "speed": 34
     }
+  },
+  {
+    "base": {
+      "attack": 182,
+      "defense": 278,
+      "stamina": 214
+    },
+    "en_name": "Armored Mewtwo",
+    "evo": [],
+    "hira": "みゅうつー（あーまーど）",
+    "name": "ミュウツー（アーマード）",
+    "no": 150,
+    "original": {
+      "attack": 90,
+      "defense": 110,
+      "hp": 106,
+      "specialattack": 90,
+      "specialdefense": 154,
+      "speed": 130
+    }
   }
 ]
