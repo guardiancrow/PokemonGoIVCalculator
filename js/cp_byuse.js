@@ -155,13 +155,14 @@ $(document).ready(function(){
         var title = $('<p class="lead"></p>');
         title.append(input.name + "(レベル" + input.level.toFixed(1) + ")");
 
-        var table = $('<table class="table table-bordered table-striped"></table>');
-        var thead = $('<thead><tr><th><div class="text-center">順位</div></th><th><div class="text-center">CP</div></th><th><div class="text-center">CPMax</div></th><th><div class="text-center">％</div></th><th><div class="text-center">HP</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th><th><div class="text-center">体力</div></th></tr></thead>');
+        var info = $('<p class="small">通常CP：通常の攻撃力重視のCPです。ケッキング・ミュウツーなどで大きくなる傾向にあります。<br>平均CP：攻撃・防御・HPの平均をとったCPです。PvP用途の強さの目安です。<br>防衛CP：ジム設置を想定した、防御とHPを重視したCPです。ハピナス・クレセリア・カビゴンなどで大きくなる傾向にあります。<br>これら３列はソートできます。</p>');
+        var table = $('<table id="mainlist" class="table table-bordered table-striped"></table>');
+        var thead = $('<thead><tr><th class="sort text-center" data-sort="atk">通常CP</th><th class="sort text-center" data-sort="ave">平均CP</th><th class="sort text-center" data-sort="def">防衛CP</th><th><div class="text-center">％</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th><th><div class="text-center">HP</div></th></tr></thead>');
         table.prepend(thead);
         var rank = 0;
         var prevcpmax = 0;
         var equivalent = 1;
-        var tbody = $("<tbody></tbody>");
+        var tbody = $('<tbody class="list"></tbody>');
         var row = $.map(result, function(value) {
             var row = $("<tr></tr>");
             if (qSta == value['stamina'] && qAtk == value['attack'] && qDef == value['defense']) {
@@ -174,11 +175,10 @@ $(document).ready(function(){
                 equivalent = 1;
             }
             prevcpmax = value['cpmax'];
-            row.append('<td><div class="text-right">' + rank + '</div></td>');
-            row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['cpmax'] + '</div></td>');
+            row.append('<td class="atk"><div class="text-right">' + value['cp'] + '</div></td>');
+            row.append('<td class="ave"><div class="text-right">' + value['cpave'] + '</div></td>');
+            row.append('<td class="def"><div class="text-right">' + value['cpdef'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['percent'].toFixed(0) + '%</div></td>');
-            row.append('<td><div class="text-right">' + value['hp'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['attack'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['defense'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
@@ -187,8 +187,15 @@ $(document).ready(function(){
         tbody.append(row);
         table.append(tbody);
         resultlist.append(title);
+        resultlist.append(info);
         resultlist.append(evo);
         resultlist.append(table);
+
+        var options = {
+            valueNames: ['atk', 'ave', 'def']
+        };
+        var mainList = new List('mainlist', options);
+        mainList.sort( 'atk', {order: 'desc'} );
 
         var uristring = location.origin + location.pathname + '?name=' + input.name + '&level=' + input.level + '&inc_wild=' + $('#inc-wild').prop('checked');
 
@@ -204,23 +211,32 @@ $(document).ready(function(){
                     if (sta + atk + def <= 36) {
                         continue;
                     }
-                    var cp = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[input.level_base] * CPM[input.level_base] / 10.0));
-                    var cpmax = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[CPM.length-1] * CPM[CPM.length-1] / 10.0));
-                    var hp = Math.max(10, Math.floor((base['stamina'] + sta) * CPM[input.level_base]));
+                    var cp = Math.max(10, Math.floor(
+                        (base['attack'] + atk) *
+                        Math.sqrt(base['defense'] + def) *
+                        Math.sqrt(base['stamina'] + sta) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
+                    var cpave = Math.max(10, Math.floor(
+                        Math.cbrt((base['attack'] + atk) * (base['attack'] + atk)) *
+                        Math.cbrt((base['defense'] + def) * (base['defense'] + def)) *
+                        Math.cbrt((base['stamina'] + sta) * (base['stamina'] + sta)) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
+                    var cpdef = Math.max(10, Math.floor(
+                        Math.pow((base['attack'] + atk), 2.0 / 5.0) *
+                        Math.pow((base['defense'] + def) * (base['defense'] + def), 2.0 / 5.0) *
+                        Math.pow((base['stamina'] + sta) * (base['stamina'] + sta), 2.0 / 5.0) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
                     var percent = Math.round((atk + def+ sta) * 1000.0 / 45.0) / 10.0;
-                    result.push({name: input.name, level_base: input.level_base, plevel: input.level, stamina: sta, attack: atk, defense: def, cp: cp, hp: hp, percent: percent, cpmax: cpmax});
+                    result.push({name: input.name, level_base: input.level_base, plevel: input.level, stamina: sta, attack: atk, defense: def, cp: cp, cpave: cpave, cpdef: cpdef, percent: percent});
                 }
             }
         }
         result.sort(function cpCompare(a, b) {
             if (b['cp'] - a['cp'] == 0) {
-                if (b['cpmax'] - a['cpmax'] == 0) {
-                    if(b['percent'] - a['percent'] == 0) {
-                        return b['hp'] - a['hp'];
-                    }
-                    return b['percent'] - a['percent'];
+                if (b['cpave'] - a['cpave'] == 0) {
+                    return b['cpdef'] - a['cpdef'];
                 }
-                return b['cpmax'] - a['cpmax'];
+                return b['cpave'] - a['cpave'];
             }
             return b['cp'] - a['cp'];
         });
@@ -231,23 +247,32 @@ $(document).ready(function(){
         for (var sta = 10; sta <= 15; sta++) {
             for (var atk = 10; atk <= 15; atk++) {
                 for (var def = 10; def <= 15; def++) {
-                    var cp = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[input.level_base] * CPM[input.level_base] / 10.0));
-                    var cpmax = Math.max(10, Math.floor((base['attack'] + atk) * Math.sqrt(base['defense'] + def) * Math.sqrt(base['stamina'] + sta) * CPM[CPM.length-1] * CPM[CPM.length-1] / 10.0));
-                    var hp = Math.max(10, Math.floor((base['stamina'] + sta) * CPM[input.level_base]));
+                    var cp = Math.max(10, Math.floor(
+                        (base['attack'] + atk) *
+                        Math.sqrt(base['defense'] + def) *
+                        Math.sqrt(base['stamina'] + sta) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
+                    var cpave = Math.max(10, Math.floor(
+                        Math.cbrt((base['attack'] + atk) * (base['attack'] + atk)) *
+                        Math.cbrt((base['defense'] + def) * (base['defense'] + def)) *
+                        Math.cbrt((base['stamina'] + sta) * (base['stamina'] + sta)) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
+                    var cpdef = Math.max(10, Math.floor(
+                        Math.pow((base['attack'] + atk), 2.0 / 5.0) *
+                        Math.pow((base['defense'] + def) * (base['defense'] + def), 2.0 / 5.0) *
+                        Math.pow((base['stamina'] + sta) * (base['stamina'] + sta), 2.0 / 5.0) *
+                        CPM[input.level_base] * CPM[input.level_base] / 10.0));
                     var percent = Math.round((atk + def+ sta) * 1000.0 / 45.0) / 10.0;
-                    result.push({name: input.name, level_base: input.level_base, plevel: input.level, stamina: sta, attack: atk, defense: def, cp: cp, hp: hp, percent: percent, cpmax: cpmax});
+                    result.push({name: input.name, level_base: input.level_base, plevel: input.level, stamina: sta, attack: atk, defense: def, cp: cp, cpave: cpave, cpdef: cpdef, percent: percent});
                 }
             }
         }
         result.sort(function cpCompare(a, b) {
             if (b['cp'] - a['cp'] == 0) {
-                if (b['cpmax'] - a['cpmax'] == 0) {
-                    if(b['percent'] - a['percent'] == 0) {
-                        return b['hp'] - a['hp'];
-                    }
-                    return b['percent'] - a['percent'];
+                if (b['cpave'] - a['cpave'] == 0) {
+                    return b['cpdef'] - a['cpdef'];
                 }
-                return b['cpmax'] - a['cpmax'];
+                return b['cpave'] - a['cpave'];
             }
             return b['cp'] - a['cp'];
         });
