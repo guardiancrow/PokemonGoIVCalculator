@@ -5110,7 +5110,7 @@
     "en_name": "Swinub",
     "evo": [
       {
-        "candy": 50,
+        "candy": 25,
         "item": "",
         "name": "イノムー"
       }
@@ -5134,7 +5134,13 @@
       "stamina": 225
     },
     "en_name": "Piloswine",
-    "evo": [],
+    "evo": [
+      {
+        "candy": 100,
+        "item": "シンオウのいし",
+        "name": "マンムー"
+      }
+    ],
     "hira": "いのむー",
     "name": "イノムー",
     "no": 221,
