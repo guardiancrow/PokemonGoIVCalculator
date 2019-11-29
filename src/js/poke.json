@@ -9464,7 +9464,7 @@
     "no": 407,
     "original": {
       "attack": 70,
-      "defense": 55,
+      "defense": 65,
       "hp": 60,
       "specialattack": 125,
       "specialdefense": 105,
@@ -11339,7 +11339,7 @@
       "defense": 210,
       "stamina": 225
     },
-    "en_name": "Shaymin Sky",
+    "en_name": "Shaymin Land",
     "evo": [],
     "hira": "しぇいみ（らんど）",
     "name": "シェイミ（ランド）",
@@ -11359,7 +11359,7 @@
       "defense": 166,
       "stamina": 225
     },
-    "en_name": "Shaymin",
+    "en_name": "Shaymin Sky",
     "evo": [],
     "hira": "しぇいみ（すかい）",
     "name": "シェイミ（スカイ）",
@@ -11391,6 +11391,3460 @@
       "specialattack": 120,
       "specialdefense": 120,
       "speed": 120
+    }
+  },
+  {
+    "base": {
+      "attack": 210,
+      "defense": 210,
+      "stamina": 225
+    },
+    "en_name": "Victini",
+    "evo": [],
+    "hira": "びくてぃに",
+    "name": "ビクティニ",
+    "no": 494,
+    "original": {
+      "attack": 100,
+      "defense": 100,
+      "hp": 100,
+      "specialattack": 100,
+      "specialdefense": 100,
+      "speed": 100
+    }
+  },
+  {
+    "base": {
+      "attack": 88,
+      "defense": 107,
+      "stamina": 128
+    },
+    "en_name": "Snivy",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ジャノビー"
+      }
+    ],
+    "hira": "つたーじゃ",
+    "name": "ツタージャ",
+    "no": 495,
+    "original": {
+      "attack": 45,
+      "defense": 55,
+      "hp": 45,
+      "specialattack": 45,
+      "specialdefense": 55,
+      "speed": 63
+    }
+  },
+  {
+    "base": {
+      "attack": 122,
+      "defense": 152,
+      "stamina": 155
+    },
+    "en_name": "Servine",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ジャローダ"
+      }
+    ],
+    "hira": "じゃのびー",
+    "name": "ジャノビー",
+    "no": 496,
+    "original": {
+      "attack": 60,
+      "defense": 75,
+      "hp": 60,
+      "specialattack": 60,
+      "specialdefense": 75,
+      "speed": 83
+    }
+  },
+  {
+    "base": {
+      "attack": 161,
+      "defense": 204,
+      "stamina": 181
+    },
+    "en_name": "Serperior",
+    "evo": [],
+    "hira": "じゃろーだ",
+    "name": "ジャローダ",
+    "no": 497,
+    "original": {
+      "attack": 75,
+      "defense": 95,
+      "hp": 75,
+      "specialattack": 75,
+      "specialdefense": 95,
+      "speed": 113
+    }
+  },
+  {
+    "base": {
+      "attack": 115,
+      "defense": 85,
+      "stamina": 163
+    },
+    "en_name": "Tepig",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "チャオブー"
+      }
+    ],
+    "hira": "ぼかぶ",
+    "name": "ポカブ",
+    "no": 498,
+    "original": {
+      "attack": 63,
+      "defense": 45,
+      "hp": 65,
+      "specialattack": 45,
+      "specialdefense": 45,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 173,
+      "defense": 106,
+      "stamina": 207
+    },
+    "en_name": "Pignite",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "エンブオー"
+      }
+    ],
+    "hira": "ちゃおぶー",
+    "name": "チャオブー",
+    "no": 499,
+    "original": {
+      "attack": 93,
+      "defense": 55,
+      "hp": 90,
+      "specialattack": 70,
+      "specialdefense": 55,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 235,
+      "defense": 127,
+      "stamina": 242
+    },
+    "en_name": "Emboar",
+    "evo": [],
+    "hira": "えんぶおー",
+    "name": "エンブオー",
+    "no": 500,
+    "original": {
+      "attack": 123,
+      "defense": 65,
+      "hp": 110,
+      "specialattack": 100,
+      "specialdefense": 65,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 117,
+      "defense": 85,
+      "stamina": 146
+    },
+    "en_name": "Oshawott",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "フタチマル"
+      }
+    ],
+    "hira": "みじゅまる",
+    "name": "ミジュマル",
+    "no": 501,
+    "original": {
+      "attack": 55,
+      "defense": 45,
+      "hp": 55,
+      "specialattack": 63,
+      "specialdefense": 45,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 159,
+      "defense": 116,
+      "stamina": 181
+    },
+    "en_name": "Dewott",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ダイケンキ"
+      }
+    ],
+    "hira": "ふたちまる",
+    "name": "フタチマル",
+    "no": 502,
+    "original": {
+      "attack": 75,
+      "defense": 60,
+      "hp": 75,
+      "specialattack": 83,
+      "specialdefense": 60,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 212,
+      "defense": 157,
+      "stamina": 216
+    },
+    "en_name": "Samurott",
+    "evo": [],
+    "hira": "だいけんき",
+    "name": "ダイケンキ",
+    "no": 503,
+    "original": {
+      "attack": 100,
+      "defense": 85,
+      "hp": 95,
+      "specialattack": 108,
+      "specialdefense": 70,
+      "speed": 70
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 73,
+      "stamina": 128
+    },
+    "en_name": "Patrat",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ミルホッグ"
+      }
+    ],
+    "hira": "みねずみ",
+    "name": "ミネズミ",
+    "no": 504,
+    "original": {
+      "attack": 55,
+      "defense": 39,
+      "hp": 45,
+      "specialattack": 35,
+      "specialdefense": 39,
+      "speed": 42
+    }
+  },
+  {
+    "base": {
+      "attack": 165,
+      "defense": 139,
+      "stamina": 155
+    },
+    "en_name": "Watchog",
+    "evo": [],
+    "hira": "みるほっぐ",
+    "name": "ミルホッグ",
+    "no": 505,
+    "original": {
+      "attack": 85,
+      "defense": 69,
+      "hp": 60,
+      "specialattack": 60,
+      "specialdefense": 69,
+      "speed": 77
+    }
+  },
+  {
+    "base": {
+      "attack": 107,
+      "defense": 86,
+      "stamina": 128
+    },
+    "en_name": "Lillipup",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ハーデリア"
+      }
+    ],
+    "hira": "よーてりー",
+    "name": "ヨーテリー",
+    "no": 506,
+    "original": {
+      "attack": 60,
+      "defense": 45,
+      "hp": 45,
+      "specialattack": 25,
+      "specialdefense": 45,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 145,
+      "defense": 126,
+      "stamina": 163
+    },
+    "en_name": "Herdier",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ムーランド"
+      }
+    ],
+    "hira": "はーでりあ",
+    "name": "ハーデリア",
+    "no": 507,
+    "original": {
+      "attack": 80,
+      "defense": 65,
+      "hp": 65,
+      "specialattack": 35,
+      "specialdefense": 65,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 188,
+      "defense": 182,
+      "stamina": 198
+    },
+    "en_name": "Stoutland",
+    "evo": [],
+    "hira": "むーらんど",
+    "name": "ムーランド",
+    "no": 508,
+    "original": {
+      "attack": 100,
+      "defense": 90,
+      "hp": 85,
+      "specialattack": 45,
+      "specialdefense": 90,
+      "speed": 80
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 73,
+      "stamina": 121
+    },
+    "en_name": "Purrloin",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "レパルダス"
+      }
+    ],
+    "hira": "ちょろねこ",
+    "name": "チョロネコ",
+    "no": 509,
+    "original": {
+      "attack": 50,
+      "defense": 37,
+      "hp": 41,
+      "specialattack": 50,
+      "specialdefense": 37,
+      "speed": 66
+    }
+  },
+  {
+    "base": {
+      "attack": 187,
+      "defense": 106,
+      "stamina": 162
+    },
+    "en_name": "Liepard",
+    "evo": [],
+    "hira": "れぱるだす",
+    "name": "レパルダス",
+    "no": 510,
+    "original": {
+      "attack": 88,
+      "defense": 50,
+      "hp": 64,
+      "specialattack": 88,
+      "specialdefense": 50,
+      "speed": 106
+    }
+  },
+  {
+    "base": {
+      "attack": 104,
+      "defense": 94,
+      "stamina": 137
+    },
+    "en_name": "Pansage",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "イッシュのいし",
+        "name": "ヤナッキー"
+      }
+    ],
+    "hira": "やなっぷ",
+    "name": "ヤナップ",
+    "no": 511,
+    "original": {
+      "attack": 53,
+      "defense": 48,
+      "hp": 50,
+      "specialattack": 53,
+      "specialdefense": 48,
+      "speed": 64
+    }
+  },
+  {
+    "base": {
+      "attack": 206,
+      "defense": 133,
+      "stamina": 181
+    },
+    "en_name": "Simisage",
+    "evo": [],
+    "hira": "やなっきー",
+    "name": "ヤナッキー",
+    "no": 512,
+    "original": {
+      "attack": 98,
+      "defense": 63,
+      "hp": 75,
+      "specialattack": 98,
+      "specialdefense": 63,
+      "speed": 101
+    }
+  },
+  {
+    "base": {
+      "attack": 104,
+      "defense": 94,
+      "stamina": 137
+    },
+    "en_name": "Pansear",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "イッシュのいし",
+        "name": "バオッキー"
+      }
+    ],
+    "hira": "ばおっぷ",
+    "name": "バオップ",
+    "no": 513,
+    "original": {
+      "attack": 53,
+      "defense": 48,
+      "hp": 50,
+      "specialattack": 53,
+      "specialdefense": 48,
+      "speed": 64
+    }
+  },
+  {
+    "base": {
+      "attack": 206,
+      "defense": 133,
+      "stamina": 181
+    },
+    "en_name": "Simisear",
+    "evo": [],
+    "hira": "ばおっきー",
+    "name": "バオッキー",
+    "no": 514,
+    "original": {
+      "attack": 98,
+      "defense": 63,
+      "hp": 75,
+      "specialattack": 98,
+      "specialdefense": 63,
+      "speed": 101
+    }
+  },
+  {
+    "base": {
+      "attack": 104,
+      "defense": 94,
+      "stamina": 137
+    },
+    "en_name": "Panpour",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "イッシュのいし",
+        "name": "ヒヤッキー"
+      }
+    ],
+    "hira": "ひやっぷ",
+    "name": "ヒヤップ",
+    "no": 515,
+    "original": {
+      "attack": 53,
+      "defense": 48,
+      "hp": 50,
+      "specialattack": 53,
+      "specialdefense": 48,
+      "speed": 64
+    }
+  },
+  {
+    "base": {
+      "attack": 206,
+      "defense": 133,
+      "stamina": 181
+    },
+    "en_name": "Simipour",
+    "evo": [],
+    "hira": "ひやっきー",
+    "name": "ヒヤッキー",
+    "no": 516,
+    "original": {
+      "attack": 98,
+      "defense": 63,
+      "hp": 75,
+      "specialattack": 98,
+      "specialdefense": 63,
+      "speed": 101
+    }
+  },
+  {
+    "base": {
+      "attack": 111,
+      "defense": 92,
+      "stamina": 183
+    },
+    "en_name": "Munna",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ムシャーナ"
+      }
+    ],
+    "hira": "むんな",
+    "name": "ムンナ",
+    "no": 517,
+    "original": {
+      "attack": 25,
+      "defense": 45,
+      "hp": 76,
+      "specialattack": 67,
+      "specialdefense": 55,
+      "speed": 24
+    }
+  },
+  {
+    "base": {
+      "attack": 183,
+      "defense": 166,
+      "stamina": 253
+    },
+    "en_name": "Musharna",
+    "evo": [],
+    "hira": "むしゃーな",
+    "name": "ムシャーナ",
+    "no": 518,
+    "original": {
+      "attack": 55,
+      "defense": 85,
+      "hp": 116,
+      "specialattack": 107,
+      "specialdefense": 95,
+      "speed": 29
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 80,
+      "stamina": 137
+    },
+    "en_name": "Pidove",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ハトーボー"
+      }
+    ],
+    "hira": "まめぱと",
+    "name": "マメパト",
+    "no": 519,
+    "original": {
+      "attack": 55,
+      "defense": 50,
+      "hp": 50,
+      "specialattack": 36,
+      "specialdefense": 30,
+      "speed": 43
+    }
+  },
+  {
+    "base": {
+      "attack": 144,
+      "defense": 107,
+      "stamina": 158
+    },
+    "en_name": "Tranquill",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ケンホロウ"
+      }
+    ],
+    "hira": "はとーぼー",
+    "name": "ハトーボー",
+    "no": 520,
+    "original": {
+      "attack": 77,
+      "defense": 62,
+      "hp": 62,
+      "specialattack": 50,
+      "specialdefense": 42,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 207,
+      "defense": 146,
+      "stamina": 190
+    },
+    "en_name": "Unfezant",
+    "evo": [],
+    "hira": "けんほろう",
+    "name": "ケンホロウ",
+    "no": 521,
+    "original": {
+      "attack": 105,
+      "defense": 80,
+      "hp": 80,
+      "specialattack": 65,
+      "specialdefense": 55,
+      "speed": 93
+    }
+  },
+  {
+    "base": {
+      "attack": 118,
+      "defense": 64,
+      "stamina": 128
+    },
+    "en_name": "Blitzle",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ゼブライカ"
+      }
+    ],
+    "hira": "しまま",
+    "name": "シママ",
+    "no": 522,
+    "original": {
+      "attack": 60,
+      "defense": 32,
+      "hp": 45,
+      "specialattack": 50,
+      "specialdefense": 32,
+      "speed": 76
+    }
+  },
+  {
+    "base": {
+      "attack": 211,
+      "defense": 136,
+      "stamina": 181
+    },
+    "en_name": "Zebstrika",
+    "evo": [],
+    "hira": "ぜぶらいか",
+    "name": "ゼブライカ",
+    "no": 523,
+    "original": {
+      "attack": 100,
+      "defense": 63,
+      "hp": 75,
+      "specialattack": 80,
+      "specialdefense": 63,
+      "speed": 116
+    }
+  },
+  {
+    "base": {
+      "attack": 121,
+      "defense": 110,
+      "stamina": 146
+    },
+    "en_name": "Roggenrola",
+    "evo": [],
+    "hira": "だんごろ",
+    "name": "ダンゴロ",
+    "no": 524,
+    "original": {
+      "attack": 75,
+      "defense": 85,
+      "hp": 55,
+      "specialattack": 25,
+      "specialdefense": 25,
+      "speed": 15
+    }
+  },
+  {
+    "base": {
+      "attack": 174,
+      "defense": 143,
+      "stamina": 172
+    },
+    "en_name": "Boldore",
+    "evo": [],
+    "hira": "がんとる",
+    "name": "ガントル",
+    "no": 525,
+    "original": {
+      "attack": 105,
+      "defense": 105,
+      "hp": 70,
+      "specialattack": 50,
+      "specialdefense": 40,
+      "speed": 20
+    }
+  },
+  {
+    "base": {
+      "attack": 226,
+      "defense": 194,
+      "stamina": 198
+    },
+    "en_name": "Gigalith",
+    "evo": [],
+    "hira": "ぎがいあす",
+    "name": "ギガイアス",
+    "no": 526,
+    "original": {
+      "attack": 135,
+      "defense": 130,
+      "hp": 85,
+      "specialattack": 60,
+      "specialdefense": 70,
+      "speed": 25
+    }
+  },
+  {
+    "base": {
+      "attack": 107,
+      "defense": 85,
+      "stamina": 146
+    },
+    "en_name": "Woobat",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ココロモリ"
+      }
+    ],
+    "hira": "ころもり",
+    "name": "コロモリ",
+    "no": 527,
+    "original": {
+      "attack": 45,
+      "defense": 43,
+      "hp": 55,
+      "specialattack": 55,
+      "specialdefense": 43,
+      "speed": 72
+    }
+  },
+  {
+    "base": {
+      "attack": 161,
+      "defense": 119,
+      "stamina": 167
+    },
+    "en_name": "Swoobat",
+    "evo": [],
+    "hira": "こころもり",
+    "name": "ココロモリ",
+    "no": 528,
+    "original": {
+      "attack": 57,
+      "defense": 55,
+      "hp": 67,
+      "specialattack": 77,
+      "specialdefense": 55,
+      "speed": 114
+    }
+  },
+  {
+    "base": {
+      "attack": 154,
+      "defense": 85,
+      "stamina": 155
+    },
+    "en_name": "Drilbur",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ドリュウズ"
+      }
+    ],
+    "hira": "もぐりゅー",
+    "name": "モグリュー",
+    "no": 529,
+    "original": {
+      "attack": 85,
+      "defense": 40,
+      "hp": 60,
+      "specialattack": 30,
+      "specialdefense": 45,
+      "speed": 68
+    }
+  },
+  {
+    "base": {
+      "attack": 255,
+      "defense": 129,
+      "stamina": 242
+    },
+    "en_name": "Excadrill",
+    "evo": [],
+    "hira": "どりゅうず",
+    "name": "ドリュウズ",
+    "no": 530,
+    "original": {
+      "attack": 135,
+      "defense": 60,
+      "hp": 110,
+      "specialattack": 50,
+      "specialdefense": 65,
+      "speed": 88
+    }
+  },
+  {
+    "base": {
+      "attack": 114,
+      "defense": 163,
+      "stamina": 230
+    },
+    "en_name": "Audino",
+    "evo": [],
+    "hira": "たぶんね",
+    "name": "タブンネ",
+    "no": 531,
+    "original": {
+      "attack": 60,
+      "defense": 86,
+      "hp": 103,
+      "specialattack": 60,
+      "specialdefense": 86,
+      "speed": 50
+    }
+  },
+  {
+    "base": {
+      "attack": 134,
+      "defense": 87,
+      "stamina": 181
+    },
+    "en_name": "Timburr",
+    "evo": [],
+    "hira": "どっこらー",
+    "name": "ドッコラー",
+    "no": 532,
+    "original": {
+      "attack": 80,
+      "defense": 55,
+      "hp": 75,
+      "specialattack": 25,
+      "specialdefense": 35,
+      "speed": 35
+    }
+  },
+  {
+    "base": {
+      "attack": 180,
+      "defense": 134,
+      "stamina": 198
+    },
+    "en_name": "Gurdurr",
+    "evo": [],
+    "hira": "どてっこつ",
+    "name": "ドテッコツ",
+    "no": 533,
+    "original": {
+      "attack": 105,
+      "defense": 85,
+      "hp": 85,
+      "specialattack": 40,
+      "specialdefense": 50,
+      "speed": 40
+    }
+  },
+  {
+    "base": {
+      "attack": 243,
+      "defense": 158,
+      "stamina": 233
+    },
+    "en_name": "Conkeldurr",
+    "evo": [],
+    "hira": "ろーぶしん",
+    "name": "ローブシン",
+    "no": 534,
+    "original": {
+      "attack": 140,
+      "defense": 95,
+      "hp": 105,
+      "specialattack": 55,
+      "specialdefense": 65,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 78,
+      "stamina": 137
+    },
+    "en_name": "Tympole",
+    "evo": [],
+    "hira": "おたまろ",
+    "name": "オタマロ",
+    "no": 535,
+    "original": {
+      "attack": 50,
+      "defense": 40,
+      "hp": 50,
+      "specialattack": 50,
+      "specialdefense": 40,
+      "speed": 64
+    }
+  },
+  {
+    "base": {
+      "attack": 128,
+      "defense": 109,
+      "stamina": 181
+    },
+    "en_name": "Palpitoad",
+    "evo": [],
+    "hira": "がまがる",
+    "name": "ガマガル",
+    "no": 536,
+    "original": {
+      "attack": 65,
+      "defense": 55,
+      "hp": 75,
+      "specialattack": 65,
+      "specialdefense": 55,
+      "speed": 69
+    }
+  },
+  {
+    "base": {
+      "attack": 170,
+      "defense": 150,
+      "stamina": 233
+    },
+    "en_name": "Seismitoad",
+    "evo": [],
+    "hira": "がまげろげ",
+    "name": "ガマゲロゲ",
+    "no": 537,
+    "original": {
+      "attack": 85,
+      "defense": 75,
+      "hp": 105,
+      "specialattack": 85,
+      "specialdefense": 75,
+      "speed": 74
+    }
+  },
+  {
+    "base": {
+      "attack": 172,
+      "defense": 160,
+      "stamina": 260
+    },
+    "en_name": "Throh",
+    "evo": [],
+    "hira": "なげき",
+    "name": "ナゲキ",
+    "no": 538,
+    "original": {
+      "attack": 100,
+      "defense": 85,
+      "hp": 120,
+      "specialattack": 30,
+      "specialdefense": 85,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 231,
+      "defense": 153,
+      "stamina": 181
+    },
+    "en_name": "Sawk",
+    "evo": [],
+    "hira": "だげき",
+    "name": "ダゲキ",
+    "no": 539,
+    "original": {
+      "attack": 125,
+      "defense": 75,
+      "hp": 75,
+      "specialattack": 30,
+      "specialdefense": 75,
+      "speed": 85
+    }
+  },
+  {
+    "base": {
+      "attack": 96,
+      "defense": 124,
+      "stamina": 128
+    },
+    "en_name": "Sewaddle",
+    "evo": [],
+    "hira": "くるみる",
+    "name": "クルミル",
+    "no": 540,
+    "original": {
+      "attack": 53,
+      "defense": 70,
+      "hp": 45,
+      "specialattack": 40,
+      "specialdefense": 60,
+      "speed": 42
+    }
+  },
+  {
+    "base": {
+      "attack": 115,
+      "defense": 162,
+      "stamina": 146
+    },
+    "en_name": "Swadloon",
+    "evo": [],
+    "hira": "くるまゆ",
+    "name": "クルマユ",
+    "no": 541,
+    "original": {
+      "attack": 63,
+      "defense": 90,
+      "hp": 55,
+      "specialattack": 50,
+      "specialdefense": 80,
+      "speed": 42
+    }
+  },
+  {
+    "base": {
+      "attack": 205,
+      "defense": 158,
+      "stamina": 181
+    },
+    "en_name": "Leavanny",
+    "evo": [],
+    "hira": "ははこもり",
+    "name": "ハハコモリ",
+    "no": 542,
+    "original": {
+      "attack": 103,
+      "defense": 80,
+      "hp": 75,
+      "specialattack": 70,
+      "specialdefense": 70,
+      "speed": 92
+    }
+  },
+  {
+    "base": {
+      "attack": 83,
+      "defense": 99,
+      "stamina": 102
+    },
+    "en_name": "Venipede",
+    "evo": [],
+    "hira": "ふしで",
+    "name": "フシデ",
+    "no": 543,
+    "original": {
+      "attack": 45,
+      "defense": 59,
+      "hp": 30,
+      "specialattack": 30,
+      "specialdefense": 39,
+      "speed": 57
+    }
+  },
+  {
+    "base": {
+      "attack": 100,
+      "defense": 173,
+      "stamina": 120
+    },
+    "en_name": "Whirlipede",
+    "evo": [],
+    "hira": "ほいーが",
+    "name": "ホイーガ",
+    "no": 544,
+    "original": {
+      "attack": 55,
+      "defense": 99,
+      "hp": 40,
+      "specialattack": 40,
+      "specialdefense": 79,
+      "speed": 47
+    }
+  },
+  {
+    "base": {
+      "attack": 184,
+      "defense": 175,
+      "stamina": 155
+    },
+    "en_name": "Scolipede",
+    "evo": [],
+    "hira": "べんどらー",
+    "name": "ペンドラー",
+    "no": 545,
+    "original": {
+      "attack": 90,
+      "defense": 89,
+      "hp": 60,
+      "specialattack": 55,
+      "specialdefense": 69,
+      "speed": 112
+    }
+  },
+  {
+    "base": {
+      "attack": 71,
+      "defense": 111,
+      "stamina": 120
+    },
+    "en_name": "Cottonee",
+    "evo": [],
+    "hira": "もんめん",
+    "name": "モンメン",
+    "no": 546,
+    "original": {
+      "attack": 27,
+      "defense": 60,
+      "hp": 40,
+      "specialattack": 37,
+      "specialdefense": 50,
+      "speed": 66
+    }
+  },
+  {
+    "base": {
+      "attack": 164,
+      "defense": 176,
+      "stamina": 155
+    },
+    "en_name": "Whimsicott",
+    "evo": [],
+    "hira": "えるふーん",
+    "name": "エルフーン",
+    "no": 547,
+    "original": {
+      "attack": 67,
+      "defense": 85,
+      "hp": 60,
+      "specialattack": 77,
+      "specialdefense": 75,
+      "speed": 116
+    }
+  },
+  {
+    "base": {
+      "attack": 119,
+      "defense": 91,
+      "stamina": 128
+    },
+    "en_name": "Petilil",
+    "evo": [],
+    "hira": "ちゅりね",
+    "name": "チュリネ",
+    "no": 548,
+    "original": {
+      "attack": 35,
+      "defense": 50,
+      "hp": 45,
+      "specialattack": 70,
+      "specialdefense": 50,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 214,
+      "defense": 155,
+      "stamina": 172
+    },
+    "en_name": "Lilligant",
+    "evo": [],
+    "hira": "どれでぃあ",
+    "name": "ドレディア",
+    "no": 549,
+    "original": {
+      "attack": 60,
+      "defense": 75,
+      "hp": 70,
+      "specialattack": 110,
+      "specialdefense": 75,
+      "speed": 90
+    }
+  },
+  {
+    "base": {
+      "attack": 189,
+      "defense": 129,
+      "stamina": 172
+    },
+    "en_name": "Basculin",
+    "evo": [],
+    "hira": "ばすらお（あかすじ）",
+    "name": "バスラオ（あかすじ）",
+    "no": 550,
+    "original": {
+      "attack": 92,
+      "defense": 65,
+      "hp": 70,
+      "specialattack": 80,
+      "specialdefense": 55,
+      "speed": 98
+    }
+  },
+  {
+    "base": {
+      "attack": 189,
+      "defense": 129,
+      "stamina": 172
+    },
+    "en_name": "Basculin",
+    "evo": [],
+    "hira": "ばすらお（あおすじ）",
+    "name": "バスラオ（あおすじ）",
+    "no": 550,
+    "original": {
+      "attack": 92,
+      "defense": 65,
+      "hp": 70,
+      "specialattack": 80,
+      "specialdefense": 55,
+      "speed": 98
+    }
+  },
+  {
+    "base": {
+      "attack": 132,
+      "defense": 69,
+      "stamina": 137
+    },
+    "en_name": "Sandile",
+    "evo": [],
+    "hira": "めぐろこ",
+    "name": "メグロコ",
+    "no": 551,
+    "original": {
+      "attack": 72,
+      "defense": 35,
+      "hp": 50,
+      "specialattack": 35,
+      "specialdefense": 35,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 155,
+      "defense": 90,
+      "stamina": 155
+    },
+    "en_name": "Krokorok",
+    "evo": [],
+    "hira": "わるびる",
+    "name": "ワルビル",
+    "no": 552,
+    "original": {
+      "attack": 82,
+      "defense": 45,
+      "hp": 60,
+      "specialattack": 45,
+      "specialdefense": 45,
+      "speed": 74
+    }
+  },
+  {
+    "base": {
+      "attack": 229,
+      "defense": 145,
+      "stamina": 216
+    },
+    "en_name": "Krookodile",
+    "evo": [],
+    "hira": "わるびある",
+    "name": "ワルビアル",
+    "no": 553,
+    "original": {
+      "attack": 117,
+      "defense": 70,
+      "hp": 95,
+      "specialattack": 65,
+      "specialdefense": 70,
+      "speed": 92
+    }
+  },
+  {
+    "base": {
+      "attack": 153,
+      "defense": 86,
+      "stamina": 172
+    },
+    "en_name": "Darumaka",
+    "evo": [],
+    "hira": "だるまっか",
+    "name": "ダルマッカ",
+    "no": 554,
+    "original": {
+      "attack": 90,
+      "defense": 45,
+      "hp": 70,
+      "specialattack": 15,
+      "specialdefense": 45,
+      "speed": 50
+    }
+  },
+  {
+    "base": {
+      "attack": 263,
+      "defense": 114,
+      "stamina": 233
+    },
+    "en_name": "Darmanitan",
+    "evo": [],
+    "hira": "ひひだるま",
+    "name": "ヒヒダルマ",
+    "no": 555,
+    "original": {
+      "attack": 140,
+      "defense": 55,
+      "hp": 105,
+      "specialattack": 30,
+      "specialdefense": 55,
+      "speed": 95
+    }
+  },
+  {
+    "base": {
+      "attack": 243,
+      "defense": 202,
+      "stamina": 233
+    },
+    "en_name": "Darmanitan Zen",
+    "evo": [],
+    "hira": "ひひだるま（だるまもーど）",
+    "name": "ヒヒダルマ（ダルマモード）",
+    "no": 555,
+    "original": {
+      "attack": 30,
+      "defense": 105,
+      "hp": 105,
+      "specialattack": 140,
+      "specialdefense": 105,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 201,
+      "defense": 130,
+      "stamina": 181
+    },
+    "en_name": "Maractus",
+    "evo": [],
+    "hira": "まらかっち",
+    "name": "マラカッチ",
+    "no": 556,
+    "original": {
+      "attack": 86,
+      "defense": 67,
+      "hp": 75,
+      "specialattack": 106,
+      "specialdefense": 67,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 118,
+      "defense": 128,
+      "stamina": 137
+    },
+    "en_name": "Dwebble",
+    "evo": [],
+    "hira": "いしずまい",
+    "name": "イシズマイ",
+    "no": 557,
+    "original": {
+      "attack": 65,
+      "defense": 85,
+      "hp": 50,
+      "specialattack": 35,
+      "specialdefense": 35,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 172,
+      "defense": 200,
+      "stamina": 172
+    },
+    "en_name": "Crustle",
+    "evo": [],
+    "hira": "いわぱれす",
+    "name": "イワパレス",
+    "no": 558,
+    "original": {
+      "attack": 95,
+      "defense": 125,
+      "hp": 70,
+      "specialattack": 65,
+      "specialdefense": 75,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 132,
+      "defense": 132,
+      "stamina": 137
+    },
+    "en_name": "Scraggy",
+    "evo": [],
+    "hira": "ずるっぐ",
+    "name": "ズルッグ",
+    "no": 559,
+    "original": {
+      "attack": 75,
+      "defense": 70,
+      "hp": 50,
+      "specialattack": 35,
+      "specialdefense": 70,
+      "speed": 48
+    }
+  },
+  {
+    "base": {
+      "attack": 163,
+      "defense": 222,
+      "stamina": 163
+    },
+    "en_name": "Scrafty",
+    "evo": [],
+    "hira": "ずるずきん",
+    "name": "ズルズキン",
+    "no": 560,
+    "original": {
+      "attack": 90,
+      "defense": 115,
+      "hp": 65,
+      "specialattack": 45,
+      "specialdefense": 115,
+      "speed": 58
+    }
+  },
+  {
+    "base": {
+      "attack": 204,
+      "defense": 167,
+      "stamina": 176
+    },
+    "en_name": "Sigilyph",
+    "evo": [],
+    "hira": "しんぼらー",
+    "name": "シンボラー",
+    "no": 561,
+    "original": {
+      "attack": 58,
+      "defense": 80,
+      "hp": 72,
+      "specialattack": 103,
+      "specialdefense": 80,
+      "speed": 97
+    }
+  },
+  {
+    "base": {
+      "attack": 95,
+      "defense": 141,
+      "stamina": 116
+    },
+    "en_name": "Yamask",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "デスカーン"
+      }
+    ],
+    "hira": "ですます",
+    "name": "デスマス",
+    "no": 562,
+    "original": {
+      "attack": 30,
+      "defense": 85,
+      "hp": 38,
+      "specialattack": 55,
+      "specialdefense": 65,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 163,
+      "defense": 237,
+      "stamina": 151
+    },
+    "en_name": "Cofagrigus",
+    "evo": [],
+    "hira": "ですかーん",
+    "name": "デスカーン",
+    "no": 563,
+    "original": {
+      "attack": 50,
+      "defense": 145,
+      "hp": 58,
+      "specialattack": 95,
+      "specialdefense": 105,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 134,
+      "defense": 146,
+      "stamina": 144
+    },
+    "en_name": "Tirtouga",
+    "evo": [],
+    "hira": "ぷろとーが",
+    "name": "プロトーガ",
+    "no": 564,
+    "original": {
+      "attack": 78,
+      "defense": 103,
+      "hp": 54,
+      "specialattack": 53,
+      "specialdefense": 45,
+      "speed": 22
+    }
+  },
+  {
+    "base": {
+      "attack": 192,
+      "defense": 197,
+      "stamina": 179
+    },
+    "en_name": "Carracosta",
+    "evo": [],
+    "hira": "あばごーら",
+    "name": "アバゴーラ",
+    "no": 565,
+    "original": {
+      "attack": 108,
+      "defense": 133,
+      "hp": 74,
+      "specialattack": 83,
+      "specialdefense": 65,
+      "speed": 32
+    }
+  },
+  {
+    "base": {
+      "attack": 213,
+      "defense": 89,
+      "stamina": 146
+    },
+    "en_name": "Archen",
+    "evo": [],
+    "hira": "あーけん",
+    "name": "アーケン",
+    "no": 566,
+    "original": {
+      "attack": 112,
+      "defense": 45,
+      "hp": 55,
+      "specialattack": 74,
+      "specialdefense": 45,
+      "speed": 70
+    }
+  },
+  {
+    "base": {
+      "attack": 292,
+      "defense": 139,
+      "stamina": 181
+    },
+    "en_name": "Archeops",
+    "evo": [],
+    "hira": "あーけおす",
+    "name": "アーケオス",
+    "no": 567,
+    "original": {
+      "attack": 140,
+      "defense": 65,
+      "hp": 75,
+      "specialattack": 112,
+      "specialdefense": 65,
+      "speed": 110
+    }
+  },
+  {
+    "base": {
+      "attack": 96,
+      "defense": 122,
+      "stamina": 137
+    },
+    "en_name": "Trubbish",
+    "evo": [],
+    "hira": "やぶくろん",
+    "name": "ヤブクロン",
+    "no": 568,
+    "original": {
+      "attack": 50,
+      "defense": 62,
+      "hp": 50,
+      "specialattack": 40,
+      "specialdefense": 62,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 181,
+      "defense": 164,
+      "stamina": 190
+    },
+    "en_name": "Garbodor",
+    "evo": [],
+    "hira": "だすとだす",
+    "name": "ダストダス",
+    "no": 569,
+    "original": {
+      "attack": 95,
+      "defense": 82,
+      "hp": 80,
+      "specialattack": 60,
+      "specialdefense": 82,
+      "speed": 75
+    }
+  },
+  {
+    "base": {
+      "attack": 153,
+      "defense": 78,
+      "stamina": 120
+    },
+    "en_name": "Zorua",
+    "evo": [],
+    "hira": "ぞろあ",
+    "name": "ゾロア",
+    "no": 570,
+    "original": {
+      "attack": 65,
+      "defense": 40,
+      "hp": 40,
+      "specialattack": 80,
+      "specialdefense": 40,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 250,
+      "defense": 127,
+      "stamina": 155
+    },
+    "en_name": "Zoroark",
+    "evo": [],
+    "hira": "ぞろあーく",
+    "name": "ゾロアーク",
+    "no": 571,
+    "original": {
+      "attack": 105,
+      "defense": 60,
+      "hp": 60,
+      "specialattack": 120,
+      "specialdefense": 60,
+      "speed": 105
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 80,
+      "stamina": 146
+    },
+    "en_name": "Minccino",
+    "evo": [],
+    "hira": "ちらーみぃ",
+    "name": "チラーミィ",
+    "no": 572,
+    "original": {
+      "attack": 50,
+      "defense": 40,
+      "hp": 55,
+      "specialattack": 40,
+      "specialdefense": 40,
+      "speed": 75
+    }
+  },
+  {
+    "base": {
+      "attack": 198,
+      "defense": 130,
+      "stamina": 181
+    },
+    "en_name": "Cinccino",
+    "evo": [],
+    "hira": "ちらちーの",
+    "name": "チラチーノ",
+    "no": 573,
+    "original": {
+      "attack": 95,
+      "defense": 60,
+      "hp": 75,
+      "specialattack": 65,
+      "specialdefense": 60,
+      "speed": 115
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 112,
+      "stamina": 128
+    },
+    "en_name": "Gothita",
+    "evo": [],
+    "hira": "ごちむ",
+    "name": "ゴチム",
+    "no": 574,
+    "original": {
+      "attack": 30,
+      "defense": 50,
+      "hp": 45,
+      "specialattack": 55,
+      "specialdefense": 65,
+      "speed": 45
+    }
+  },
+  {
+    "base": {
+      "attack": 137,
+      "defense": 153,
+      "stamina": 155
+    },
+    "en_name": "Gothorita",
+    "evo": [],
+    "hira": "ごちみる",
+    "name": "ゴチミル",
+    "no": 575,
+    "original": {
+      "attack": 45,
+      "defense": 70,
+      "hp": 60,
+      "specialattack": 75,
+      "specialdefense": 85,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 176,
+      "defense": 205,
+      "stamina": 172
+    },
+    "en_name": "Gothitelle",
+    "evo": [],
+    "hira": "ごちるぜる",
+    "name": "ゴチルゼル",
+    "no": 576,
+    "original": {
+      "attack": 55,
+      "defense": 95,
+      "hp": 70,
+      "specialattack": 95,
+      "specialdefense": 110,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 170,
+      "defense": 83,
+      "stamina": 128
+    },
+    "en_name": "Solosis",
+    "evo": [],
+    "hira": "ゆにらん",
+    "name": "ユニラン",
+    "no": 577,
+    "original": {
+      "attack": 30,
+      "defense": 40,
+      "hp": 45,
+      "specialattack": 105,
+      "specialdefense": 50,
+      "speed": 20
+    }
+  },
+  {
+    "base": {
+      "attack": 208,
+      "defense": 103,
+      "stamina": 163
+    },
+    "en_name": "Duosion",
+    "evo": [],
+    "hira": "だぶらん",
+    "name": "ダブラン",
+    "no": 578,
+    "original": {
+      "attack": 40,
+      "defense": 50,
+      "hp": 65,
+      "specialattack": 125,
+      "specialdefense": 60,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 214,
+      "defense": 148,
+      "stamina": 242
+    },
+    "en_name": "Reuniclus",
+    "evo": [],
+    "hira": "らんくるす",
+    "name": "ランクルス",
+    "no": 579,
+    "original": {
+      "attack": 65,
+      "defense": 75,
+      "hp": 110,
+      "specialattack": 125,
+      "specialdefense": 85,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 84,
+      "defense": 96,
+      "stamina": 158
+    },
+    "en_name": "Ducklett",
+    "evo": [],
+    "hira": "こあるひー",
+    "name": "コアルヒー",
+    "no": 580,
+    "original": {
+      "attack": 44,
+      "defense": 50,
+      "hp": 62,
+      "specialattack": 44,
+      "specialdefense": 50,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 182,
+      "defense": 132,
+      "stamina": 181
+    },
+    "en_name": "Swanna",
+    "evo": [],
+    "hira": "すわんな",
+    "name": "スワンナ",
+    "no": 581,
+    "original": {
+      "attack": 87,
+      "defense": 63,
+      "hp": 75,
+      "specialattack": 87,
+      "specialdefense": 63,
+      "speed": 98
+    }
+  },
+  {
+    "base": {
+      "attack": 118,
+      "defense": 106,
+      "stamina": 113
+    },
+    "en_name": "Vanillite",
+    "evo": [],
+    "hira": "ばにぷっち",
+    "name": "バニプッチ",
+    "no": 582,
+    "original": {
+      "attack": 50,
+      "defense": 50,
+      "hp": 36,
+      "specialattack": 65,
+      "specialdefense": 60,
+      "speed": 44
+    }
+  },
+  {
+    "base": {
+      "attack": 151,
+      "defense": 138,
+      "stamina": 139
+    },
+    "en_name": "Vanillish",
+    "evo": [],
+    "hira": "ばにりっち",
+    "name": "バニリッチ",
+    "no": 583,
+    "original": {
+      "attack": 65,
+      "defense": 65,
+      "hp": 51,
+      "specialattack": 80,
+      "specialdefense": 75,
+      "speed": 59
+    }
+  },
+  {
+    "base": {
+      "attack": 218,
+      "defense": 184,
+      "stamina": 174
+    },
+    "en_name": "Vanilluxe",
+    "evo": [],
+    "hira": "ばいばにら",
+    "name": "バイバニラ",
+    "no": 584,
+    "original": {
+      "attack": 95,
+      "defense": 85,
+      "hp": 71,
+      "specialattack": 110,
+      "specialdefense": 95,
+      "speed": 79
+    }
+  },
+  {
+    "base": {
+      "attack": 115,
+      "defense": 100,
+      "stamina": 155
+    },
+    "en_name": "Deerling",
+    "evo": [],
+    "hira": "しきじか",
+    "name": "シキジカ",
+    "no": 585,
+    "original": {
+      "attack": 60,
+      "defense": 50,
+      "hp": 60,
+      "specialattack": 40,
+      "specialdefense": 50,
+      "speed": 75
+    }
+  },
+  {
+    "base": {
+      "attack": 198,
+      "defense": 146,
+      "stamina": 190
+    },
+    "en_name": "Sawsbuck",
+    "evo": [],
+    "hira": "めぶきじか",
+    "name": "メブキジカ",
+    "no": 586,
+    "original": {
+      "attack": 100,
+      "defense": 70,
+      "hp": 80,
+      "specialattack": 60,
+      "specialdefense": 70,
+      "speed": 95
+    }
+  },
+  {
+    "base": {
+      "attack": 158,
+      "defense": 127,
+      "stamina": 146
+    },
+    "en_name": "Emolga",
+    "evo": [],
+    "hira": "えもんが",
+    "name": "エモンガ",
+    "no": 587,
+    "original": {
+      "attack": 75,
+      "defense": 60,
+      "hp": 55,
+      "specialattack": 75,
+      "specialdefense": 60,
+      "speed": 103
+    }
+  },
+  {
+    "base": {
+      "attack": 137,
+      "defense": 87,
+      "stamina": 137
+    },
+    "en_name": "Karrablast",
+    "evo": [],
+    "hira": "かぶるも",
+    "name": "カブルモ",
+    "no": 588,
+    "original": {
+      "attack": 75,
+      "defense": 45,
+      "hp": 50,
+      "specialattack": 40,
+      "specialdefense": 45,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 223,
+      "defense": 187,
+      "stamina": 172
+    },
+    "en_name": "Escavalier",
+    "evo": [],
+    "hira": "しゅばるご",
+    "name": "シュバルゴ",
+    "no": 589,
+    "original": {
+      "attack": 135,
+      "defense": 105,
+      "hp": 70,
+      "specialattack": 60,
+      "specialdefense": 105,
+      "speed": 20
+    }
+  },
+  {
+    "base": {
+      "attack": 97,
+      "defense": 91,
+      "stamina": 170
+    },
+    "en_name": "Foongus",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "モロバレル"
+      }
+    ],
+    "hira": "たまげたけ",
+    "name": "タマゲタケ",
+    "no": 590,
+    "original": {
+      "attack": 55,
+      "defense": 45,
+      "hp": 69,
+      "specialattack": 55,
+      "specialdefense": 55,
+      "speed": 15
+    }
+  },
+  {
+    "base": {
+      "attack": 155,
+      "defense": 139,
+      "stamina": 249
+    },
+    "en_name": "Amoonguss",
+    "evo": [],
+    "hira": "もろばれる",
+    "name": "モロバレル",
+    "no": 591,
+    "original": {
+      "attack": 85,
+      "defense": 70,
+      "hp": 114,
+      "specialattack": 85,
+      "specialdefense": 80,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 115,
+      "defense": 134,
+      "stamina": 146
+    },
+    "en_name": "Frillish",
+    "evo": [],
+    "hira": "ぷるりる",
+    "name": "プルリル",
+    "no": 592,
+    "original": {
+      "attack": 40,
+      "defense": 50,
+      "hp": 55,
+      "specialattack": 65,
+      "specialdefense": 85,
+      "speed": 40
+    }
+  },
+  {
+    "base": {
+      "attack": 159,
+      "defense": 178,
+      "stamina": 225
+    },
+    "en_name": "Jellicent",
+    "evo": [],
+    "hira": "ぶるんげる",
+    "name": "ブルンゲル",
+    "no": 593,
+    "original": {
+      "attack": 60,
+      "defense": 70,
+      "hp": 100,
+      "specialattack": 85,
+      "specialdefense": 105,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 138,
+      "defense": 131,
+      "stamina": 338
+    },
+    "en_name": "Alomomola",
+    "evo": [],
+    "hira": "ままんぼう",
+    "name": "ママンボウ",
+    "no": 594,
+    "original": {
+      "attack": 75,
+      "defense": 80,
+      "hp": 165,
+      "specialattack": 40,
+      "specialdefense": 45,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 110,
+      "defense": 98,
+      "stamina": 137
+    },
+    "en_name": "Joltik",
+    "evo": [],
+    "hira": "ばちゅる",
+    "name": "バチュル",
+    "no": 595,
+    "original": {
+      "attack": 47,
+      "defense": 50,
+      "hp": 50,
+      "specialattack": 57,
+      "specialdefense": 50,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 201,
+      "defense": 128,
+      "stamina": 172
+    },
+    "en_name": "Galvantula",
+    "evo": [],
+    "hira": "でんちゅら",
+    "name": "デンチュラ",
+    "no": 596,
+    "original": {
+      "attack": 77,
+      "defense": 60,
+      "hp": 70,
+      "specialattack": 97,
+      "specialdefense": 60,
+      "speed": 108
+    }
+  },
+  {
+    "base": {
+      "attack": 82,
+      "defense": 155,
+      "stamina": 127
+    },
+    "en_name": "Ferroseed",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ナットレイ"
+      }
+    ],
+    "hira": "てっしーど",
+    "name": "テッシード",
+    "no": 597,
+    "original": {
+      "attack": 50,
+      "defense": 91,
+      "hp": 44,
+      "specialattack": 24,
+      "specialdefense": 86,
+      "speed": 10
+    }
+  },
+  {
+    "base": {
+      "attack": 158,
+      "defense": 223,
+      "stamina": 179
+    },
+    "en_name": "Ferrothorn",
+    "evo": [],
+    "hira": "なっとれい",
+    "name": "ナットレイ",
+    "no": 598,
+    "original": {
+      "attack": 94,
+      "defense": 131,
+      "hp": 74,
+      "specialattack": 54,
+      "specialdefense": 116,
+      "speed": 20
+    }
+  },
+  {
+    "base": {
+      "attack": 98,
+      "defense": 121,
+      "stamina": 120
+    },
+    "en_name": "Klink",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ギギアル"
+      }
+    ],
+    "hira": "ぎある",
+    "name": "ギアル",
+    "no": 599,
+    "original": {
+      "attack": 55,
+      "defense": 70,
+      "hp": 40,
+      "specialattack": 45,
+      "specialdefense": 60,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 150,
+      "defense": 174,
+      "stamina": 155
+    },
+    "en_name": "Klang",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "ギギギアル"
+      }
+    ],
+    "hira": "ぎぎある",
+    "name": "ギギアル",
+    "no": 600,
+    "original": {
+      "attack": 80,
+      "defense": 95,
+      "hp": 60,
+      "specialattack": 70,
+      "specialdefense": 85,
+      "speed": 50
+    }
+  },
+  {
+    "base": {
+      "attack": 199,
+      "defense": 214,
+      "stamina": 155
+    },
+    "en_name": "Klinklang",
+    "evo": [],
+    "hira": "ぎぎぎある",
+    "name": "ギギギアル",
+    "no": 601,
+    "original": {
+      "attack": 100,
+      "defense": 115,
+      "hp": 60,
+      "specialattack": 70,
+      "specialdefense": 85,
+      "speed": 90
+    }
+  },
+  {
+    "base": {
+      "attack": 105,
+      "defense": 78,
+      "stamina": 111
+    },
+    "en_name": "Tynamo",
+    "evo": [],
+    "hira": "しびらんす",
+    "name": "シビシラス",
+    "no": 602,
+    "original": {
+      "attack": 55,
+      "defense": 40,
+      "hp": 35,
+      "specialattack": 45,
+      "specialdefense": 40,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 156,
+      "defense": 130,
+      "stamina": 163
+    },
+    "en_name": "Eelektrik",
+    "evo": [],
+    "hira": "しびびーる",
+    "name": "シビビール",
+    "no": 603,
+    "original": {
+      "attack": 85,
+      "defense": 70,
+      "hp": 65,
+      "specialattack": 75,
+      "specialdefense": 70,
+      "speed": 40
+    }
+  },
+  {
+    "base": {
+      "attack": 217,
+      "defense": 152,
+      "stamina": 198
+    },
+    "en_name": "Eelektross",
+    "evo": [],
+    "hira": "しびるどん",
+    "name": "シビルドン",
+    "no": 604,
+    "original": {
+      "attack": 115,
+      "defense": 80,
+      "hp": 85,
+      "specialattack": 105,
+      "specialdefense": 80,
+      "speed": 50
+    }
+  },
+  {
+    "base": {
+      "attack": 148,
+      "defense": 100,
+      "stamina": 146
+    },
+    "en_name": "Elgyem",
+    "evo": [],
+    "hira": "りぐれー",
+    "name": "リグレー",
+    "no": 605,
+    "original": {
+      "attack": 55,
+      "defense": 55,
+      "hp": 55,
+      "specialattack": 85,
+      "specialdefense": 55,
+      "speed": 30
+    }
+  },
+  {
+    "base": {
+      "attack": 221,
+      "defense": 163,
+      "stamina": 181
+    },
+    "en_name": "Beheeyem",
+    "evo": [],
+    "hira": "おーべむ",
+    "name": "オーベム",
+    "no": 606,
+    "original": {
+      "attack": 75,
+      "defense": 75,
+      "hp": 75,
+      "specialattack": 125,
+      "specialdefense": 95,
+      "speed": 40
+    }
+  },
+  {
+    "base": {
+      "attack": 108,
+      "defense": 98,
+      "stamina": 137
+    },
+    "en_name": "Litwick",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ランプラー"
+      }
+    ],
+    "hira": "ひともし",
+    "name": "ヒトモシ",
+    "no": 607,
+    "original": {
+      "attack": 30,
+      "defense": 55,
+      "hp": 50,
+      "specialattack": 65,
+      "specialdefense": 55,
+      "speed": 20
+    }
+  },
+  {
+    "base": {
+      "attack": 169,
+      "defense": 115,
+      "stamina": 155
+    },
+    "en_name": "Lampent",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "イッシュのいし",
+        "name": "シャンデラ"
+      }
+    ],
+    "hira": "らんぷらー",
+    "name": "ランプラー",
+    "no": 608,
+    "original": {
+      "attack": 40,
+      "defense": 60,
+      "hp": 60,
+      "specialattack": 95,
+      "specialdefense": 60,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 271,
+      "defense": 182,
+      "stamina": 155
+    },
+    "en_name": "Chandelure",
+    "evo": [],
+    "hira": "しゃんでら",
+    "name": "シャンデラ",
+    "no": 609,
+    "original": {
+      "attack": 55,
+      "defense": 90,
+      "hp": 60,
+      "specialattack": 145,
+      "specialdefense": 90,
+      "speed": 80
+    }
+  },
+  {
+    "base": {
+      "attack": 154,
+      "defense": 101,
+      "stamina": 130
+    },
+    "en_name": "Axew",
+    "evo": [],
+    "hira": "きばご",
+    "name": "キバゴ",
+    "no": 610,
+    "original": {
+      "attack": 87,
+      "defense": 60,
+      "hp": 46,
+      "specialattack": 30,
+      "specialdefense": 40,
+      "speed": 57
+    }
+  },
+  {
+    "base": {
+      "attack": 212,
+      "defense": 123,
+      "stamina": 165
+    },
+    "en_name": "Fraxure",
+    "evo": [],
+    "hira": "おのんど",
+    "name": "オノンド",
+    "no": 611,
+    "original": {
+      "attack": 117,
+      "defense": 70,
+      "hp": 66,
+      "specialattack": 40,
+      "specialdefense": 50,
+      "speed": 67
+    }
+  },
+  {
+    "base": {
+      "attack": 284,
+      "defense": 172,
+      "stamina": 183
+    },
+    "en_name": "Haxorus",
+    "evo": [],
+    "hira": "おののくす",
+    "name": "オノノクス",
+    "no": 612,
+    "original": {
+      "attack": 147,
+      "defense": 90,
+      "hp": 76,
+      "specialattack": 60,
+      "specialdefense": 70,
+      "speed": 97
+    }
+  },
+  {
+    "base": {
+      "attack": 128,
+      "defense": 74,
+      "stamina": 146
+    },
+    "en_name": "Cubchoo",
+    "evo": [],
+    "hira": "くましゅん",
+    "name": "クマシュン",
+    "no": 613,
+    "original": {
+      "attack": 70,
+      "defense": 40,
+      "hp": 55,
+      "specialattack": 60,
+      "specialdefense": 40,
+      "speed": 40
+    }
+  },
+  {
+    "base": {
+      "attack": 200,
+      "defense": 152,
+      "stamina": 216
+    },
+    "en_name": "Beartic",
+    "evo": [],
+    "hira": "つんべあー",
+    "name": "ツンベアー",
+    "no": 614,
+    "original": {
+      "attack": 110,
+      "defense": 80,
+      "hp": 95,
+      "specialattack": 70,
+      "specialdefense": 80,
+      "speed": 50
+    }
+  },
+  {
+    "base": {
+      "attack": 190,
+      "defense": 202,
+      "stamina": 172
+    },
+    "en_name": "Cryogonal",
+    "evo": [],
+    "hira": "ふりーじお",
+    "name": "フリージオ",
+    "no": 615,
+    "original": {
+      "attack": 50,
+      "defense": 30,
+      "hp": 70,
+      "specialattack": 95,
+      "specialdefense": 135,
+      "speed": 105
+    }
+  },
+  {
+    "base": {
+      "attack": 72,
+      "defense": 140,
+      "stamina": 137
+    },
+    "en_name": "Shelmet",
+    "evo": [],
+    "hira": "ちょぼまき",
+    "name": "チョボマキ",
+    "no": 616,
+    "original": {
+      "attack": 40,
+      "defense": 85,
+      "hp": 50,
+      "specialattack": 40,
+      "specialdefense": 65,
+      "speed": 25
+    }
+  },
+  {
+    "base": {
+      "attack": 220,
+      "defense": 120,
+      "stamina": 190
+    },
+    "en_name": "Accelgor",
+    "evo": [],
+    "hira": "あぎるだー",
+    "name": "アギルダー",
+    "no": 617,
+    "original": {
+      "attack": 70,
+      "defense": 40,
+      "hp": 80,
+      "specialattack": 100,
+      "specialdefense": 60,
+      "speed": 145
+    }
+  },
+  {
+    "base": {
+      "attack": 144,
+      "defense": 171,
+      "stamina": 240
+    },
+    "en_name": "Stunfisk",
+    "evo": [],
+    "hira": "まっぎょ",
+    "name": "マッギョ",
+    "no": 618,
+    "original": {
+      "attack": 66,
+      "defense": 84,
+      "hp": 109,
+      "specialattack": 81,
+      "specialdefense": 99,
+      "speed": 32
+    }
+  },
+  {
+    "base": {
+      "attack": 160,
+      "defense": 98,
+      "stamina": 128
+    },
+    "en_name": "Mienfoo",
+    "evo": [],
+    "hira": "こじょふー",
+    "name": "コジョフー",
+    "no": 619,
+    "original": {
+      "attack": 85,
+      "defense": 50,
+      "hp": 45,
+      "specialattack": 55,
+      "specialdefense": 50,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 258,
+      "defense": 127,
+      "stamina": 163
+    },
+    "en_name": "Mienshao",
+    "evo": [],
+    "hira": "こじょんど",
+    "name": "コジョンド",
+    "no": 620,
+    "original": {
+      "attack": 125,
+      "defense": 60,
+      "hp": 65,
+      "specialattack": 95,
+      "specialdefense": 60,
+      "speed": 105
+    }
+  },
+  {
+    "base": {
+      "attack": 213,
+      "defense": 170,
+      "stamina": 184
+    },
+    "en_name": "Druddigon",
+    "evo": [],
+    "hira": "くりむがん",
+    "name": "クリムガン",
+    "no": 621,
+    "original": {
+      "attack": 120,
+      "defense": 90,
+      "hp": 77,
+      "specialattack": 60,
+      "specialdefense": 90,
+      "speed": 48
+    }
+  },
+  {
+    "base": {
+      "attack": 127,
+      "defense": 92,
+      "stamina": 153
+    },
+    "en_name": "Golett",
+    "evo": [
+      {
+        "candy": 50,
+        "item": "",
+        "name": "ゴルーグ"
+      }
+    ],
+    "hira": "ごびっと",
+    "name": "ゴビット",
+    "no": 622,
+    "original": {
+      "attack": 74,
+      "defense": 50,
+      "hp": 59,
+      "specialattack": 35,
+      "specialdefense": 50,
+      "speed": 35
+    }
+  },
+  {
+    "base": {
+      "attack": 222,
+      "defense": 154,
+      "stamina": 205
+    },
+    "en_name": "Golurk",
+    "evo": [],
+    "hira": "ごるーぐ",
+    "name": "ゴルーグ",
+    "no": 623,
+    "original": {
+      "attack": 124,
+      "defense": 80,
+      "hp": 89,
+      "specialattack": 55,
+      "specialdefense": 80,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 154,
+      "defense": 114,
+      "stamina": 128
+    },
+    "en_name": "Pawniard",
+    "evo": [],
+    "hira": "こまたな",
+    "name": "コマタナ",
+    "no": 624,
+    "original": {
+      "attack": 85,
+      "defense": 70,
+      "hp": 45,
+      "specialattack": 40,
+      "specialdefense": 40,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 232,
+      "defense": 176,
+      "stamina": 163
+    },
+    "en_name": "Bisharp",
+    "evo": [],
+    "hira": "きりきざん",
+    "name": "キリキザン",
+    "no": 625,
+    "original": {
+      "attack": 125,
+      "defense": 100,
+      "hp": 65,
+      "specialattack": 60,
+      "specialdefense": 70,
+      "speed": 70
+    }
+  },
+  {
+    "base": {
+      "attack": 195,
+      "defense": 182,
+      "stamina": 216
+    },
+    "en_name": "Bouffalant",
+    "evo": [],
+    "hira": "ばっふろん",
+    "name": "バッフロン",
+    "no": 626,
+    "original": {
+      "attack": 110,
+      "defense": 95,
+      "hp": 95,
+      "specialattack": 40,
+      "specialdefense": 95,
+      "speed": 55
+    }
+  },
+  {
+    "base": {
+      "attack": 150,
+      "defense": 97,
+      "stamina": 172
+    },
+    "en_name": "Rufflet",
+    "evo": [],
+    "hira": "わしぼん",
+    "name": "ワシボン",
+    "no": 627,
+    "original": {
+      "attack": 83,
+      "defense": 50,
+      "hp": 70,
+      "specialattack": 37,
+      "specialdefense": 50,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 232,
+      "defense": 152,
+      "stamina": 225
+    },
+    "en_name": "Braviary",
+    "evo": [],
+    "hira": "うぉーぐる",
+    "name": "ウォーグル",
+    "no": 628,
+    "original": {
+      "attack": 123,
+      "defense": 75,
+      "hp": 100,
+      "specialattack": 57,
+      "specialdefense": 75,
+      "speed": 80
+    }
+  },
+  {
+    "base": {
+      "attack": 105,
+      "defense": 139,
+      "stamina": 172
+    },
+    "en_name": "Vullaby",
+    "evo": [],
+    "hira": "ばるちゃい",
+    "name": "バルチャイ",
+    "no": 629,
+    "original": {
+      "attack": 55,
+      "defense": 75,
+      "hp": 70,
+      "specialattack": 45,
+      "specialdefense": 65,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 129,
+      "defense": 205,
+      "stamina": 242
+    },
+    "en_name": "Mandibuzz",
+    "evo": [],
+    "hira": "ばるじーな",
+    "name": "バルジーナ",
+    "no": 630,
+    "original": {
+      "attack": 65,
+      "defense": 105,
+      "hp": 110,
+      "specialattack": 55,
+      "specialdefense": 95,
+      "speed": 80
+    }
+  },
+  {
+    "base": {
+      "attack": 204,
+      "defense": 129,
+      "stamina": 198
+    },
+    "en_name": "Heatmor",
+    "evo": [],
+    "hira": "くいたらん",
+    "name": "クイタラン",
+    "no": 631,
+    "original": {
+      "attack": 97,
+      "defense": 66,
+      "hp": 85,
+      "specialattack": 105,
+      "specialdefense": 66,
+      "speed": 65
+    }
+  },
+  {
+    "base": {
+      "attack": 217,
+      "defense": 188,
+      "stamina": 151
+    },
+    "en_name": "Durant",
+    "evo": [],
+    "hira": "あいあんと",
+    "name": "アイアント",
+    "no": 632,
+    "original": {
+      "attack": 109,
+      "defense": 112,
+      "hp": 58,
+      "specialattack": 48,
+      "specialdefense": 48,
+      "speed": 109
+    }
+  },
+  {
+    "base": {
+      "attack": 116,
+      "defense": 93,
+      "stamina": 141
+    },
+    "en_name": "Deino",
+    "evo": [
+      {
+        "candy": 25,
+        "item": "",
+        "name": "ジヘッド"
+      }
+    ],
+    "hira": "ものず",
+    "name": "モノズ",
+    "no": 633,
+    "original": {
+      "attack": 65,
+      "defense": 50,
+      "hp": 52,
+      "specialattack": 45,
+      "specialdefense": 50,
+      "speed": 38
+    }
+  },
+  {
+    "base": {
+      "attack": 159,
+      "defense": 135,
+      "stamina": 176
+    },
+    "en_name": "Zweilous",
+    "evo": [
+      {
+        "candy": 100,
+        "item": "",
+        "name": "サザンドラ"
+      }
+    ],
+    "hira": "じへっど",
+    "name": "ジヘッド",
+    "no": 634,
+    "original": {
+      "attack": 85,
+      "defense": 70,
+      "hp": 72,
+      "specialattack": 65,
+      "specialdefense": 70,
+      "speed": 58
+    }
+  },
+  {
+    "base": {
+      "attack": 256,
+      "defense": 188,
+      "stamina": 211
+    },
+    "en_name": "Hydreigon",
+    "evo": [],
+    "hira": "さざんどら",
+    "name": "サザンドラ",
+    "no": 635,
+    "original": {
+      "attack": 105,
+      "defense": 90,
+      "hp": 92,
+      "specialattack": 125,
+      "specialdefense": 90,
+      "speed": 98
+    }
+  },
+  {
+    "base": {
+      "attack": 156,
+      "defense": 107,
+      "stamina": 146
+    },
+    "en_name": "Larvesta",
+    "evo": [],
+    "hira": "めらるば",
+    "name": "メラルバ",
+    "no": 636,
+    "original": {
+      "attack": 85,
+      "defense": 55,
+      "hp": 55,
+      "specialattack": 50,
+      "specialdefense": 55,
+      "speed": 60
+    }
+  },
+  {
+    "base": {
+      "attack": 264,
+      "defense": 189,
+      "stamina": 198
+    },
+    "en_name": "Volcarona",
+    "evo": [],
+    "hira": "うるがもす",
+    "name": "ウルガモス",
+    "no": 637,
+    "original": {
+      "attack": 60,
+      "defense": 65,
+      "hp": 85,
+      "specialattack": 135,
+      "specialdefense": 105,
+      "speed": 100
+    }
+  },
+  {
+    "base": {
+      "attack": 192,
+      "defense": 229,
+      "stamina": 209
+    },
+    "en_name": "Cobalion",
+    "evo": [],
+    "hira": "こばるおん",
+    "name": "コバルオン",
+    "no": 638,
+    "original": {
+      "attack": 90,
+      "defense": 129,
+      "hp": 91,
+      "specialattack": 90,
+      "specialdefense": 72,
+      "speed": 108
+    }
+  },
+  {
+    "base": {
+      "attack": 260,
+      "defense": 192,
+      "stamina": 209
+    },
+    "en_name": "Terrakion",
+    "evo": [],
+    "hira": "てらきおん",
+    "name": "テラキオン",
+    "no": 639,
+    "original": {
+      "attack": 129,
+      "defense": 90,
+      "hp": 91,
+      "specialattack": 72,
+      "specialdefense": 90,
+      "speed": 108
+    }
+  },
+  {
+    "base": {
+      "attack": 192,
+      "defense": 229,
+      "stamina": 209
+    },
+    "en_name": "Virizion",
+    "evo": [],
+    "hira": "びりじおん",
+    "name": "ビリジオン",
+    "no": 640,
+    "original": {
+      "attack": 90,
+      "defense": 72,
+      "hp": 91,
+      "specialattack": 90,
+      "specialdefense": 129,
+      "speed": 108
+    }
+  },
+  {
+    "base": {
+      "attack": 266,
+      "defense": 164,
+      "stamina": 188
+    },
+    "en_name": "Tornadus",
+    "evo": [],
+    "hira": "とるねろす（けしんふぉるむ）",
+    "name": "トルネロス（けしんフォルム）",
+    "no": 641,
+    "original": {
+      "attack": 115,
+      "defense": 70,
+      "hp": 79,
+      "specialattack": 125,
+      "specialdefense": 80,
+      "speed": 111
+    }
+  },
+  {
+    "base": {
+      "attack": 238,
+      "defense": 189,
+      "stamina": 188
+    },
+    "en_name": "Tornadus Therian",
+    "evo": [],
+    "hira": "とるねろす（れいじゅうふぉるむ）",
+    "name": "トルネロス（れいじゅうフォルム）",
+    "no": 641,
+    "original": {
+      "attack": 100,
+      "defense": 80,
+      "hp": 79,
+      "specialattack": 110,
+      "specialdefense": 90,
+      "speed": 121
+    }
+  },
+  {
+    "base": {
+      "attack": 266,
+      "defense": 164,
+      "stamina": 188
+    },
+    "en_name": "Thundurus",
+    "evo": [],
+    "hira": "ぼるとろす（けしんふぉるむ）",
+    "name": "ボルトロス（けしんフォルム）",
+    "no": 642,
+    "original": {
+      "attack": 115,
+      "defense": 70,
+      "hp": 79,
+      "specialattack": 125,
+      "specialdefense": 80,
+      "speed": 111
+    }
+  },
+  {
+    "base": {
+      "attack": 295,
+      "defense": 161,
+      "stamina": 188
+    },
+    "en_name": "Thundurus Therian",
+    "evo": [],
+    "hira": "ぼるとろす（れいじゅうふぉるむ）",
+    "name": "ボルトロス（れいじゅうフォルム）",
+    "no": 642,
+    "original": {
+      "attack": 105,
+      "defense": 70,
+      "hp": 79,
+      "specialattack": 145,
+      "specialdefense": 80,
+      "speed": 101
+    }
+  },
+  {
+    "base": {
+      "attack": 275,
+      "defense": 211,
+      "stamina": 205
+    },
+    "en_name": "Reshiram",
+    "evo": [],
+    "hira": "れじらむ",
+    "name": "レシラム",
+    "no": 643,
+    "original": {
+      "attack": 120,
+      "defense": 100,
+      "hp": 100,
+      "specialattack": 150,
+      "specialdefense": 120,
+      "speed": 90
+    }
+  },
+  {
+    "base": {
+      "attack": 275,
+      "defense": 211,
+      "stamina": 205
+    },
+    "en_name": "Zekrom",
+    "evo": [],
+    "hira": "ぜくろむ",
+    "name": "ゼクロム",
+    "no": 644,
+    "original": {
+      "attack": 150,
+      "defense": 120,
+      "hp": 100,
+      "specialattack": 120,
+      "specialdefense": 100,
+      "speed": 90
+    }
+  },
+  {
+    "base": {
+      "attack": 261,
+      "defense": 182,
+      "stamina": 205
+    },
+    "en_name": "Landorus",
+    "evo": [],
+    "hira": "らんどろす（けしんふぉるむ）",
+    "name": "ランドロス（けしんフォルム）",
+    "no": 645,
+    "original": {
+      "attack": 125,
+      "defense": 90,
+      "hp": 89,
+      "specialattack": 115,
+      "specialdefense": 80,
+      "speed": 101
+    }
+  },
+  {
+    "base": {
+      "attack": 289,
+      "defense": 179,
+      "stamina": 205
+    },
+    "en_name": "Landorus Therian",
+    "evo": [],
+    "hira": "らんどろす（れいじゅうふぉるむ）",
+    "name": "ランドロス（れいじゅうフォルム）",
+    "no": 645,
+    "original": {
+      "attack": 145,
+      "defense": 90,
+      "hp": 89,
+      "specialattack": 105,
+      "specialdefense": 80,
+      "speed": 91
+    }
+  },
+  {
+    "base": {
+      "attack": 246,
+      "defense": 170,
+      "stamina": 245
+    },
+    "en_name": "Kyurem",
+    "evo": [],
+    "hira": "きゅれむ",
+    "name": "キュレム",
+    "no": 646,
+    "original": {
+      "attack": 130,
+      "defense": 90,
+      "hp": 125,
+      "specialattack": 130,
+      "specialdefense": 90,
+      "speed": 95
+    }
+  },
+  {
+    "base": {
+      "attack": 310,
+      "defense": 183,
+      "stamina": 245
+    },
+    "en_name": "Kyurem Black",
+    "evo": [],
+    "hira": "きゅれむ（ぶらっくきゅれむ）",
+    "name": "キュレム（ブラックキュレム）",
+    "no": 642,
+    "original": {
+      "attack": 170,
+      "defense": 100,
+      "hp": 125,
+      "specialattack": 120,
+      "specialdefense": 90,
+      "speed": 95
+    }
+  },
+  {
+    "base": {
+      "attack": 310,
+      "defense": 183,
+      "stamina": 245
+    },
+    "en_name": "Kyurem White",
+    "evo": [],
+    "hira": "きゅれむ（ほわいときゅれむ）",
+    "name": "キュレム（ホワイトキュレム）",
+    "no": 642,
+    "original": {
+      "attack": 120,
+      "defense": 90,
+      "hp": 125,
+      "specialattack": 170,
+      "specialdefense": 100,
+      "speed": 95
+    }
+  },
+  {
+    "base": {
+      "attack": 260,
+      "defense": 192,
+      "stamina": 209
+    },
+    "en_name": "Keldeo",
+    "evo": [],
+    "hira": "けるでぃお",
+    "name": "ケルディオ",
+    "no": 647,
+    "original": {
+      "attack": 72,
+      "defense": 90,
+      "hp": 91,
+      "specialattack": 129,
+      "specialdefense": 90,
+      "speed": 108
+    }
+  },
+  {
+    "base": {
+      "attack": 250,
+      "defense": 225,
+      "stamina": 225
+    },
+    "en_name": "Meloetta Aria",
+    "evo": [],
+    "hira": "めろえった（ぼいすふぁるむ）",
+    "name": "メロエッタ（ボイスフォルム）",
+    "no": 648,
+    "original": {
+      "attack": 77,
+      "defense": 77,
+      "hp": 100,
+      "specialattack": 128,
+      "specialdefense": 128,
+      "speed": 90
+    }
+  },
+  {
+    "base": {
+      "attack": 269,
+      "defense": 188,
+      "stamina": 225
+    },
+    "en_name": "Meloetta Pirouette",
+    "evo": [],
+    "hira": "めろえった（すてっぷふぉるむ）",
+    "name": "メロエッタ（ステップフォルム）",
+    "no": 648,
+    "original": {
+      "attack": 128,
+      "defense": 90,
+      "hp": 100,
+      "specialattack": 77,
+      "specialdefense": 77,
+      "speed": 128
+    }
+  },
+  {
+    "base": {
+      "attack": 252,
+      "defense": 199,
+      "stamina": 174
+    },
+    "en_name": "Genesect",
+    "evo": [],
+    "hira": "げのせくと",
+    "name": "ゲノセクト",
+    "no": 649,
+    "original": {
+      "attack": 120,
+      "defense": 95,
+      "hp": 71,
+      "specialattack": 120,
+      "specialdefense": 95,
+      "speed": 99
     }
   },
   {
@@ -11865,6 +15319,26 @@
       "specialattack": 90,
       "specialdefense": 154,
       "speed": 130
+    }
+  },
+  {
+    "base": {
+      "attack": 174,
+      "defense": 197,
+      "stamina": 163
+    },
+    "en_name": "Galarian Weezing",
+    "evo": [],
+    "hira": "またどがす（がらる）",
+    "name": "マタドガス（ガラル）",
+    "no": 110,
+    "original": {
+      "attack": 90,
+      "defense": 120,
+      "hp": 65,
+      "specialattack": 85,
+      "specialdefense": 70,
+      "speed": 60
     }
   }
 ]
