@@ -166,9 +166,9 @@ $(document).ready(function(){
 
         var title = $('<p class="lead"></p>');
         if (input.league == 0) {
-            title.append(input.name + "：（スーパーリーグのランキング）");
+            title.append(input.name + "：（スーパーリーグ）");
         } else if (input.league == 1) {
-            title.append(input.name + "：（ハイパーリーグのランキング）");
+            title.append(input.name + "：（ハイパーリーグ）");
         } else {
             title.append(input.name);
         }
@@ -227,12 +227,12 @@ $(document).ready(function(){
             prevtdo = value['tdobase'];
             row.append('<td><div class="text-right">' + rank + '</div></td>');
             row.append('<td><div class="text-right">' + value['cp'] + '</div></td>');
-            row.append('<td><div class="text-right">' + value['level'] + '</div></td>');
+            row.append('<td><div class="text-right">' + value['level'].toFixed(1) + '</div></td>');
             row.append('<td><div class="text-right">' + value['attack'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['defense'] + '</div></td>');
             row.append('<td><div class="text-right">' + value['stamina'] + '</div></td>');
-            row.append('<td><div class="text-right">' + Math.floor(value['tdobase']) / 10000 + '</div></td>');
-            row.append('<td><div class="text-right">' + Math.floor(((tdomax - value['tdobase']) / tdomax) * 10000) / 100 + '</div></td>');
+            row.append('<td><div class="text-right">' + (Math.floor(value['tdobase']) / 10000).toFixed(4) + '</div></td>');
+            row.append('<td><div class="text-right">' + (Math.floor(((tdomax - value['tdobase']) / tdomax) * 10000) / 100).toFixed(2) + '</div></td>');
             return row;
         });
         tbody.append(row);
