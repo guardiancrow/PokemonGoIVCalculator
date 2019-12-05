@@ -155,7 +155,7 @@ $(document).ready(function(){
         var title = $('<p class="lead"></p>');
         title.append(input.name + "(レベル" + input.level.toFixed(1) + ")");
 
-        var info = $('<p class="small">通常CP：通常の攻撃力重視のCPです。ケッキング・ミュウツーなどで大きくなる傾向にあります。<br>平均CP：攻撃・防御・HPの平均をとったCPです。PvP用途の強さの目安です。<br>防衛CP：ジム設置を想定した、防御とHPを重視したCPです。ハピナス・クレセリア・カビゴンなどで大きくなる傾向にあります。<br>これら３列はソートできます。</p>');
+        var info = $('<p class="small">通常CP：通常の攻撃力重視のCPです。ケッキング・ミュウツーなどで大きくなる傾向にあります。<br>平均CP：攻撃・防御・HPの平均をとったCPです。PvP用途、特にマスターリーグでの強さの目安です。<br>防衛CP：ジム設置を想定した、防御とHPを重視したCPです。ハピナス・クレセリア・カビゴンなどで大きくなる傾向にあります。<br>これら３列はソートできます。</p>');
         var table = $('<table id="mainlist" class="table table-bordered table-striped"></table>');
         var thead = $('<thead><tr><th class="sort text-center" data-sort="atk">通常CP</th><th class="sort text-center" data-sort="ave">平均CP</th><th class="sort text-center" data-sort="def">防衛CP</th><th><div class="text-center">％</div></th><th><div class="text-center">攻撃</div></th><th><div class="text-center">防御</div></th><th><div class="text-center">HP</div></th></tr></thead>');
         table.prepend(thead);
